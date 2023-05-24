@@ -1,4 +1,4 @@
-package practice.toyproject.batch.controller;
+package practice.toyproject.test.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
