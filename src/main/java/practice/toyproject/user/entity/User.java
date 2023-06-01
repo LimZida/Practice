@@ -1,4 +1,4 @@
-package practice.toyproject.test.entity;
+package practice.toyproject.user.entity;
 
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
@@ -9,7 +9,9 @@ import java.sql.Timestamp;
 
 /**
  * title : entity
+ *
  * description : T_USER 테이블 컬럼 매핑용 entity
+ *
  * reference : 생성자 https://kadosholy.tistory.com/91
  * 롬복  https://www.daleseo.com/lombok-popular-annotations/
  * 엔티티 https://choiseonjae.github.io/jpa/jpa-%EA%B8%B0%EB%B3%B8%ED%82%A4%EC%A0%84/

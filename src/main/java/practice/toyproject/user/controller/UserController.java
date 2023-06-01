@@ -1,4 +1,4 @@
-package practice.toyproject.test.controller;
+package practice.toyproject.user.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,12 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import practice.toyproject.test.entity.User;
-import practice.toyproject.test.service.UserService;
+import practice.toyproject.user.entity.User;
+import practice.toyproject.user.service.UserService;
 
 /**
  * title : userController
- * description : user 관련 controller
+ * description : saveService(userId) => 유저 저장
+ *               selectService(seq) => 유저 조회
+ *
  * reference :
  *
  * author : 임현영
@@ -38,13 +40,13 @@ public class UserController {
 
     @RequestMapping(value = "/save",method = RequestMethod.GET)
     public User saveService(@RequestParam("userId") String userId){
-        logger.info("####### 유저 저장용 파라미터: {}",userId);
+        logger.info("####### 유저 저장용 파라미터 : {}",userId);
         return userService.saveUser(userId);
     }
 
     @RequestMapping(value ="select" ,method = RequestMethod.GET)
     public User selectService(@RequestParam("seq") long seq){
-        logger.info("####### 유저 조회용 파라미터: {}",seq);
+        logger.info("####### 유저 조회용 파라미터 : {}",seq);
         return userService.selectUser(seq);
     }
 }
