@@ -24,19 +24,18 @@ import java.sql.Timestamp;
 //@NoArgsConstructor 파라미터가 없는 생성자 생성
 //@ToString Stringbuffer 역할
 @Entity(name = "T_USER") //DB 테이블과 매핑
-//@SequenceGenerator(
-//        name = "MEMBER_SEQ_GENERATOR", // 여기서 사용할 시퀀스 이름
-//        sequenceName = "SEQ_T_USER", //매핑할 데이터베이스 시퀀스 이름
-//        initialValue = 1, allocationSize = 1)
 public class User {
 
     @Id //PK
-//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "MEMBER_SEQ_GENERATOR")
-    @GeneratedValue(strategy = GenerationType.AUTO)//자동으로 oracle 잡아줌
+    @SequenceGenerator(
+            name = "MEMBER_SEQ_GENERATOR", // 여기서 사용할 시퀀스 이름
+            sequenceName = "SEQ_T_USER", //매핑할 데이터베이스 시퀀스 이름
+            initialValue = 1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "MEMBER_SEQ_GENERATOR")
     private long seq;
     private String userId;
     @CreationTimestamp
     private Timestamp regDate;
     @UpdateTimestamp
-    private Timestamp lastLogInDate;
+    private Timestamp lastLoginDate;
 }
