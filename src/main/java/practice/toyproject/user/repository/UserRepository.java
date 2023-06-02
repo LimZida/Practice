@@ -10,7 +10,9 @@ import java.util.List;
  * title : userRepository
  * description : save(user) => 유저 저장
  *               findBySeq(seq) => 시퀀스를 통해 유저 조회
+ *               findByUserId(userId) => ID를 통해 유저 조회
  *               findAll() => 모든 유저 조회
+ *               
  * reference : 쿼리 직접 사용시 https://sundries-in-myidea.tistory.com/91
  * JPA 메서드 명령규칙 https://zara49.tistory.com/130
  *
