@@ -14,8 +14,11 @@ import java.util.List;
 
 /**
  * title : userController
- * description : saveService(userId) => 유저 저장
- *               selectService(seq) => 유저 조회
+ * description : sayTest() => 테스트
+ *               saveService(userId) => 유저 저장
+ *               selectSeqService(seq) => 시퀀스로 유저 조회
+ *               selectAllService() => 모든 유저 조회
+ *               selectIdService(userId) => 아이디로 유저 조회
  *
  * reference :
  *

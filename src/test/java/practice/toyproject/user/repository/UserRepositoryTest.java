@@ -22,6 +22,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  *                                    https://bcp0109.tistory.com/245
  *             DataJpaTest 정리 https://insanelysimple.tistory.com/338
  *                             https://webcoding-start.tistory.com/20
+ *             Transactional 정리 https://imiyoungman.tistory.com/9
  *
  * author : 임현영
  * date : 2023.06.01
@@ -45,8 +46,8 @@ class UserRepositoryTest {
 
     @Test
     void save() {
-        User user=new User();
-        user.setUserId("zida");
+        User user= User.builder().userId("zida").build();
+
         logger.info("###### save User 주소값 {} :",user.hashCode());
         userRepository.save((user));
         User result = userRepository.findByUserId(user.getUserId());
@@ -55,8 +56,8 @@ class UserRepositoryTest {
 
     @Test
     void findBySeq() {
-        User user=new User();
-        user.setUserId("zida");
+        User user= User.builder().userId("zida").build();
+
         logger.info("###### findBySeq User 주소값 {} :",user.hashCode());
 
         userRepository.save(user);
@@ -67,17 +68,14 @@ class UserRepositoryTest {
 
     @Test
     void findAll() {
-        User user=new User();
-        user.setUserId("zida");
+        User user=User.builder().userId("zida").build();
         userRepository.save(user);
         logger.info("###### findAll User 주소값 {} :",user.hashCode());
 
-        User user2=new User();
-        user.setUserId("zida2");
+        User user2=User.builder().userId("zida2").build();
         userRepository.save(user2);
 
-        User user3=new User();
-        user.setUserId("zida3");
+        User user3=User.builder().userId("zida3").build();
         userRepository.save(user3);
 
         List<User> result = userRepository.findAll();

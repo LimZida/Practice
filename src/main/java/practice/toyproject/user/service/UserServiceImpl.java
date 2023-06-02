@@ -37,8 +37,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User saveUser(String userId) {
-        User user= new User();
-        user.setUserId(userId);
+        User user= User.builder().userId(userId).build();
+
         logger.info("####### user 정보 : {}",user.toString());
         return userRepository.save(user);
     }
