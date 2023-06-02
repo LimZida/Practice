@@ -13,7 +13,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * title : UserRepositoryTests
+ * title : UserRepositoryTest
  * description : User entity 사용한 userRepository test
  *
  * reference : 테스트 예제 https://www.wool-dev.com/backend-engineering/spring/spring-jpa-repo-simple-test
@@ -29,14 +29,14 @@ import static org.assertj.core.api.Assertions.assertThat;
  **/
 @DataJpaTest
 class UserRepositoryTest {
-    private final Logger logger = LoggerFactory.getLogger(UserRepositoryTest.class);
     private final UserRepository userRepository;
-
+    //생성자 주입 (Autowired 생략가능)
     @Autowired
     UserRepositoryTest(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
+    private final Logger logger = LoggerFactory.getLogger(UserRepositoryTest.class);
 
 //    @BeforeEach
 //    public void makeUser(){
