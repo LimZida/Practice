@@ -1,13 +1,16 @@
 package practice.toyproject.user.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import practice.toyproject.user.entity.User;
 
+import java.util.List;
+
 /**
  * title : userRepository
- * description : User entity 사용한 userRepository
+ * description : save(user) => 유저 저장
+ *               findBySeq(seq) => 시퀀스를 통해 유저 조회
+ *               findAll() => 모든 유저 조회
  * reference : 쿼리 직접 사용시 https://sundries-in-myidea.tistory.com/91
  * JPA 메서드 명령규칙 https://zara49.tistory.com/130
  *
@@ -17,6 +20,7 @@ import practice.toyproject.user.entity.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
     User save(User user);
-    @Query(value = "SELECT U FROM T_USER U WHERE U.seq = ?1")
     User findBySeq(long seq);
+    User findByUserId(String userId);
+    List<User> findAll();
 }

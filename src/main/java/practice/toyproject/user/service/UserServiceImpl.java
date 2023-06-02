@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import practice.toyproject.user.entity.User;
 import practice.toyproject.user.repository.UserRepository;
 
+import java.util.List;
+
 /**
  * title : userServiceImpl
  *
@@ -25,10 +27,10 @@ import practice.toyproject.user.repository.UserRepository;
 @Service
 public class UserServiceImpl implements UserService {
     //생성자 주입 (Autowired 생략가능)
-    private final UserRepository userRepo;
+    private final UserRepository userRepository;
     @Autowired
     public UserServiceImpl(UserRepository userRepo) {
-        this.userRepo = userRepo;
+        this.userRepository = userRepo;
     }
 
     private final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
@@ -38,11 +40,21 @@ public class UserServiceImpl implements UserService {
         User user= new User();
         user.setUserId(userId);
         logger.info("####### user 정보 : {}",user.toString());
-        return userRepo.save(user);
+        return userRepository.save(user);
     }
 
     @Override
-    public User selectUser(long seq) {
-        return userRepo.findBySeq(seq);
+    public User selectUserBySeq(long seq) {
+        return userRepository.findBySeq(seq);
+    }
+
+    @Override
+    public List<User> selectAllUser() {
+        return userRepository.findAll();
+    }
+
+    @Override
+    public User selectUserByUserId(String userId) {
+        return userRepository.findByUserId(userId);
     }
 }

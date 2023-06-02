@@ -30,10 +30,10 @@ public class User {
 
     @Id //PK
     @SequenceGenerator(
-            name = "MEMBER_SEQ_GENERATOR", // 여기서 사용할 시퀀스 이름
+            name = "USER_SEQ_GENERATOR", // 여기서 사용할 시퀀스 이름
             sequenceName = "SEQ_T_USER", //매핑할 데이터베이스 시퀀스 이름
             initialValue = 1, allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "MEMBER_SEQ_GENERATOR")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "USER_SEQ_GENERATOR")
     private long seq;
     private String userId;
     @CreationTimestamp

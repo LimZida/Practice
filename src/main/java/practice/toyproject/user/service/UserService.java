@@ -2,6 +2,8 @@ package practice.toyproject.user.service;
 
 import practice.toyproject.user.entity.User;
 
+import java.util.List;
+
 /**
  * title : userService
  *
@@ -19,6 +21,8 @@ import practice.toyproject.user.entity.User;
 
 public interface UserService {
     User saveUser(String userId);
-    User selectUser(long seq);
+    User selectUserBySeq(long seq);
+    List<User> selectAllUser();
+    User selectUserByUserId(String userId);
 
 }
