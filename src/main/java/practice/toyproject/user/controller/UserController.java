@@ -19,7 +19,6 @@ import java.util.List;
  *               selectSeqService(seq) => 시퀀스로 유저 조회
  *               selectAllService() => 모든 유저 조회
  *               selectIdService(userId) => 아이디로 유저 조회
- *
  * reference :
  *
  * author : 임현영
