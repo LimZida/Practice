@@ -34,7 +34,6 @@ public class UserController {
     public UserController(UserService userService){
         this.userService=userService;
     }
-
     private final Logger logger = LoggerFactory.getLogger(UserController.class);
 
     @RequestMapping(value = "/test",method = RequestMethod.GET)
