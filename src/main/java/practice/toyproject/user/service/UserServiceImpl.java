@@ -13,7 +13,9 @@ import java.util.List;
  * title : userServiceImpl
  *
  * description : saveUser(userId) => 유저 저장
-                 selectUser(seq) => 유저 조회
+ *               selectUserBySeq(seq) => 시퀀스를 통한 유저 조회
+ *               selectUserByUserId(userId) => ID를 통한 유저 조회
+ *               selectAllUser() => 모든 유저 조회
  *
  * reference : Optional https://mangkyu.tistory.com/70
  * 메소드의 반환 값이 절대 null이 아니라면 Optional을 사용하지 않는 것이 좋다.
