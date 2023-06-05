@@ -19,13 +19,14 @@ import java.util.List;
  *               selectSeqService(seq) => 시퀀스로 유저 조회
  *               selectAllService() => 모든 유저 조회
  *               selectIdService(userId) => ID로 유저 조회
- * reference :
+ *               
+ * reference : RESTful 설계 규칙 https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
  *
  * author : 임현영
  * date : 2023.05.24
  **/
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/users")
 public class UserController {
     //생성자 주입 (Autowired 생략가능)
     private final UserService userService;
@@ -41,25 +42,25 @@ public class UserController {
         return "This is test";
     }
 
-    @RequestMapping(value = "/save",method = RequestMethod.GET)
+    @RequestMapping(value = "/user-save",method = RequestMethod.GET)
     public User saveService(@RequestParam("userId") String userId){
         logger.info("####### 유저 저장용 파라미터 : {}",userId);
         return userService.saveUser(userId);
     }
 
-    @RequestMapping(value ="/selectSeq" ,method = RequestMethod.GET)
+    @RequestMapping(value ="/seq-selection" ,method = RequestMethod.GET)
     public User selectSeqService(@RequestParam("seq") long seq){
         logger.info("####### 유저 조회용 시퀀스 파라미터 : {}",seq);
         return userService.selectUserBySeq(seq);
     }
 
-    @RequestMapping(value = "/selectAll", method = RequestMethod.GET)
+    @RequestMapping(value = "/all", method = RequestMethod.GET)
     public List<User> selectAllService(){
         logger.info("####### 모든 유저 조회");
         return userService.selectAllUser();
     }
 
-    @RequestMapping(value =("/selectUserId") ,method =RequestMethod.GET)
+    @RequestMapping(value =("/userId-selection") ,method =RequestMethod.GET)
     public User selectIdService(@RequestParam("userId") String userId){
         logger.info("####### 유저 조회용 아이디 파라미터 : {}",userId);
         return userService.selectUserByUserId(userId);
