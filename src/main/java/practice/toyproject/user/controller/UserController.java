@@ -16,10 +16,10 @@ import java.util.List;
  * title : userController
  * description : sayTest() => 테스트
  *               saveService(userId) => 유저 저장
- *               selectSeqService(seq) => 시퀀스로 유저 조회
  *               selectAllService() => 모든 유저 조회
+ *               selectSeqService(seq) => 시퀀스로 유저 조회
  *               selectIdService(userId) => ID로 유저 조회
- *               
+ *
  * reference : RESTful 설계 규칙 https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
  *
  * author : 임현영
@@ -35,32 +35,38 @@ public class UserController {
         this.userService=userService;
     }
     private final Logger logger = LoggerFactory.getLogger(UserController.class);
-
+    
+    //테스트
     @RequestMapping(value = "/test",method = RequestMethod.GET)
     public String sayTest(){
         logger.info("####### testcontroller 입장: {}","test");
         return "This is test";
     }
-
-    @RequestMapping(value = "/user-save",method = RequestMethod.GET)
-    public User saveService(@RequestParam("userId") String userId){
+    
+    // 유저 저장
+    @RequestMapping(value = "",method = RequestMethod.POST)
+    public User saveService(String userId){
         logger.info("####### 유저 저장용 파라미터 : {}",userId);
         return userService.saveUser(userId);
     }
 
-    @RequestMapping(value ="/seq-selection" ,method = RequestMethod.GET)
-    public User selectSeqService(@RequestParam("seq") long seq){
-        logger.info("####### 유저 조회용 시퀀스 파라미터 : {}",seq);
-        return userService.selectUserBySeq(seq);
-    }
-
-    @RequestMapping(value = "/all", method = RequestMethod.GET)
+    // 유저 모두 조회
+    @RequestMapping(value = "", method = RequestMethod.GET)
     public List<User> selectAllService(){
         logger.info("####### 모든 유저 조회");
         return userService.selectAllUser();
     }
 
-    @RequestMapping(value =("/userId-selection") ,method =RequestMethod.GET)
+    // 유저 일련번호로 조회
+    @RequestMapping(value ="/seq" ,method = RequestMethod.GET)
+    public User selectSeqService(@RequestParam("seq") long seq){
+        logger.info("####### 유저 조회용 시퀀스 파라미터 : {}",seq);
+        return userService.selectUserBySeq(seq);
+    }
+
+
+    // 유저 ID로 조회
+    @RequestMapping(value =("/userId") ,method =RequestMethod.GET)
     public User selectIdService(@RequestParam("userId") String userId){
         logger.info("####### 유저 조회용 아이디 파라미터 : {}",userId);
         return userService.selectUserByUserId(userId);
