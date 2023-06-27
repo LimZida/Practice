@@ -33,9 +33,13 @@ class JwtServiceTest {
         System.out.println(token);
     }
 
-//    @Test
-//    void validateToken() {
-//    }
+    @Test
+    void validateToken() {
+        Long date=1000L * 60 * 60 * 24 * 30;
+        String token = jwtService.createToken("zida4470@naver.com", date);
+        boolean result = jwtService.validateToken(token);
+        System.out.println(result);
+    }
 //
 //    @Test
 //    void getInformation() {
