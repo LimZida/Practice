@@ -22,8 +22,8 @@ import practice.toyproject.token.entity.Token;
 public interface TokenRepository extends JpaRepository<Token, Long> {
     Token save(Token token);
     Token findTokenByUserId(String userId);
-    @Query("UPDATE T_TOKEN t SET t.accessJwt = :accessJwt where t.userId = :userId")
+    @Query("UPDATE T_TOKEN t SET t.accessJwt = :accessJwt WHERE t.userId = :userId")
     Token updateAccessJwtByUserIdAndAccessJwt(String userId, String accessJwt);
-    @Query("UPDATE T_TOKEN t SET t.refreshJwt = :refreshJwt where t.userId = :userId")
+    @Query("UPDATE T_TOKEN t SET t.refreshJwt = :refreshJwt WHERE t.userId = :userId")
     Token updateRefreshJwtByUserIdAndRefreshJwt(String userId,String refreshJwt);
 }

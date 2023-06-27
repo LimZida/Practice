@@ -30,21 +30,21 @@ public class TokenController {
     }
 
     @RequestMapping(value = "",method = RequestMethod.GET)
-    public Token selectTokenService(String userId){
+    public Boolean checkTokenService(String userId){
         logger.info("####### userId 정보 : {}",userId);
-        return tokenService.selectTokenByUserId(userId);
+        return tokenService.checkTokenExpired(userId);
     }
 
     @RequestMapping(value = "/AccessJWT",method = RequestMethod.POST)
     public Token updateAccessJwtService(String userId){
         logger.info("####### userId 정보 : {}",userId);
-        return tokenService.updateAccessToken(userId);
+        return tokenService.updateAccessJWT(userId);
     }
 
     @RequestMapping(value = "/refreshJWT",method = RequestMethod.POST)
     public Token updateRefreshJwtService(String userId){
         logger.info("####### userId 정보 : {}",userId);
-        return tokenService.updateRefreshToken(userId);
+        return tokenService.updateRefreshJWT(userId);
     }
 
 }
