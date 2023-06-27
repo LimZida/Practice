@@ -11,8 +11,9 @@ import org.springframework.test.context.TestPropertySource;
  * description : User entity 사용한 userRepository test
  *
  * reference : TestPropertySource으로 Junit에서 프로퍼티 사용하기: https://jaehoney.tistory.com/218
-               테스트를 위한 다양한 어노테이션들: https://mangkyu.tistory.com/242
+ *             테스트를 위한 다양한 어노테이션들: https://mangkyu.tistory.com/242
  *             Runwith (Junit 4) 와 ExtendWith (Junit 5): https://findmypiece.tistory.com/173
+ *
  * author : 임현영
  * date : 2023.06.27
  **/

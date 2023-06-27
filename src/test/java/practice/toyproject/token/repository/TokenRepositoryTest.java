@@ -18,8 +18,10 @@ import static org.assertj.core.api.Assertions.assertThat;
  * description : Token entity 사용한 tokenRepository test
  *
  * reference : TestPropertySource으로 Junit에서 프로퍼티 사용하기: https://jaehoney.tistory.com/218
+ *
  *             참고: @DataJpaTest 어노테이션은 JPA 관련 컴포넌트를 테스트하기 위한 슬라이스 테스트입니다.
  *             따라서 JPA 관련 컴포넌트에 대한 빈만 자동으로 등록됩니다. JwtService는 JPA 관련 컴포넌트가 아니므로 자동으로 등록되지 않습니다.
+ *
  * author : 임현영
  * date : 2023.06.27
  **/

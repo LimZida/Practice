@@ -41,12 +41,6 @@ class UserRepositoryTest {
 
     private final Logger logger = LoggerFactory.getLogger(UserRepositoryTest.class);
 
-//    @BeforeEach
-//    public void makeUser(){
-//        User user=new User();
-//        user.setUserId("zida");
-//    }
-
     @Test
     void save() {
         User user= User.builder()

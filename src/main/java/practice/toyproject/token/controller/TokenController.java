@@ -35,7 +35,7 @@ public class TokenController {
         return tokenService.checkTokenExpired(userId);
     }
 
-    @RequestMapping(value = "/AccessJWT",method = RequestMethod.POST)
+    @RequestMapping(value = "/accessJWT",method = RequestMethod.POST)
     public void updateAccessJwtService(String userId){
         logger.info("####### userId 정보 : {}",userId);
         tokenService.updateAccessJWT(userId);
