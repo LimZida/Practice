@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import practice.toyproject.user.entity.User;
 
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -46,25 +48,33 @@ class UserRepositoryTest {
 
     @Test
     void save() {
-        User user= User.builder().userId("zida").build();
+        User user= User.builder()
+                .userId("zida")
+                .userHp("01098744470")
+                .userPw("zz")
+                .loginCnt(0)
+                .loginFailCnt(0)
+//                .regDate(Timestamp.valueOf(LocalDateTime.now()))
+//                .lastLoginDate(Timestamp.valueOf(LocalDateTime.now()))
+                .build();
 
         logger.info("###### save User 주소값 {} :",user.hashCode());
         userRepository.save((user));
-        User result = userRepository.findByUserId(user.getUserId());
+        User result = userRepository.findUserByUserIdAndUserPw(user.getUserId(),user.getUserPw());
         assertThat(result).isEqualTo(user);
     }
 
-    @Test
-    void findBySeq() {
-        User user= User.builder().userId("zida").build();
-
-        logger.info("###### findBySeq User 주소값 {} :",user.hashCode());
-
-        userRepository.save(user);
-        long seq = user.getSeq();
-        User result = userRepository.findBySeq(seq);
-        assertThat(result).isEqualTo(user);
-    }
+//    @Test
+//    void findBySeq() {
+//        User user= User.builder().userId("zida").build();
+//
+//        logger.info("###### findBySeq User 주소값 {} :",user.hashCode());
+//
+//        userRepository.save(user);
+//        long seq = user.getSeq();
+//        User result = userRepository.findBySeq(seq);
+//        assertThat(result).isEqualTo(user);
+//    }
 
     @Test
     void findAll() {

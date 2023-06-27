@@ -26,7 +26,7 @@ import java.util.List;
  * date : 2023.05.24
  **/
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/shop")
 public class UserController {
     //생성자 주입 (Autowired 생략가능)
     private final UserService userService;
@@ -43,11 +43,18 @@ public class UserController {
         return "This is test";
     }
     
-    // 유저 저장
-    @RequestMapping(value = "",method = RequestMethod.POST)
-    public User saveService(String userId){
+    // 로그인(유저 조회)
+    @RequestMapping(value =("/login") ,method =RequestMethod.POST)
+    public User selectIdService(String userId,String userPw){
+        logger.info("####### 유저 조회용 아이디 파라미터 : {}",userId+" "+userPw);
+        return userService.selectUserByUserIdAndUserPw(userId,userPw);
+    }
+    
+    // 회원가입(유저 저장)
+    @RequestMapping(value = "/signup",method = RequestMethod.POST)
+    public User saveService(String userId,String userHp, String userPw,Long loginCnt,Long loginFailCnt){
         logger.info("####### 유저 저장용 파라미터 : {}",userId);
-        return userService.saveUser(userId);
+        return userService.saveUser(userId,userHp,userPw,loginCnt,loginFailCnt);
     }
 
     // 유저 모두 조회
@@ -58,17 +65,9 @@ public class UserController {
     }
 
     // 유저 일련번호로 조회
-    @RequestMapping(value ="/seq" ,method = RequestMethod.GET)
-    public User selectSeqService(@RequestParam("seq") long seq){
-        logger.info("####### 유저 조회용 시퀀스 파라미터 : {}",seq);
-        return userService.selectUserBySeq(seq);
-    }
-
-
-    // 유저 ID로 조회
-    @RequestMapping(value =("/userId") ,method =RequestMethod.GET)
-    public User selectIdService(@RequestParam("userId") String userId){
-        logger.info("####### 유저 조회용 아이디 파라미터 : {}",userId);
-        return userService.selectUserByUserId(userId);
-    }
+//    @RequestMapping(value ="/seq" ,method = RequestMethod.GET)
+//    public User selectSeqService(@RequestParam("seq") long seq){
+//        logger.info("####### 유저 조회용 시퀀스 파라미터 : {}",seq);
+//        return userService.selectUserBySeq(seq);
+//    }
 }

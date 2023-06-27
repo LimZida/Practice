@@ -12,8 +12,7 @@ import java.util.List;
 /**
  * title : userServiceImpl
  *
- * description : saveUser(userId) => 유저 저장
- *               selectUserBySeq(seq) => 시퀀스를 통한 유저 조회
+ * description : saveUser(userId,...) => 유저 저장
  *               selectUserByUserId(userId) => ID를 통한 유저 조회
  *               selectAllUser() => 모든 유저 조회
  *
@@ -38,17 +37,23 @@ public class UserServiceImpl implements UserService {
     private final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Override
-    public User saveUser(String userId) {
-        User user= User.builder().userId(userId).build();
+    public User saveUser(String userId,String userHp, String userPw,Long loginCnt,Long loginFailCnt) {
+        User user= User.builder()
+                .userId(userId)
+                .userPw(userPw)
+                .userHp(userHp)
+                .loginCnt(loginCnt)
+                .loginFailCnt(loginFailCnt)
+                .build();
 
         logger.info("####### user 정보 : {}",user.toString());
         return userRepository.save(user);
     }
 
-    @Override
-    public User selectUserBySeq(long seq) {
-        return userRepository.findBySeq(seq);
-    }
+//    @Override
+//    public User selectUserBySeq(long seq) {
+//        return userRepository.findBySeq(seq);
+//    }
 
     @Override
     public List<User> selectAllUser() {
@@ -56,7 +61,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User selectUserByUserId(String userId) {
-        return userRepository.findByUserId(userId);
+    public User selectUserByUserIdAndUserPw(String userId,String userPw) {
+        return userRepository.findUserByUserIdAndUserPw(userId,userPw);
     }
 }

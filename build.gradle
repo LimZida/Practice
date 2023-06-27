@@ -35,6 +35,9 @@ dependencies {
 	implementation 'com.oracle.database.jdbc:ojdbc8:21.1.0.0'
 	// https://mvnrepository.com/artifact/com.oracle.database.nls/orai18n
 	implementation 'com.oracle.database.nls:orai18n:21.1.0.0'
+	implementation 'io.jsonwebtoken:jjwt-api:0.11.2'
+	implementation 'io.jsonwebtoken:jjwt-impl:0.11.2'
+	implementation 'io.jsonwebtoken:jjwt-jackson:0.11.2'
 }
 
 tasks.named('test') {
