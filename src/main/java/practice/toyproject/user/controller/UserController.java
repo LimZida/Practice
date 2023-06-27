@@ -5,8 +5,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import practice.toyproject.token.entity.Token;
+import practice.toyproject.token.service.TokenService;
 import practice.toyproject.user.entity.User;
 import practice.toyproject.user.service.UserService;
 
@@ -14,8 +15,7 @@ import java.util.List;
 
 /**
  * title : userController
- * description : sayTest() => 테스트
- *               saveService(userId) => 유저 저장
+ * description : saveService(userId) => 유저 저장
  *               selectAllService() => 모든 유저 조회
  *               selectSeqService(seq) => 시퀀스로 유저 조회
  *               selectIdService(userId) => ID로 유저 조회
@@ -30,24 +30,28 @@ import java.util.List;
 public class UserController {
     //생성자 주입 (Autowired 생략가능)
     private final UserService userService;
+    private final TokenService tokenService;
     @Autowired
-    public UserController(UserService userService){
+    public UserController(UserService userService, TokenService tokenService){
         this.userService=userService;
+        this.tokenService = tokenService;
     }
     private final Logger logger = LoggerFactory.getLogger(UserController.class);
     
-    //테스트
-    @RequestMapping(value = "/test",method = RequestMethod.GET)
-    public String sayTest(){
-        logger.info("####### testcontroller 입장: {}","test");
-        return "This is test";
-    }
-    
     // 로그인(유저 조회)
     @RequestMapping(value =("/login") ,method =RequestMethod.POST)
-    public Boolean selectIdService(String userId,String userPw){
+    public String selectIdService(String userId,String userPw){
         logger.info("####### 유저 조회용 아이디 파라미터 : {}",userId+" "+userPw);
-        return userService.selectUserByUserIdAndUserPw(userId,userPw);
+
+        Boolean loginResult = userService.selectUserByUserIdAndUserPw(userId, userPw);
+
+        if(loginResult){
+            Token token = tokenService.saveToken(userId);
+            return token.getAccessJwt();
+        }
+        else{
+            return null;
+        }
     }
     
     // 회원가입(유저 저장)

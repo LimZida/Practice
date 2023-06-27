@@ -30,11 +30,9 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     //생성자 주입 (Autowired 생략가능)
     private final UserRepository userRepository;
-    private final TokenService tokenService;
     @Autowired
-    public UserServiceImpl(UserRepository userRepo, TokenService tokenService) {
+    public UserServiceImpl(UserRepository userRepo) {
         this.userRepository = userRepo;
-        this.tokenService = tokenService;
     }
 
     private final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
@@ -61,10 +59,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public Boolean selectUserByUserIdAndUserPw(String userId,String userPw) {
         User loginResult = userRepository.findUserByUserIdAndUserPw(userId, userPw);
-        if(!loginResult.getUserId().isEmpty()){
-            tokenService.saveToken(userId);
+        if(loginResult.getUserId().isEmpty()){
+            return false;
         }
-
         return true;
     }
 
