@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import practice.toyproject.token.service.TokenService;
 import practice.toyproject.user.entity.User;
 import practice.toyproject.user.repository.UserRepository;
 
@@ -29,9 +30,11 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     //생성자 주입 (Autowired 생략가능)
     private final UserRepository userRepository;
+    private final TokenService tokenService;
     @Autowired
-    public UserServiceImpl(UserRepository userRepo) {
+    public UserServiceImpl(UserRepository userRepo, TokenService tokenService) {
         this.userRepository = userRepo;
+        this.tokenService = tokenService;
     }
 
     private final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
@@ -50,18 +53,23 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(user);
     }
 
-//    @Override
-//    public User selectUserBySeq(long seq) {
-//        return userRepository.findBySeq(seq);
-//    }
-
     @Override
     public List<User> selectAllUser() {
         return userRepository.findAll();
     }
 
     @Override
-    public User selectUserByUserIdAndUserPw(String userId,String userPw) {
-        return userRepository.findUserByUserIdAndUserPw(userId,userPw);
+    public Boolean selectUserByUserIdAndUserPw(String userId,String userPw) {
+        User loginResult = userRepository.findUserByUserIdAndUserPw(userId, userPw);
+        if(!loginResult.getUserId().isEmpty()){
+            tokenService.saveToken(userId);
+        }
+
+        return true;
     }
+
+    //    @Override
+    //    public User selectUserBySeq(long seq) {
+    //        return userRepository.findBySeq(seq);
+    //    }
 }

@@ -22,7 +22,7 @@ import java.util.List;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
     User save(User user);
-//    User findBySeq(long seq);
     User findUserByUserIdAndUserPw(String userId, String userPw);
     List<User> findAll();
+    //    User findBySeq(long seq);
 }

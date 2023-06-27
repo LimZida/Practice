@@ -45,7 +45,7 @@ public class UserController {
     
     // 로그인(유저 조회)
     @RequestMapping(value =("/login") ,method =RequestMethod.POST)
-    public User selectIdService(String userId,String userPw){
+    public Boolean selectIdService(String userId,String userPw){
         logger.info("####### 유저 조회용 아이디 파라미터 : {}",userId+" "+userPw);
         return userService.selectUserByUserIdAndUserPw(userId,userPw);
     }

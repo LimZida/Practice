@@ -23,6 +23,6 @@ public interface UserService {
     User saveUser(String userId, String userHp, String userPw,Long loginCnt,Long loginFailCnt);
 //    User selectUserBySeq(long seq);
     List<User> selectAllUser();
-    User selectUserByUserIdAndUserPw(String userId,String userPw);
+    Boolean selectUserByUserIdAndUserPw(String userId,String userPw);
 
 }
