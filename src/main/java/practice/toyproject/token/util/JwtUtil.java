@@ -1,7 +1,6 @@
 package practice.toyproject.token.util;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import java.util.Base64;
@@ -11,7 +10,6 @@ import io.jsonwebtoken.Header;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import org.springframework.stereotype.Service;
 
 /**
  * title : JWTService
@@ -34,11 +32,11 @@ import org.springframework.stereotype.Service;
  * date : 2023.06.27
  **/
 @Component
-public class JwtService {
+public class JwtUtil {
     //암복호화에 사용되는 키 값
     //생성자 방식으로 초기화 진행
     private final String secretKey;
-    public JwtService(@Value("${jwt.key}") String encryptKey) {
+    public JwtUtil(@Value("${jwt.key}") String encryptKey) {
         this.secretKey = Base64.getEncoder().encodeToString(encryptKey.getBytes());
     }
     

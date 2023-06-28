@@ -5,11 +5,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.transaction.annotation.Transactional;
 import practice.toyproject.token.entity.Token;
-import practice.toyproject.token.util.JwtService;
+import practice.toyproject.token.util.JwtUtil;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -31,12 +30,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Transactional
 class TokenRepositoryTest {
     private final TokenRepository tokenRepository;
-    private final JwtService jwtService;
+    private final JwtUtil jwtUtil;
 
     @Autowired
-    TokenRepositoryTest(TokenRepository tokenRepository, JwtService jwtService) {
+    TokenRepositoryTest(TokenRepository tokenRepository, JwtUtil jwtUtil) {
         this.tokenRepository = tokenRepository;
-        this.jwtService = jwtService;
+        this.jwtUtil = jwtUtil;
     }
 
     private final Logger logger = LoggerFactory.getLogger(TokenRepositoryTest.class);
@@ -44,8 +43,8 @@ class TokenRepositoryTest {
     @Test
     void save() {
         String userId="zida4472";
-        String accessJWT = jwtService.createToken(userId, 1000L * 60 * 60 * 24 * 1);
-        String refreshJWT = jwtService.createToken(userId, 1000L * 60 * 60 * 24 * 30);
+        String accessJWT = jwtUtil.createToken(userId, 1000L * 60 * 60 * 24 * 1);
+        String refreshJWT = jwtUtil.createToken(userId, 1000L * 60 * 60 * 24 * 30);
 
         Token token=Token.builder()
                 .userId(userId)
@@ -71,7 +70,7 @@ class TokenRepositoryTest {
     @Test
     void updateAccessJwtByUserIdAndAccessJwt() {
         String userId="zida4470";
-        String accessJWT = jwtService.createToken(userId + "Access", 1000L * 60 * 60 * 24 * 1);
+        String accessJWT = jwtUtil.createToken(userId + "Access", 1000L * 60 * 60 * 24 * 1);
         logger.info("###### accessJWT값 {} :",accessJWT);
 
         tokenRepository.updateAccessJwtByUserIdAndAccessJwt(userId,accessJWT);
@@ -83,7 +82,7 @@ class TokenRepositoryTest {
     @Test
     void updateRefreshJwtByUserIdAndRefreshJwt() {
         String userId="zida4470";
-        String refreshJWT = jwtService.createToken(userId + "Refresh", 1000L * 60 * 60 * 24 * 30);
+        String refreshJWT = jwtUtil.createToken(userId + "Refresh", 1000L * 60 * 60 * 24 * 30);
         logger.info("###### refreshJWT값 {} :",refreshJWT);
 
         tokenRepository.updateRefreshJwtByUserIdAndRefreshJwt(userId,refreshJWT);

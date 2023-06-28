@@ -6,15 +6,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import practice.toyproject.token.entity.Token;
 import practice.toyproject.token.repository.TokenRepository;
-import practice.toyproject.token.util.JwtService;
+import practice.toyproject.token.util.JwtUtil;
 /**
  * title : TokenServiceImpl
  *
- * description : saveToken(String userId) => 토큰정보(유저, 토큰 2개) 저장
- *               selectTokenByUserId(String userId) => ID를 통한 토큰 조회
- *               checkTokenExpired(String userId) => ID를 통한 토큰 조회/만료 확인 후 업데이트
- *               updateAccessToken(String userId) => 만료시 AccessJWT 업데이트
- *               updateRefreshToken(String userId) => 만료시 RefreshJWT 업데이트
+ * description : saveTokenService(String userId) => 토큰정보(유저, 토큰 2개) 저장
+ *               selectTokenService(String userId) => ID를 통한 토큰 조회
+ *               checkTokenExpiredService(String userId) => ID를 통한 토큰 조회/만료 확인 후 업데이트
+ *               updateAccessTokenService(String userId) => 만료시 AccessJWT 업데이트
+ *               updateRefreshTokenService(String userId) => 만료시 RefreshJWT 업데이트
  *               
  * reference : Optional https://mangkyu.tistory.com/70
  *             메소드의 반환 값이 절대 null이 아니라면 Optional을 사용하지 않는 것이 좋다.
@@ -29,22 +29,22 @@ import practice.toyproject.token.util.JwtService;
 public class TokenServiceImpl implements TokenService {
 
     private final TokenRepository tokenRepository;
-    private final JwtService jwtService;
+    private final JwtUtil jwtUtil;
 
     @Autowired
-    public TokenServiceImpl(TokenRepository tokenRepository, JwtService jwtService) {
+    public TokenServiceImpl(TokenRepository tokenRepository, JwtUtil jwtUtil) {
         this.tokenRepository = tokenRepository;
-        this.jwtService = jwtService;
+        this.jwtUtil = jwtUtil;
     }
 
     private final Logger logger= LoggerFactory.getLogger(TokenServiceImpl.class);
 
     @Override
-    public Token saveToken(String userId) {
+    public Token saveTokenService(String userId) {
         //accessJWT (1일)
-        String accessJWT = jwtService.createToken(userId+"Access", 1000L * 60 * 60 * 24 * 1);
+        String accessJWT = jwtUtil.createToken(userId+"Access", 1000L * 60 * 60 * 24 * 1);
         //refreshJWT (30일)
-        String refreshJWT = jwtService.createToken(userId+"Refresh", 1000L * 60 * 60 * 24 * 30);
+        String refreshJWT = jwtUtil.createToken(userId+"Refresh", 1000L * 60 * 60 * 24 * 30);
 
         logger.info("####### userId 정보 : {}",userId);
         logger.info("####### accessJWT 정보 : {}",accessJWT);
@@ -60,39 +60,39 @@ public class TokenServiceImpl implements TokenService {
     }
 
     @Override
-    public Boolean checkTokenExpired(String userId) {
-        Token resultToken = selectTokenByUserId(userId);
+    public Boolean checkTokenExpiredService(String userId) {
+        Token resultToken = selectTokenService(userId);
 
         String accessJwt = resultToken.getAccessJwt();
-        boolean checkAccessJWT = jwtService.validateToken(accessJwt);
+        boolean checkAccessJWT = jwtUtil.validateToken(accessJwt);
 
         String refreshJwt = resultToken.getRefreshJwt();
-        boolean checkRefreshJWT = jwtService.validateToken(refreshJwt);
+        boolean checkRefreshJWT = jwtUtil.validateToken(refreshJwt);
 
         logger.info("####### checkAccessJWT 정보 : {}",checkAccessJWT);
         logger.info("####### checkRefreshJWT 정보 : {}",checkRefreshJWT);
 
         if(!checkAccessJWT && checkRefreshJWT){
-            updateAccessJWT(userId);
+            updateAccessJWTService(userId);
         }
         else if(!checkAccessJWT && !checkRefreshJWT){
-            updateAccessJWT(userId);
-            updateRefreshJWT(userId);
+            updateAccessJWTService(userId);
+            updateRefreshJWTService(userId);
         }
 
         return true;
     }
 
     @Override
-    public Token selectTokenByUserId(String userId){
+    public Token selectTokenService(String userId){
         logger.info("####### userId 정보 : {}",userId);
         return tokenRepository.findTokenByUserId(userId);
     }
 
     @Override
-    public void updateAccessJWT(String userId) {
+    public void updateAccessJWTService(String userId) {
         //accessJWT (1일)
-        String accessJWT = jwtService.createToken(userId+"Access", 1000L * 60 * 60 * 24 * 1);
+        String accessJWT = jwtUtil.createToken(userId+"Access", 1000L * 60 * 60 * 24 * 1);
         logger.info("####### userId 정보 : {}",userId);
         logger.info("####### accessJWT 정보 : {}",accessJWT);
 
@@ -100,9 +100,9 @@ public class TokenServiceImpl implements TokenService {
     }
 
     @Override
-    public void updateRefreshJWT(String userId) {
+    public void updateRefreshJWTService(String userId) {
         //refreshJWT (30일)
-        String refreshJWT = jwtService.createToken(userId+"Refresh", 1000L * 60 * 60 * 24 * 30);
+        String refreshJWT = jwtUtil.createToken(userId+"Refresh", 1000L * 60 * 60 * 24 * 30);
         logger.info("####### userId 정보 : {}",userId);
         logger.info("####### refreshJWT 정보 : {}",refreshJWT);
 

@@ -13,9 +13,9 @@ import java.util.List;
 /**
  * title : userServiceImpl
  *
- * description : saveUser(userId,...) => 유저 저장
- *               selectUserByUserId(userId) => ID를 통한 유저 조회
- *               selectAllUser() => 모든 유저 조회
+ * description : saveUserService(userId,...) => 유저 저장
+ *               selectUserByUserIdService(userId) => ID를 통한 유저 조회
+ *               selectAllUserService() => 모든 유저 조회
  *
  * reference : Optional https://mangkyu.tistory.com/70
  * 메소드의 반환 값이 절대 null이 아니라면 Optional을 사용하지 않는 것이 좋다.
@@ -38,7 +38,7 @@ public class UserServiceImpl implements UserService {
     private final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Override
-    public User saveUser(String userId,String userHp, String userPw,Long loginCnt,Long loginFailCnt) {
+    public User saveUserService(String userId, String userHp, String userPw, Long loginCnt, Long loginFailCnt) {
         User user= User.builder()
                 .userId(userId)
                 .userPw(userPw)
@@ -52,12 +52,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> selectAllUser() {
+    public List<User> selectAllUserService() {
         return userRepository.findAll();
     }
 
     @Override
-    public Boolean selectUserByUserIdAndUserPw(String userId,String userPw) {
+    public Boolean selectUserService(String userId, String userPw) {
         User loginResult = userRepository.findUserByUserIdAndUserPw(userId, userPw);
         if(loginResult.getUserId().isEmpty()){
             return false;

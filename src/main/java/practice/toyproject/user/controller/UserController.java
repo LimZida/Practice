@@ -15,10 +15,10 @@ import java.util.List;
 
 /**
  * title : userController
- * description : saveService(userId) => 유저 저장
- *               selectAllService() => 모든 유저 조회
- *               selectSeqService(seq) => 시퀀스로 유저 조회
- *               selectIdService(userId) => ID로 유저 조회
+ * description : saveServiceContoller(userId) => 유저 저장
+ *               selectAllServiceContoller() => 모든 유저 조회
+ *               selectSeqServiceContoller(seq) => 시퀀스로 유저 조회
+ *               selectIdServiceContoller(userId) => ID로 유저 조회
  *
  * reference : RESTful 설계 규칙 https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
  *
@@ -40,13 +40,13 @@ public class UserController {
     
     // 로그인(유저 조회)
     @RequestMapping(value =("/login") ,method =RequestMethod.POST)
-    public String selectIdService(String userId,String userPw){
+    public String selectUserContoller(String userId,String userPw){
         logger.info("####### 유저 조회용 아이디 파라미터 : {}",userId+" "+userPw);
 
-        Boolean loginResult = userService.selectUserByUserIdAndUserPw(userId, userPw);
+        Boolean loginResult = userService.selectUserService(userId, userPw);
 
         if(loginResult){
-            Token token = tokenService.saveToken(userId);
+            Token token = tokenService.saveTokenService(userId);
             return token.getAccessJwt();
         }
         else{
@@ -56,16 +56,16 @@ public class UserController {
     
     // 회원가입(유저 저장)
     @RequestMapping(value = "/signup",method = RequestMethod.POST)
-    public User saveService(String userId,String userHp, String userPw,Long loginCnt,Long loginFailCnt){
+    public User saveUserContoller(String userId,String userHp, String userPw,Long loginCnt,Long loginFailCnt){
         logger.info("####### 유저 저장용 파라미터 : {}",userId);
-        return userService.saveUser(userId,userHp,userPw,loginCnt,loginFailCnt);
+        return userService.saveUserService(userId,userHp,userPw,loginCnt,loginFailCnt);
     }
 
     // 유저 모두 조회
     @RequestMapping(value = "", method = RequestMethod.GET)
-    public List<User> selectAllService(){
+    public List<User> selectAllUserController(){
         logger.info("####### 모든 유저 조회");
-        return userService.selectAllUser();
+        return userService.selectAllUserService();
     }
 
     // 유저 일련번호로 조회

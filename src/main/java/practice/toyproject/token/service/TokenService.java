@@ -1,6 +1,5 @@
 package practice.toyproject.token.service;
 
-import org.springframework.stereotype.Service;
 import practice.toyproject.token.entity.Token;
 /**
  * title : TokenService
@@ -15,9 +14,9 @@ import practice.toyproject.token.entity.Token;
  * date : 2023.06.27
  **/
 public interface TokenService {
-    Token saveToken(String userId);
-    Token selectTokenByUserId(String userId);
-    Boolean checkTokenExpired(String userId);
-    void updateAccessJWT(String userId);
-    void updateRefreshJWT(String userId);
+    Token saveTokenService(String userId);
+    Token selectTokenService(String userId);
+    Boolean checkTokenExpiredService(String userId);
+    void updateAccessJWTService(String userId);
+    void updateRefreshJWTService(String userId);
 }

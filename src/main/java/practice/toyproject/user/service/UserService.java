@@ -20,9 +20,9 @@ import java.util.List;
  **/
 
 public interface UserService {
-    User saveUser(String userId, String userHp, String userPw,Long loginCnt,Long loginFailCnt);
+    User saveUserService(String userId, String userHp, String userPw, Long loginCnt, Long loginFailCnt);
 //    User selectUserBySeq(long seq);
-    List<User> selectAllUser();
-    Boolean selectUserByUserIdAndUserPw(String userId,String userPw);
+    List<User> selectAllUserService();
+    Boolean selectUserService(String userId, String userPw);
 
 }

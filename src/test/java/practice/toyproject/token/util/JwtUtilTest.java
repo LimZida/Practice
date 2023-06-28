@@ -2,7 +2,6 @@ package practice.toyproject.token.util;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 
@@ -17,28 +16,28 @@ import org.springframework.test.context.TestPropertySource;
  * author : 임현영
  * date : 2023.06.27
  **/
-@SpringBootTest(classes = JwtService.class)
+@SpringBootTest(classes = JwtUtil.class)
 @TestPropertySource(locations = "classpath:application-dev.properties")
-class JwtServiceTest {
-    private final JwtService jwtService;
+class JwtUtilTest {
+    private final JwtUtil jwtUtil;
 
     @Autowired
-    JwtServiceTest(JwtService jwtService) {
-        this.jwtService = jwtService;
+    JwtUtilTest(JwtUtil jwtUtil) {
+        this.jwtUtil = jwtUtil;
     }
 
     @Test
     public void createToken() {
         Long date=1000L * 60 * 60 * 24 * 30;
-        String token = jwtService.createToken("zida4470@naver.com", date);
+        String token = jwtUtil.createToken("zida4470@naver.com", date);
         System.out.println(token);
     }
 
     @Test
     void validateToken() {
         Long date=1000L * 60 * 60 * 24 * 30;
-        String token = jwtService.createToken("zida4470@naver.com", date);
-        boolean result = jwtService.validateToken(token);
+        String token = jwtUtil.createToken("zida4470@naver.com", date);
+        boolean result = jwtUtil.validateToken(token);
         System.out.println(result);
     }
 //
