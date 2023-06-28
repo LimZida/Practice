@@ -1,10 +1,12 @@
 package practice.toyproject.user.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Repository;
 import practice.toyproject.user.entity.User;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * title : userRepository
@@ -22,6 +24,7 @@ import java.util.List;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
     User save(User user);
+    Optional<UserDetails> findUserByUserId(String userId);
     User findUserByUserIdAndUserPw(String userId, String userPw);
     List<User> findAll();
     //    User findBySeq(long seq);

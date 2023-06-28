@@ -6,6 +6,9 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import practice.toyproject.token.entity.Token;
+
+import java.util.Optional;
+
 /**
  * title : TokenRepository
  * description : save(token) => 토큰 저장
@@ -25,7 +28,7 @@ import practice.toyproject.token.entity.Token;
 @Repository
 public interface TokenRepository extends JpaRepository<Token, Long> {
     Token save(Token token);
-    Token findTokenByUserId(String userId);
+    Optional<Token> findTokenByUserId(String userId);
     @Modifying
     @Query("UPDATE T_TOKEN t SET t.accessJwt = ?2 WHERE t.userId = ?1")
     void updateAccessJwtByUserIdAndAccessJwt(String userId, String accessJwt);

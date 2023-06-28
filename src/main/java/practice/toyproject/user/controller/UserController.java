@@ -43,9 +43,12 @@ public class UserController {
     public String selectUserContoller(String userId,String userPw){
         logger.info("####### 유저 조회용 아이디 파라미터 : {}",userId+" "+userPw);
 
+        //로그인 시도
         Boolean loginResult = userService.selectUserService(userId, userPw);
 
+        //로그인 성공 시
         if(loginResult){
+            //토큰 발급 후 헤더에 담아 응답
             Token token = tokenService.saveTokenService(userId);
             return token.getAccessJwt();
         }

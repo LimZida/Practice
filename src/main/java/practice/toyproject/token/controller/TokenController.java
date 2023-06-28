@@ -42,9 +42,10 @@ public class TokenController {
     }
 
     @RequestMapping(value = "/check",method = RequestMethod.POST)
-    public Boolean checkTokenService(String userId){
+    public Boolean checkTokenService(String userId, String JWT){
         logger.info("####### userId 정보 : {}",userId);
-        return tokenService.checkTokenExpiredService(userId);
+        logger.info("####### userJWT 정보 : {}",JWT);
+        return tokenService.updateTokenService(userId,JWT);
     }
 
 //    @RequestMapping(value = "/accessJWT",method = RequestMethod.POST)

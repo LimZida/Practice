@@ -3,6 +3,9 @@ package practice.toyproject.user.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import practice.toyproject.token.service.TokenService;
 import practice.toyproject.user.entity.User;
@@ -58,12 +61,41 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Boolean selectUserService(String userId, String userPw) {
-        User loginResult = userRepository.findUserByUserIdAndUserPw(userId, userPw);
-        if(loginResult.getUserId().isEmpty()){
-            return false;
-        }
+        // user 검증
+        // 받아온 유저네임과 패스워드를 이용해 UsernamePasswordAuthenticationToken 객체 생성
+        UsernamePasswordAuthenticationToken authenticationToken =
+                new UsernamePasswordAuthenticationToken(loginRequestDto.getEmail(), loginRequestDto.getPassword());
+        // authenticationToken 객체를 통해 Authentication 객체 생성
+        // 이 과정에서 CustomUserDetailsService 에서 우리가 재정의한 loadUserByUsername 메서드 호출
+        Authentication authentication = authenticationManagerBuilder.getObject().authenticate(authenticationToken);
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+
+        // token 생성
+        String accessToken = jwtProvider.generateAccessToken(authentication);
+        String refreshToken = jwtProvider.generateRefreshToken(authentication);
+        User user = (User) authentication.getPrincipal(); // user 정보
+
+        // refresh token 저장
+        refreshTokenService.saveOrUpdate(user, refreshToken);
+
+        return LoginResponseDto.builder()
+                .accessToken(accessToken)
+                .tokenType("Bearer ")
+                .userId(user.getId())
+                .build();
+
         return true;
     }
+
+//    2023 06 28 수정전 원본
+//    @Override
+//    public Boolean selectUserService(String userId, String userPw) {
+//        User loginResult = userRepository.findUserByUserIdAndUserPw(userId, userPw);
+//        if(loginResult.getUserId().isEmpty()){
+//            return false;
+//        }
+//        return true;
+//    }
 
     //    @Override
     //    public User selectUserBySeq(long seq) {

@@ -36,9 +36,13 @@ dependencies {
 	implementation 'com.oracle.database.jdbc:ojdbc8:21.1.0.0'
 	// https://mvnrepository.com/artifact/com.oracle.database.nls/orai18n
 	implementation 'com.oracle.database.nls:orai18n:21.1.0.0'
+	// 스프링시큐리티 & jwt https://webfirewood.tistory.com/115
 	implementation 'io.jsonwebtoken:jjwt-api:0.11.2'
 	implementation 'io.jsonwebtoken:jjwt-impl:0.11.2'
 	implementation 'io.jsonwebtoken:jjwt-jackson:0.11.2'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.security:spring-security-test'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 }
 
 tasks.named('test') {

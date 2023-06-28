@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.transaction.annotation.Transactional;
 import practice.toyproject.token.entity.Token;
-import practice.toyproject.token.util.JwtUtil;
+import practice.toyproject.token.util.JWT.JwtUtil;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -1,15 +1,14 @@
-package practice.toyproject.token.util;
+package practice.toyproject.token.util.JWT;
 
+import io.jsonwebtoken.*;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.Base64;
 import java.util.Date;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Header;
-import io.jsonwebtoken.Jws;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
 
 /**
  * title : JWTService
@@ -31,6 +30,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
  * author : 임현영
  * date : 2023.06.27
  **/
+@Slf4j
 @Component
 public class JwtUtil {
     //암복호화에 사용되는 키 값
@@ -39,6 +39,7 @@ public class JwtUtil {
     public JwtUtil(@Value("${jwt.key}") String encryptKey) {
         this.secretKey = Base64.getEncoder().encodeToString(encryptKey.getBytes());
     }
+
     
     //멤버변수주입 방식 (참고)
     //@Value("${jwt.key}")
@@ -65,9 +66,16 @@ public class JwtUtil {
         try {
             Jws<Claims> claims = Jwts.parser().setSigningKey(secretKey).parseClaimsJws(jwtToken);
             return !claims.getBody().getExpiration().before(new Date());
-        } catch (Exception e) {
-            return false;
+        } catch (io.jsonwebtoken.security.SecurityException | MalformedJwtException e) {
+            log.info("잘못된 JWT 서명입니다.");
+        } catch (ExpiredJwtException e) {
+            log.info("만료된 JWT 토큰입니다.");
+        } catch (UnsupportedJwtException e) {
+            log.info("지원되지 않는 JWT 토큰입니다.");
+        } catch (IllegalArgumentException e) {
+            log.info("JWT 토큰이 잘못되었습니다.");
         }
+        return false;
     }
 
     // Jwt Token에서 데이터를 전달

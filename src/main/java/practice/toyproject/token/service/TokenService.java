@@ -16,7 +16,8 @@ import practice.toyproject.token.entity.Token;
 public interface TokenService {
     Token saveTokenService(String userId);
     Token selectTokenService(String userId);
-    Boolean checkTokenExpiredService(String userId);
+    Boolean validateTokenService(String JWT);
+    Boolean updateTokenService(String userId, String JWT);
     void updateAccessJWTService(String userId);
     void updateRefreshJWTService(String userId);
 }
