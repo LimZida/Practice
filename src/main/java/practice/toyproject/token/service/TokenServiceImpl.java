@@ -40,86 +40,86 @@ public class TokenServiceImpl implements TokenService {
 
     private final Logger logger= LoggerFactory.getLogger(TokenServiceImpl.class);
 
-//    @Override
-//    public Token saveTokenService(String userId) {
-//        //accessJWT (1일)
-//        String accessJWT = jwtUtil.createToken(userId+"Access", 1000L * 60 * 60 * 24 * 1);
-//        //refreshJWT (30일)
-//        String refreshJWT = jwtUtil.createToken(userId+"Refresh", 1000L * 60 * 60 * 24 * 30);
-//
-//        logger.info("####### userId 정보 : {}",userId);
-//        logger.info("####### accessJWT 정보 : {}",accessJWT);
-//        logger.info("####### refreshJWT 정보 : {}",refreshJWT);
-//
-//        Token token=Token.builder()
-//                .userId(userId)
-//                .accessJwt(accessJWT)
-//                .refreshJwt(refreshJWT)
-//                .build();
-//
-//        return tokenRepository.save(token);
-//    }
-//
-//
-//    @Override
-//    public Boolean updateTokenService(String userId,String JWT) {
-//        Token resultToken = selectTokenService(userId);
-//        String accessJwt = resultToken.getAccessJwt();
-//
-//        if(accessJwt!=JWT){
-//            //헤더에 에러코드 메세지 넣어서
-//            return false;
-//        }
-//        String refreshJwt = resultToken.getRefreshJwt();
-//        Boolean checkRefreshJWT = validateTokenService(refreshJwt);
-//
-//        logger.info("####### checkRefreshJWT 정보 : {}",checkRefreshJWT);
-//
-//        //리프레시 토큰이 유효하면 엑세스 토큰만 재발급
-//        if(checkRefreshJWT){
-//            updateAccessJWTService(userId);
-//        }
-//        //리프레시 토큰이 유효하지 않으면 두 토큰 모두 발급
-//        else{
-//            updateAccessJWTService(userId);
-//            updateRefreshJWTService(userId);
-//        }
-//
-//        return true;
-//    }
-//
-//    @Override
-//    public Boolean validateTokenService(String JWT) {
-//        boolean checkAccessJWT = jwtUtil.validateToken(JWT);
-//        logger.info("####### JWT 정보 : {}",JWT);
-//        logger.info("####### checkAccessJWT 검증 결과 : {}",checkAccessJWT);
-//
-//        return checkAccessJWT;
-//    }
-//
-//    @Override
-//    public Token selectTokenService(String userId){
-//        logger.info("####### userId 정보 : {}",userId);
-//        return tokenRepository.findTokenByUserId(userId);
-//    }
-//
-//    @Override
-//    public void updateAccessJWTService(String userId) {
-//        //accessJWT (1일)
-//        String accessJWT = jwtUtil.createToken(userId+"Access", 1000L * 60 * 60 * 24 * 1);
-//        logger.info("####### userId 정보 : {}",userId);
-//        logger.info("####### accessJWT 정보 : {}",accessJWT);
-//
-//        tokenRepository.updateAccessJwtByUserIdAndAccessJwt(userId,accessJWT);
-//    }
-//
-//    @Override
-//    public void updateRefreshJWTService(String userId) {
-//        //refreshJWT (30일)
-//        String refreshJWT = jwtUtil.createToken(userId+"Refresh", 1000L * 60 * 60 * 24 * 30);
-//        logger.info("####### userId 정보 : {}",userId);
-//        logger.info("####### refreshJWT 정보 : {}",refreshJWT);
-//
-//        tokenRepository.updateRefreshJwtByUserIdAndRefreshJwt(userId,refreshJWT);
-//    }
+    @Override
+    public Token saveTokenService(String userId) {
+        //accessJWT (1일)
+        String accessJWT = jwtUtil.createToken(userId+"Access", 1000L * 60 * 60 * 24 * 1);
+        //refreshJWT (30일)
+        String refreshJWT = jwtUtil.createToken(userId+"Refresh", 1000L * 60 * 60 * 24 * 30);
+
+        logger.info("####### userId 정보 : {}",userId);
+        logger.info("####### accessJWT 정보 : {}",accessJWT);
+        logger.info("####### refreshJWT 정보 : {}",refreshJWT);
+
+        Token token=Token.builder()
+                .userId(userId)
+                .accessJwt(accessJWT)
+                .refreshJwt(refreshJWT)
+                .build();
+
+        return tokenRepository.save(token);
+    }
+
+
+    @Override
+    public Boolean updateTokenService(String userId,String JWT) {
+        Token resultToken = selectTokenService(userId);
+        String accessJwt = resultToken.getAccessJwt();
+
+        if(accessJwt!=JWT){
+            //헤더에 에러코드 메세지 넣어서
+            return false;
+        }
+        String refreshJwt = resultToken.getRefreshJwt();
+        Boolean checkRefreshJWT = validateTokenService(refreshJwt);
+
+        logger.info("####### checkRefreshJWT 정보 : {}",checkRefreshJWT);
+
+        //리프레시 토큰이 유효하면 엑세스 토큰만 재발급
+        if(checkRefreshJWT){
+            updateAccessJWTService(userId);
+        }
+        //리프레시 토큰이 유효하지 않으면 두 토큰 모두 발급
+        else{
+            updateAccessJWTService(userId);
+            updateRefreshJWTService(userId);
+        }
+
+        return true;
+    }
+
+    @Override
+    public Boolean validateTokenService(String JWT) {
+        boolean checkAccessJWT = jwtUtil.validateToken(JWT);
+        logger.info("####### JWT 정보 : {}",JWT);
+        logger.info("####### checkAccessJWT 검증 결과 : {}",checkAccessJWT);
+
+        return checkAccessJWT;
+    }
+
+    @Override
+    public Token selectTokenService(String userId){
+        logger.info("####### userId 정보 : {}",userId);
+        return tokenRepository.findTokenByUserId(userId);
+    }
+
+    @Override
+    public void updateAccessJWTService(String userId) {
+        //accessJWT (1일)
+        String accessJWT = jwtUtil.createToken(userId+"Access", 1000L * 60 * 60 * 24 * 1);
+        logger.info("####### userId 정보 : {}",userId);
+        logger.info("####### accessJWT 정보 : {}",accessJWT);
+
+        tokenRepository.updateAccessJwtByUserIdAndAccessJwt(userId,accessJWT);
+    }
+
+    @Override
+    public void updateRefreshJWTService(String userId) {
+        //refreshJWT (30일)
+        String refreshJWT = jwtUtil.createToken(userId+"Refresh", 1000L * 60 * 60 * 24 * 30);
+        logger.info("####### userId 정보 : {}",userId);
+        logger.info("####### refreshJWT 정보 : {}",refreshJWT);
+
+        tokenRepository.updateRefreshJwtByUserIdAndRefreshJwt(userId,refreshJWT);
+    }
 }
