@@ -81,7 +81,7 @@ public class UserServiceImpl implements UserService {
         return LoginResponseDto.builder()
                 .accessToken(accessToken)
                 .tokenType("Bearer ")
-                .userId(user.getId())
+                .userId(user.getUserId())
                 .build();
 
         return true;
