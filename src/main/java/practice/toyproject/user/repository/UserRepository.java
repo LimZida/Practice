@@ -23,7 +23,7 @@ import java.util.Optional;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
     User save(User user);
-    Optional<User> findUserByUserId(String userId);
+    User findUserByUserId(String userId);
     User findUserByUserIdAndUserPw(String userId, String userPw);
     List<User> findAll();
     //    User findBySeq(long seq);

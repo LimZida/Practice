@@ -38,7 +38,7 @@ import java.util.Collection;
 @ToString // 로그 debug 시 toString 자동생성
 @NoArgsConstructor(access = AccessLevel.PROTECTED) // new 객체 생성을 막고, Builder와 호환
 @Entity(name = "T_USER") //DB 테이블과 매핑
-public class User implements UserDetails{
+public class User{
 
 //    @SequenceGenerator(
 //            name = "USER_SEQ_GENERATOR", // 여기서 사용할 시퀀스 이름
@@ -84,24 +84,5 @@ public class User implements UserDetails{
         this.loginCnt=loginCnt;
         this.loginFailCnt=loginFailCnt;
         this.userHp=userHp;
-    }
-
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        Set<Authority> authorities = getAuthoritiesFromUser(); // 사용자의 권한 정보를 가져오는 메서드 (예시)
-
-        return authorities.stream()
-                .map(authority -> new SimpleGrantedAuthority(authority.getAuthorityName()))
-                .collect(Collectors.toList());
-    }
-
-    @Override
-    public String getPassword() {
-        return userPw;
-    }
-
-    @Override
-    public String getUsername() {
-        return userId;
     }
 }

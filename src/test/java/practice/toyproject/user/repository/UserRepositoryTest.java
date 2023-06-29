@@ -101,7 +101,7 @@ class UserRepositoryTest {
 
         userRepository.save((user));
 
-        Optional<User> result = userRepository.findUserByUserId("zida");
-        logger.info("###### result {} :",result.orElse(null));
+        User result = userRepository.findUserByUserId("zida");
+        logger.info("###### result {} :",result);
     }
 }
