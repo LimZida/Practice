@@ -90,9 +90,18 @@ class UserRepositoryTest {
     @Test
     void findUserByUserId() {
         User user= User.builder()
-                .userId("zz")
+                .userId("zida")
+                .userHp("01098744470")
+                .userPw("zz")
+                .loginCnt(0)
+                .loginFailCnt(0)
+//                .regDate(Timestamp.valueOf(LocalDateTime.now()))
+//                .lastLoginDate(Timestamp.valueOf(LocalDateTime.now()))
                 .build();
-        Optional<User> result = userRepository.findUserByUserId(user.getUserId());
+
+        userRepository.save((user));
+
+        Optional<User> result = userRepository.findUserByUserId("zida");
         logger.info("###### result {} :",result.orElse(null));
     }
 }

@@ -4,9 +4,12 @@ import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.Collection;
 
 /**
  * title : entity
@@ -35,7 +38,7 @@ import java.sql.Timestamp;
 @ToString // 로그 debug 시 toString 자동생성
 @NoArgsConstructor(access = AccessLevel.PROTECTED) // new 객체 생성을 막고, Builder와 호환
 @Entity(name = "T_USER") //DB 테이블과 매핑
-public class User {
+public class User implements UserDetails{
 
 //    @SequenceGenerator(
 //            name = "USER_SEQ_GENERATOR", // 여기서 사용할 시퀀스 이름
@@ -83,4 +86,22 @@ public class User {
         this.userHp=userHp;
     }
 
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        Set<Authority> authorities = getAuthoritiesFromUser(); // 사용자의 권한 정보를 가져오는 메서드 (예시)
+
+        return authorities.stream()
+                .map(authority -> new SimpleGrantedAuthority(authority.getAuthorityName()))
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public String getPassword() {
+        return userPw;
+    }
+
+    @Override
+    public String getUsername() {
+        return userId;
+    }
 }

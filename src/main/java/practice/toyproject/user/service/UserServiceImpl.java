@@ -82,6 +82,8 @@ public class UserServiceImpl implements UserService {
         // authenticationToken 객체를 통해 Authentication 객체 생성
         // 이 과정에서 CustomUserDetailsService 에서 우리가 재정의한 loadUserByUsername 메서드 호출
         Authentication authentication = authenticationManagerBuilder.getObject().authenticate(authenticationToken);
+        logger.info("####### authentication getobject 정보 : {}",authenticationManagerBuilder.getObject());
+
         SecurityContextHolder.getContext().setAuthentication(authentication);
         logger.info("####### authentication 정보 : {}",authentication);
 

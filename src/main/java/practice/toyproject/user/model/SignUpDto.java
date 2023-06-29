@@ -17,7 +17,7 @@ public class SignUpDto {
     private String userName;
 
     public SignUpDto(){
-        
+
     }
 
     @Builder

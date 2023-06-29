@@ -47,10 +47,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 // request permission
                 .and()
                 .authorizeRequests()
-                .antMatchers("/").permitAll() // /api/hello
+                .antMatchers("/").permitAll() // index.html
                 .antMatchers("/shop/login").permitAll() // 로그인 경로
                 .antMatchers("/shop/signup").permitAll() // 회원가입 경로는 인증없이 호출 가능
-                .anyRequest().authenticated() // 나머지 경로는 jwt 인증 해야함
+//                .anyRequest().authenticated() // 나머지 경로는 jwt 인증 해야함
 
                 // exception handling
                 .and()
