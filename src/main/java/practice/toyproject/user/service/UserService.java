@@ -1,6 +1,8 @@
 package practice.toyproject.user.service;
 
 import practice.toyproject.user.entity.User;
+import practice.toyproject.user.model.LoginDto;
+import practice.toyproject.user.model.SignUpDto;
 
 import java.util.List;
 
@@ -20,9 +22,9 @@ import java.util.List;
  **/
 
 public interface UserService {
-    User saveUserService(String userId, String userHp, String userPw, Long loginCnt, Long loginFailCnt);
+    User saveUserService(SignUpDto signUpDto);
 //    User selectUserBySeq(long seq);
     List<User> selectAllUserService();
-    Boolean selectUserService(String userId, String userPw);
+    LoginDto selectUserService(LoginDto loginDto);
 
 }

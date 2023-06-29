@@ -4,11 +4,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import practice.toyproject.token.service.TokenService;
+import practice.toyproject.token.util.JWT.JwtProvider;
 import practice.toyproject.user.entity.User;
+import practice.toyproject.user.model.LoginDto;
+import practice.toyproject.user.model.SignUpDto;
 import practice.toyproject.user.repository.UserRepository;
 
 import java.util.List;
@@ -33,21 +37,29 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     //생성자 주입 (Autowired 생략가능)
     private final UserRepository userRepository;
+    private final JwtProvider jwtProvider;
+    private final TokenService tokenService;
+    private final AuthenticationManagerBuilder authenticationManagerBuilder;
     @Autowired
-    public UserServiceImpl(UserRepository userRepo) {
+    public UserServiceImpl(UserRepository userRepo, JwtProvider jwtProvider, TokenService tokenService, AuthenticationManagerBuilder authenticationManagerBuilder) {
         this.userRepository = userRepo;
+        this.jwtProvider = jwtProvider;
+        this.tokenService = tokenService;
+        this.authenticationManagerBuilder = authenticationManagerBuilder;
     }
 
     private final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Override
-    public User saveUserService(String userId, String userHp, String userPw, Long loginCnt, Long loginFailCnt) {
+    public User saveUserService(SignUpDto signUpDto) {
         User user= User.builder()
-                .userId(userId)
-                .userPw(userPw)
-                .userHp(userHp)
-                .loginCnt(loginCnt)
-                .loginFailCnt(loginFailCnt)
+                .userId(signUpDto.getUserId())
+                .userPw(signUpDto.getUserPw())
+                .userHp(signUpDto.getUserHp())
+                .userName(signUpDto.getUserName())
+                .imageUrl("")
+                .loginCnt(0)
+                .loginFailCnt(0)
                 .build();
 
         logger.info("####### user 정보 : {}",user.toString());
@@ -60,31 +72,34 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Boolean selectUserService(String userId, String userPw) {
+    public LoginDto selectUserService(LoginDto loginDto) {
         // user 검증
         // 받아온 유저네임과 패스워드를 이용해 UsernamePasswordAuthenticationToken 객체 생성
         UsernamePasswordAuthenticationToken authenticationToken =
-                new UsernamePasswordAuthenticationToken(loginRequestDto.getEmail(), loginRequestDto.getPassword());
+                new UsernamePasswordAuthenticationToken(loginDto.getUserId(), loginDto.getUserPw());
+        logger.info("####### authenticationToken 정보 : {}",authenticationToken);
+
         // authenticationToken 객체를 통해 Authentication 객체 생성
         // 이 과정에서 CustomUserDetailsService 에서 우리가 재정의한 loadUserByUsername 메서드 호출
         Authentication authentication = authenticationManagerBuilder.getObject().authenticate(authenticationToken);
         SecurityContextHolder.getContext().setAuthentication(authentication);
+        logger.info("####### authentication 정보 : {}",authentication);
 
         // token 생성
-        String accessToken = jwtProvider.generateAccessToken(authentication);
-        String refreshToken = jwtProvider.generateRefreshToken(authentication);
+        String accessJWT = jwtProvider.generateAccessToken(authentication);
+        String refreshJWT = jwtProvider.generateRefreshToken(authentication);
         User user = (User) authentication.getPrincipal(); // user 정보
+        logger.info("####### accessJWT 정보 : {}",accessJWT);
+        logger.info("####### user 정보 : {}",user.getUserId());
 
         // refresh token 저장
-        refreshTokenService.saveOrUpdate(user, refreshToken);
+        tokenService.saveTokenService(user.getUserId(), accessJWT,refreshJWT);
 
-        return LoginResponseDto.builder()
-                .accessToken(accessToken)
+        return loginDto.builder()
+                .accessJWT(accessJWT)
                 .tokenType("Bearer ")
                 .userId(user.getUserId())
                 .build();
-
-        return true;
     }
 
 //    2023 06 28 수정전 원본

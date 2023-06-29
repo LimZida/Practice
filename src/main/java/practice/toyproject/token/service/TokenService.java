@@ -14,7 +14,7 @@ import practice.toyproject.token.entity.Token;
  * date : 2023.06.27
  **/
 public interface TokenService {
-    Token saveTokenService(String userId);
+    Token saveTokenService(String userId,String accessJWT,String refreshJWT);
     Token selectTokenService(String userId);
     Boolean validateTokenService(String JWT);
     Boolean updateTokenService(String userId, String JWT);

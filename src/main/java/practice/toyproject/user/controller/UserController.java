@@ -3,12 +3,13 @@ package practice.toyproject.user.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import practice.toyproject.token.entity.Token;
 import practice.toyproject.token.service.TokenService;
 import practice.toyproject.user.entity.User;
+import practice.toyproject.user.model.LoginDto;
+import practice.toyproject.user.model.SignUpDto;
 import practice.toyproject.user.service.UserService;
 
 import java.util.List;
@@ -21,6 +22,9 @@ import java.util.List;
  *               selectIdServiceContoller(userId) => ID로 유저 조회
  *
  * reference : RESTful 설계 규칙 https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
+ *             @RequestBody란?
+ *             jackson library object mapper
+ *             JSON Serialize 알아보기
  *
  * author : 임현영
  * date : 2023.05.24
@@ -40,28 +44,29 @@ public class UserController {
     
     // 로그인(유저 조회)
     @RequestMapping(value =("/login") ,method =RequestMethod.POST)
-    public String selectUserContoller(String userId,String userPw){
-        logger.info("####### 유저 조회용 아이디 파라미터 : {}",userId+" "+userPw);
+    public LoginDto selectUserContoller(@RequestBody LoginDto loginDto){
+        logger.info("####### 유저 조회용  파라미터 : {}",loginDto.toString());
 
-        //로그인 시도
-        Boolean loginResult = userService.selectUserService(userId, userPw);
-
-        //로그인 성공 시
-        if(loginResult){
-            //토큰 발급 후 헤더에 담아 응답
-            Token token = tokenService.saveTokenService(userId);
-            return token.getAccessJwt();
-        }
-        else{
-            return null;
-        }
+//        //로그인 시도
+//        Boolean loginResult = userService.selectUserService(loginDto);
+//
+//        //로그인 성공 시
+//        if(loginResult){
+//            //토큰 발급 후 헤더에 담아 응답
+//            Token token = tokenService.saveTokenService(userId);
+//            return token.getAccessJwt();
+//        }
+//        else{
+//            return null;
+//        }
+        return userService.selectUserService(loginDto);
     }
     
     // 회원가입(유저 저장)
     @RequestMapping(value = "/signup",method = RequestMethod.POST)
-    public User saveUserContoller(String userId,String userHp, String userPw,Long loginCnt,Long loginFailCnt){
-        logger.info("####### 유저 저장용 파라미터 : {}",userId);
-        return userService.saveUserService(userId,userHp,userPw,loginCnt,loginFailCnt);
+    public User saveUserContoller(@RequestBody SignUpDto signUpDto){
+        logger.info("####### 유저 저장용 파라미터 : {}",signUpDto.toString());
+        return userService.saveUserService(signUpDto);
     }
 
     // 유저 모두 조회

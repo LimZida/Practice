@@ -51,6 +51,8 @@ public class User {
     private long loginCnt;
     // 로그인 실패횟수
     private long loginFailCnt;
+    // 이름
+    private String userName;
     // 핸드폰
     private String userHp;
     // 비밀번호
@@ -68,9 +70,10 @@ public class User {
 
     //빌더패턴 사용
     @Builder
-    public User(String userId,String userPw,String imageUrl,Timestamp updateDate,Timestamp regDate,Timestamp lastLoginDate, long loginCnt, long loginFailCnt, String userHp){
+    public User(String userId,String userPw,String userName,String imageUrl,Timestamp updateDate,Timestamp regDate,Timestamp lastLoginDate, long loginCnt, long loginFailCnt, String userHp){
         this.userId=userId;
         this.userPw=userPw;
+        this.userName=userName;
         this.imageUrl=imageUrl;
         this.updateDate=updateDate;
         this.regDate=regDate;

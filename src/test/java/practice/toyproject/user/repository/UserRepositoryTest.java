@@ -1,6 +1,5 @@
 package practice.toyproject.user.repository;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,9 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import practice.toyproject.user.entity.User;
 
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -56,6 +54,7 @@ class UserRepositoryTest {
         logger.info("###### save User 주소값 {} :",user.hashCode());
         userRepository.save((user));
         User result = userRepository.findUserByUserIdAndUserPw(user.getUserId(),user.getUserPw());
+        logger.info("###### result값 {} :",result.getUserId());
         assertThat(result).isEqualTo(user);
     }
 
@@ -86,5 +85,14 @@ class UserRepositoryTest {
         List<User> result = userRepository.findAll();
 
         assertThat(result.size()).isEqualTo(3);
+    }
+
+    @Test
+    void findUserByUserId() {
+        User user= User.builder()
+                .userId("zz")
+                .build();
+        Optional<User> result = userRepository.findUserByUserId(user.getUserId());
+        logger.info("###### result {} :",result.orElse(null));
     }
 }

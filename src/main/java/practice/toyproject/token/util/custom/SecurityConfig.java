@@ -15,23 +15,23 @@ import practice.toyproject.token.util.JWT.JwtProvider;
 
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-    private final CustomUserDetailsService customUserDetailsService;
+//    private final CustomUserDetailsService customUserDetailsService;
     private final JwtProvider jwtProvider;
     private final JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
     private final JwtAccessDeniedHandler jwtAccessDeniedHandler;
 
     @Autowired
     public SecurityConfig(CustomUserDetailsService customUserDetailsService, JwtProvider jwtProvider, JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint, JwtAccessDeniedHandler jwtAccessDeniedHandler) {
-        this.customUserDetailsService = customUserDetailsService;
+//        this.customUserDetailsService = customUserDetailsService;
         this.jwtProvider = jwtProvider;
         this.jwtAuthenticationEntryPoint = jwtAuthenticationEntryPoint;
         this.jwtAccessDeniedHandler = jwtAccessDeniedHandler;
     }
 
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(customUserDetailsService); // customUserDetailsService 등록
-    }
+//    @Override
+//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+//        auth.userDetailsService(customUserDetailsService); // customUserDetailsService 등록
+//    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -47,9 +47,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 // request permission
                 .and()
                 .authorizeRequests()
-                .antMatchers("/api/hello").permitAll() // /api/hello
-                .antMatchers("/api/authenticate").permitAll() // 로그인 경로
-                .antMatchers("/api/user/signup").permitAll() // 회원가입 경로는 인증없이 호출 가능
+                .antMatchers("/").permitAll() // /api/hello
+                .antMatchers("/shop/login").permitAll() // 로그인 경로
+                .antMatchers("/shop/signup").permitAll() // 회원가입 경로는 인증없이 호출 가능
                 .anyRequest().authenticated() // 나머지 경로는 jwt 인증 해야함
 
                 // exception handling

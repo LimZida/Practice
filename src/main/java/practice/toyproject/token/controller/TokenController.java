@@ -26,27 +26,27 @@ import practice.toyproject.token.service.TokenService;
 @RestController
 @RequestMapping("/token")
 public class TokenController {
-    private final TokenService tokenService;
+//    private final TokenService tokenService;
+//
+//    @Autowired
+//    public TokenController(TokenService tokenService) {
+//        this.tokenService = tokenService;
+//    }
+//
+//    private final Logger logger= LoggerFactory.getLogger(TokenController.class);
 
-    @Autowired
-    public TokenController(TokenService tokenService) {
-        this.tokenService = tokenService;
-    }
+//    @RequestMapping(value = "",method = RequestMethod.POST)
+//    public Token saveTokenService(String userId){
+//        logger.info("####### userId 정보 : {}",userId);
+//        return tokenService.saveTokenService(userId);
+//    }
 
-    private final Logger logger= LoggerFactory.getLogger(TokenController.class);
-
-    @RequestMapping(value = "",method = RequestMethod.POST)
-    public Token saveTokenService(String userId){
-        logger.info("####### userId 정보 : {}",userId);
-        return tokenService.saveTokenService(userId);
-    }
-
-    @RequestMapping(value = "/check",method = RequestMethod.POST)
-    public Boolean checkTokenService(String userId, String JWT){
-        logger.info("####### userId 정보 : {}",userId);
-        logger.info("####### userJWT 정보 : {}",JWT);
-        return tokenService.updateTokenService(userId,JWT);
-    }
+//    @RequestMapping(value = "/check",method = RequestMethod.POST)
+//    public Boolean checkTokenService(String userId, String JWT){
+//        logger.info("####### userId 정보 : {}",userId);
+//        logger.info("####### userJWT 정보 : {}",JWT);
+//        return tokenService.updateTokenService(userId,JWT);
+//    }
 
 //    @RequestMapping(value = "/accessJWT",method = RequestMethod.POST)
 //    public void updateAccessJwtService(String userId){

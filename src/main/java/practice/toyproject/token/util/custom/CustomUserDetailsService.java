@@ -1,5 +1,6 @@
 package practice.toyproject.token.util.custom;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Component;
 import practice.toyproject.user.repository.UserRepository;
 
 @Component
+@Slf4j
 public class CustomUserDetailsService implements UserDetailsService {
     private final UserRepository userRepository;
     @Autowired
@@ -17,7 +19,8 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String userId) throws UsernameNotFoundException {
-        return userRepository.findUserByUserId(userId)
+        log.info("############ userId {}",userId);
+        return (UserDetails) userRepository.findUserByUserId(userId)
                 .orElseThrow(() -> new UsernameNotFoundException(userId + " 사용자를 찾을 수 없습니다."));
     }
 }
