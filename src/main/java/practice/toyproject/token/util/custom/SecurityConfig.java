@@ -2,12 +2,14 @@ package practice.toyproject.token.util.custom;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.filter.CorsFilter;
@@ -16,39 +18,27 @@ import practice.toyproject.token.util.JWT.JwtProvider;
 
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-//    private final CustomUserDetailsService customUserDetailsService;
     private final JwtProvider jwtProvider;
 //    private final CorsFilter corsFilter;
     private final JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
     private final JwtAccessDeniedHandler jwtAccessDeniedHandler;
 
     @Autowired
-    public SecurityConfig(CustomUserDetailsService customUserDetailsService, JwtProvider jwtProvider, CorsFilter corsFilter, JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint, JwtAccessDeniedHandler jwtAccessDeniedHandler) {
-//        this.customUserDetailsService = customUserDetailsService;
+    public SecurityConfig(JwtProvider jwtProvider, CorsFilter corsFilter, JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint, JwtAccessDeniedHandler jwtAccessDeniedHandler) {
         this.jwtProvider = jwtProvider;
 //        this.corsFilter = corsFilter;
         this.jwtAuthenticationEntryPoint = jwtAuthenticationEntryPoint;
         this.jwtAccessDeniedHandler = jwtAccessDeniedHandler;
     }
 
-    // BCryptPasswordEncoder 라는 패스워드 인코더 사용
-//    @Bean
-//    public PasswordEncoder passwordEncoder() {
-//        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
-//    }
-
-//    @Override
-//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-//        auth.userDetailsService(customUserDetailsService); // customUserDetailsService 등록
-//    }
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
+        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable() // 서버에 인증정보를 저장하지 않기 때문에(stateless, rest api) csrf를 추가할 필요가 없다.
+        http
+                .csrf().disable() // 서버에 인증정보를 저장하지 않기 때문에(stateless, rest api) csrf를 추가할 필요가 없다.
                 .httpBasic().disable() // 기본 인증 로그인 사용하지 않음. (rest api)
                 .cors()
 
@@ -63,7 +53,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll() // index.html
                 .antMatchers("/shop/login").permitAll() // 로그인 경로
                 .antMatchers("/shop/signup").permitAll() // 회원가입 경로는 인증없이 호출 가능
-//                .anyRequest().authenticated() // 나머지 경로는 jwt 인증 해야함
+                .anyRequest().authenticated() // 나머지 경로는 jwt 인증 해야함
 
                 // exception handling
                 .and()

@@ -7,6 +7,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import practice.toyproject.token.service.TokenService;
 import practice.toyproject.token.util.JWT.JwtProvider;
@@ -37,12 +38,14 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     //생성자 주입 (Autowired 생략가능)
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
     private final JwtProvider jwtProvider;
     private final TokenService tokenService;
     private final AuthenticationManagerBuilder authenticationManagerBuilder;
     @Autowired
-    public UserServiceImpl(UserRepository userRepo, JwtProvider jwtProvider, TokenService tokenService, AuthenticationManagerBuilder authenticationManagerBuilder) {
+    public UserServiceImpl(UserRepository userRepo, PasswordEncoder passwordEncoder, JwtProvider jwtProvider, TokenService tokenService, AuthenticationManagerBuilder authenticationManagerBuilder) {
         this.userRepository = userRepo;
+        this.passwordEncoder = passwordEncoder;
         this.jwtProvider = jwtProvider;
         this.tokenService = tokenService;
         this.authenticationManagerBuilder = authenticationManagerBuilder;
@@ -54,7 +57,7 @@ public class UserServiceImpl implements UserService {
     public User saveUserService(SignUpDto signUpDto) {
         User user= User.builder()
                 .userId(signUpDto.getUserId())
-                .userPw(signUpDto.getUserPw())
+                .userPw(passwordEncoder.encode(signUpDto.getUserPw()))
                 .userHp(signUpDto.getUserHp())
                 .userName(signUpDto.getUserName())
                 .imageUrl("")
@@ -85,22 +88,23 @@ public class UserServiceImpl implements UserService {
         logger.info("####### authentication getobject 정보 : {}",authenticationManagerBuilder.getObject());
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        logger.info("####### authentication 정보 : {}",authentication);
+        logger.info("####### authentication 정보 : {}",authentication.getPrincipal());
 
         // token 생성
         String accessJWT = jwtProvider.generateAccessToken(authentication);
         String refreshJWT = jwtProvider.generateRefreshToken(authentication);
-        User user = (User) authentication.getPrincipal(); // user 정보
+//        User user = (User)authentication.getPrincipal();// user 정보
         logger.info("####### accessJWT 정보 : {}",accessJWT);
-        logger.info("####### user 정보 : {}",user.getUserId());
+        logger.info("####### user 정보 : {}",loginDto.getUserId());
 
         // refresh token 저장
-        tokenService.saveTokenService(user.getUserId(), accessJWT,refreshJWT);
+        tokenService.saveTokenService(loginDto.getUserId(), accessJWT,refreshJWT);
 
         return loginDto.builder()
                 .accessJWT(accessJWT)
+                .refreshJWT(refreshJWT)
                 .tokenType("Bearer ")
-                .userId(user.getUserId())
+                .userId(loginDto.getUserId())
                 .build();
     }
 
