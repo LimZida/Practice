@@ -1,4 +1,4 @@
-package practice.toyproject.token.util.custom;
+package practice.toyproject.util.security;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;

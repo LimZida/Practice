@@ -9,8 +9,9 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import practice.toyproject.token.service.TokenService;
-import practice.toyproject.token.util.JWT.JwtProvider;
+import practice.toyproject.token.entity.Token;
+import practice.toyproject.token.repository.TokenRepository;
+import practice.toyproject.util.JWT.JwtProvider;
 import practice.toyproject.user.entity.User;
 import practice.toyproject.user.model.LoginDto;
 import practice.toyproject.user.model.SignUpDto;
@@ -40,14 +41,14 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtProvider jwtProvider;
-    private final TokenService tokenService;
+    private final TokenRepository tokenRepository;
     private final AuthenticationManagerBuilder authenticationManagerBuilder;
     @Autowired
-    public UserServiceImpl(UserRepository userRepo, PasswordEncoder passwordEncoder, JwtProvider jwtProvider, TokenService tokenService, AuthenticationManagerBuilder authenticationManagerBuilder) {
+    public UserServiceImpl(UserRepository userRepo, PasswordEncoder passwordEncoder, JwtProvider jwtProvider, TokenRepository tokenRepository, AuthenticationManagerBuilder authenticationManagerBuilder) {
         this.userRepository = userRepo;
         this.passwordEncoder = passwordEncoder;
         this.jwtProvider = jwtProvider;
-        this.tokenService = tokenService;
+        this.tokenRepository = tokenRepository;
         this.authenticationManagerBuilder = authenticationManagerBuilder;
     }
 
@@ -93,12 +94,17 @@ public class UserServiceImpl implements UserService {
         // token 생성
         String accessJWT = jwtProvider.generateAccessToken(authentication);
         String refreshJWT = jwtProvider.generateRefreshToken(authentication);
-//        User user = (User)authentication.getPrincipal();// user 정보
         logger.info("####### accessJWT 정보 : {}",accessJWT);
         logger.info("####### user 정보 : {}",loginDto.getUserId());
 
+        Token token= Token.builder()
+                .userId(loginDto.getUserId())
+                .accessJwt(accessJWT)
+                .refreshJwt(refreshJWT)
+                .build();
+
         // refresh token 저장
-        tokenService.saveTokenService(loginDto.getUserId(), accessJWT,refreshJWT);
+        tokenRepository.save(token);
 
         return loginDto.builder()
                 .accessJWT(accessJWT)
@@ -107,19 +113,4 @@ public class UserServiceImpl implements UserService {
                 .userId(loginDto.getUserId())
                 .build();
     }
-
-//    2023 06 28 수정전 원본
-//    @Override
-//    public Boolean selectUserService(String userId, String userPw) {
-//        User loginResult = userRepository.findUserByUserIdAndUserPw(userId, userPw);
-//        if(loginResult.getUserId().isEmpty()){
-//            return false;
-//        }
-//        return true;
-//    }
-
-    //    @Override
-    //    public User selectUserBySeq(long seq) {
-    //        return userRepository.findBySeq(seq);
-    //    }
 }

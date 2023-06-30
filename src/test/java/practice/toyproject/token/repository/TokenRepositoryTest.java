@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.transaction.annotation.Transactional;
 import practice.toyproject.token.entity.Token;
-import practice.toyproject.token.util.JWT.JwtUtil;
+import practice.toyproject.util.JWT.JwtUtil;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -67,27 +67,4 @@ class TokenRepositoryTest {
 //        assertThat(result.getUserId()).isEqualTo(userId);
     }
 
-    @Test
-    void updateAccessJwtByUserIdAndAccessJwt() {
-        String userId="zida4470";
-        String accessJWT = jwtUtil.createToken(userId + "Access", 1000L * 60 * 60 * 24 * 1);
-        logger.info("###### accessJWT값 {} :",accessJWT);
-
-        tokenRepository.updateAccessJwtByUserIdAndAccessJwt(userId,accessJWT);
-//        Token result = tokenRepository.findTokenByUserId(userId);
-//
-//        assertThat(accessJWT).isEqualTo(result.getAccessJwt());
-    }
-
-    @Test
-    void updateRefreshJwtByUserIdAndRefreshJwt() {
-        String userId="zida4470";
-        String refreshJWT = jwtUtil.createToken(userId + "Refresh", 1000L * 60 * 60 * 24 * 30);
-        logger.info("###### refreshJWT값 {} :",refreshJWT);
-
-        tokenRepository.updateRefreshJwtByUserIdAndRefreshJwt(userId,refreshJWT);
-//        Token result = tokenRepository.findTokenByUserId(userId);
-//
-//        assertThat(refreshJWT).isEqualTo(result.getRefreshJwt());
-    }
 }

@@ -30,6 +30,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// https://devmango.tistory.com/85 - 설정
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools
 	implementation 'org.springframework.boot:spring-boot-devtools:2.6.2'
 	// https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8

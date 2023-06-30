@@ -1,4 +1,4 @@
-package practice.toyproject.token.util.JWT;
+package practice.toyproject.util.JWT;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;

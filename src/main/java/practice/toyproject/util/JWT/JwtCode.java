@@ -1,4 +1,4 @@
-package practice.toyproject.token.util.JWT;
+package practice.toyproject.util.JWT;
 
 public class JwtCode {
     public static final Boolean ACCESS = true;

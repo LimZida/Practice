@@ -8,7 +8,7 @@
               value="[%d{yyyy-MM-dd HH:mm:ss}:%-3relative]  %clr(%-5level) %clr(${PID:-}){magenta} %clr(---){faint} %clr([%15.15thread]){faint} %clr(%-40.40logger{36}){cyan} %clr(:){faint} %msg%n"/>
 
     <!-- 로그 파일이 저장될 경로 -->
-    <property name="LOG_PATH" value="./files/${spring.profiles.active}"/>
+    <property name="LOG_PATH" value="./src/main/resources/log/files/${spring.profiles.active}"/>
 
     <!-- 로그 파일 이름 -->
     <property name="LOG_FILE_NAME" value="logfiles-${spring.profiles.active}"/>
@@ -54,7 +54,7 @@
                 <maxFileSize>10MB</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
             <!-- 일자별 로그파일 최대 보관주기(~일), 해당 설정일 이상된 파일은 자동으로 제거-->
-            <maxHistory>30</maxHistory>
+            <maxHistory>365</maxHistory>
             <!--<MinIndex>1</MinIndex>
             <MaxIndex>10</MaxIndex>-->
         </rollingPolicy>
@@ -64,7 +64,6 @@
     <root level="${LOG_LEVEL}">
         <!-- 위에 설정한 콘솔 설정 추가 -->
         <appender-ref ref="CONSOLE"/>
-
         <!-- 위에 설정한 파일 설정 추가 -->
         <appender-ref ref="FILE"/>
     </root>

@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
-import practice.toyproject.token.util.JWT.JwtUtil;
+import practice.toyproject.util.JWT.JwtUtil;
 
 /**
  * title : JwtServiceTest

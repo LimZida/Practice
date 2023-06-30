@@ -1,11 +1,9 @@
-package practice.toyproject.token.util.JWT;
+package practice.toyproject.util.JWT;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -48,6 +46,9 @@ public class JwtFilter extends OncePerRequestFilter {
 
                 response.setHeader(HttpHeaders.AUTHORIZATION, newAccessToken);
                 log.info("Reissue access token");
+            } else if(StringUtils.hasText(refreshToken) && jwtProvider.validateToken(refreshToken) == JwtCode.EXPIRED){
+                response.setHeader(HttpHeaders.AUTHORIZATION, "refresh token expired");
+                log.info("refresh token expired! please redirect to login");
             }
         }
         filterChain.doFilter(request, response);

@@ -1,12 +1,12 @@
 package practice.toyproject.user.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import practice.toyproject.token.entity.Token;
-import practice.toyproject.token.service.TokenService;
 import practice.toyproject.user.entity.User;
 import practice.toyproject.user.model.LoginDto;
 import practice.toyproject.user.model.SignUpDto;
@@ -29,50 +29,35 @@ import java.util.List;
  * author : 임현영
  * date : 2023.05.24
  **/
+@Slf4j
 @RestController
 @RequestMapping("/shop")
 public class UserController {
     //생성자 주입 (Autowired 생략가능)
     private final UserService userService;
-    private final TokenService tokenService;
     @Autowired
-    public UserController(UserService userService, TokenService tokenService){
+    public UserController(UserService userService){
         this.userService=userService;
-        this.tokenService = tokenService;
     }
-    private final Logger logger = LoggerFactory.getLogger(UserController.class);
     
     // 로그인(유저 조회)
     @RequestMapping(value =("/login") ,method =RequestMethod.POST)
-    public LoginDto selectUserContoller(@RequestBody LoginDto loginDto){
-        logger.info("####### 유저 조회용  파라미터 : {}",loginDto.toString());
-
-//        //로그인 시도
-//        Boolean loginResult = userService.selectUserService(loginDto);
-//
-//        //로그인 성공 시
-//        if(loginResult){
-//            //토큰 발급 후 헤더에 담아 응답
-//            Token token = tokenService.saveTokenService(userId);
-//            return token.getAccessJwt();
-//        }
-//        else{
-//            return null;
-//        }
+    public LoginDto loginContoller(@RequestBody LoginDto loginDto){
+        log.info("####### 유저 조회용  파라미터 : {}",loginDto.toString());
         return userService.selectUserService(loginDto);
     }
     
     // 회원가입(유저 저장)
     @RequestMapping(value = "/signup",method = RequestMethod.POST)
-    public User saveUserContoller(@RequestBody SignUpDto signUpDto){
-        logger.info("####### 유저 저장용 파라미터 : {}",signUpDto.toString());
+    public User signUpContoller(@RequestBody SignUpDto signUpDto){
+        log.info("####### 유저 저장용 파라미터 : {}",signUpDto.toString());
         return userService.saveUserService(signUpDto);
     }
 
     // 유저 모두 조회
     @RequestMapping(value = "/select", method = RequestMethod.GET)
     public List<User> selectAllUserController(){
-        logger.info("####### 모든 유저 조회");
+        log.info("####### 모든 유저 조회");
         return userService.selectAllUserService();
     }
 

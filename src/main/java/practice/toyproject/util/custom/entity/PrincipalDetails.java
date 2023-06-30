@@ -1,4 +1,4 @@
-package practice.toyproject.token.util.custom.entity;
+package practice.toyproject.util.custom.entity;
 
 import lombok.Getter;
 import lombok.ToString;
