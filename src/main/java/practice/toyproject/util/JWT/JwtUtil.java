@@ -30,8 +30,8 @@ import java.util.Date;
  * author : 임현영
  * date : 2023.06.27
  **/
-@Slf4j
 @Component
+@Slf4j
 public class JwtUtil {
     //암복호화에 사용되는 키 값
     //생성자 방식으로 초기화 진행

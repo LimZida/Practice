@@ -27,9 +27,9 @@ import java.util.List;
  * author : 임현영
  * date : 2023.05.24
  **/
-@Slf4j
 @RestController
 @RequestMapping("/shop")
+@Slf4j
 public class UserController {
     //생성자 주입 (Autowired 생략가능)
     private final UserService userService;
