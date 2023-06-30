@@ -70,7 +70,7 @@ public class UserController {
     }
 
     // 유저 모두 조회
-    @RequestMapping(value = "", method = RequestMethod.GET)
+    @RequestMapping(value = "/select", method = RequestMethod.GET)
     public List<User> selectAllUserController(){
         logger.info("####### 모든 유저 조회");
         return userService.selectAllUserService();

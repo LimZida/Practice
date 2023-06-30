@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class PrincipalDetails implements UserDetails {
-
     private User user; // 컴포지션
 
     public PrincipalDetails(User user) {
