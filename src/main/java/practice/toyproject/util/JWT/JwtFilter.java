@@ -12,7 +12,17 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-
+/**
+ * title : JwtFilter
+ *
+ * description : Servlet에서 요청받기 전 Spring security filter단에서 JWT 검증
+ *
+ * reference : Spring security + JWT : https://do5do.tistory.com/14
+ *             ,https://velog.io/@suhongkim98/Spring-Security-JWT%EB%A1%9C-%EC%9D%B8%EC%A6%9D-%EC%9D%B8%EA%B0%80-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0
+ *
+ * author : 임현영
+ * date : 2023.06.30
+ **/
 @Slf4j
 public class JwtFilter extends OncePerRequestFilter {
     private final JwtProvider jwtProvider;

@@ -23,7 +23,6 @@ import java.util.List;
 
 public interface UserService {
     User saveUserService(SignUpDto signUpDto);
-//    User selectUserBySeq(long seq);
     List<User> selectAllUserService();
     LoginDto selectUserService(LoginDto loginDto);
 

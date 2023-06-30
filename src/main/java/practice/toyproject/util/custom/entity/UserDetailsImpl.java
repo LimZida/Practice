@@ -1,7 +1,5 @@
 package practice.toyproject.util.custom.entity;
 
-import lombok.Getter;
-import lombok.ToString;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -10,37 +8,30 @@ import practice.toyproject.user.entity.User;
 import java.util.ArrayList;
 import java.util.Collection;
 /**
- * title : entity
+ * title : PrincipalDetails
  *
- * description : T_TOKEN 테이블 컬럼 매핑용 entity
+ * description : UserDetails interface 구현체, user entity 사용
  *
- * reference : 생성자 https://kadosholy.tistory.com/91
- * 롬복  https://www.daleseo.com/lombok-popular-annotations/
- * 엔티티 https://choiseonjae.github.io/jpa/jpa-%EA%B8%B0%EB%B3%B8%ED%82%A4%EC%A0%84/
- * 엔티티 setter 쓰지않는 이유 https://velog.io/@langoustine/setter%EB%A5%BC-%EC%93%B0%EC%A7%80%EB%A7%90%EB%9D%BC%EA%B3%A0
- *                          https://velog.io/@aidenshin/%EB%82%B4%EA%B0%80-%EC%83%9D%EA%B0%81%ED%95%98%EB%8A%94-JPA-%EC%97%94%ED%8B%B0%ED%8B%B0-%EC%9E%91%EC%84%B1-%EC%9B%90%EC%B9%99
- * 빌더 https://velog.io/@mooh2jj/%EC%98%AC%EB%B0%94%EB%A5%B8-%EC%97%94%ED%8B%B0%ED%8B%B0-Builder-%EC%82%AC%EC%9A%A9%EB%B2%95
+ * reference : 생성자 User 매개변수 차용: https://velog.io/@kyu9610/Spring-Security-4.-Spring-Security-%EB%A1%9C%EA%B7%B8%EC%9D%B8
  *
  * author : 임현영
- * date : 2023.06.27
+ * date : 2023.06.30
  **/
-public class PrincipalDetails implements UserDetails {
-    private User user; // 컴포지션
+public class UserDetailsImpl implements UserDetails {
+    private User user;
 
-    public PrincipalDetails(User user) {
+    public UserDetailsImpl(User user) {
         this.user = user;
     }
 
-    // 해당 User의 권한을 리턴하는곳.
+    // 해당 User의 권한을 리턴
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         ArrayList<GrantedAuthority> auth = new ArrayList<>();
+        //역할 부여 가능
         auth.add(new SimpleGrantedAuthority("ROLE_USER"));
         return auth;
     }
-
-
-    // User 의 password 리턴
     @Override
     public String getPassword() {
         return user.getUserPw();
@@ -68,7 +59,6 @@ public class PrincipalDetails implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-
         // 사이트 내에서 1년동안 로그인을 안하면 휴먼계정을 전환을 하도록 하겠다.
         // -> loginDate 타입을 모아놨다가 이 값을 false로 return 해버리면 된다.
         return true;

@@ -6,6 +6,10 @@
     <!-- 로그 출력 패턴 -->
     <property name="LOG_PATTERN"
               value="[%d{yyyy-MM-dd HH:mm:ss}:%-3relative]  %clr(%-5level) %clr(${PID:-}){magenta} %clr(---){faint} %clr([%15.15thread]){faint} %clr(%-40.40logger{36}){cyan} %clr(:){faint} %msg%n"/>
+    <!-- 로그 저장 패턴 -->
+    <property name="LOG_SAVE_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %-4relative --- [ %thread{10} ] %logger{35} - %msg%n"/>
+
 
     <!-- 로그 파일이 저장될 경로 -->
     <property name="LOG_PATH" value="./src/main/resources/log/files/${spring.profiles.active}"/>
@@ -42,7 +46,7 @@
 
         <!-- 출력패턴 설정-->
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-            <pattern>${LOG_PATTERN}</pattern>
+            <pattern>${LOG_SAVE_PATTERN}</pattern>
         </encoder>
 
         <!-- Rolling 정책 -->

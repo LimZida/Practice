@@ -74,7 +74,8 @@ public class User{
 
     //빌더패턴 사용
     @Builder
-    public User(String userId,String userPw,String userName,String imageUrl,Timestamp updateDate,Timestamp regDate,Timestamp updPwDate,Timestamp lastLoginDate, long loginCnt, long loginFailCnt, String userHp){
+    public User(String userId,String userPw,String userName,String imageUrl,
+                Timestamp updateDate,Timestamp regDate,Timestamp updPwDate,Timestamp lastLoginDate, long loginCnt, long loginFailCnt, String userHp){
         this.userId=userId;
         this.userPw=userPw;
         this.userName=userName;

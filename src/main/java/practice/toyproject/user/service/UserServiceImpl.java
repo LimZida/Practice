@@ -1,5 +1,6 @@
 package practice.toyproject.user.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +23,8 @@ import java.util.List;
 /**
  * title : userServiceImpl
  *
- * description : saveUserService(userId,...) => 유저 저장
- *               selectUserByUserIdService(userId) => ID를 통한 유저 조회
+ * description : saveUserService(SignUpDto signUpDto) => 회원가입
+ *               selectUserService(LoginDto loginDto) => 로그인
  *               selectAllUserService() => 모든 유저 조회
  *
  * reference : Optional https://mangkyu.tistory.com/70
@@ -36,6 +37,7 @@ import java.util.List;
  * date : 2023.05.31
  **/
 @Service
+@Slf4j
 public class UserServiceImpl implements UserService {
     //생성자 주입 (Autowired 생략가능)
     private final UserRepository userRepository;
@@ -52,12 +54,11 @@ public class UserServiceImpl implements UserService {
         this.authenticationManagerBuilder = authenticationManagerBuilder;
     }
 
-    private final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
-
     @Override
     public User saveUserService(SignUpDto signUpDto) {
         User user= User.builder()
                 .userId(signUpDto.getUserId())
+                //spring security 설정으로 인해 passwordEncoder 사용 후 저장
                 .userPw(passwordEncoder.encode(signUpDto.getUserPw()))
                 .userHp(signUpDto.getUserHp())
                 .userName(signUpDto.getUserName())
@@ -66,36 +67,30 @@ public class UserServiceImpl implements UserService {
                 .loginFailCnt(0)
                 .build();
 
-        logger.info("####### user 정보 : {}",user.toString());
+        log.info("####### user 정보 : {}",user.toString());
         return userRepository.save(user);
     }
-
-    @Override
-    public List<User> selectAllUserService() {
-        return userRepository.findAll();
-    }
-
     @Override
     public LoginDto selectUserService(LoginDto loginDto) {
         // user 검증
         // 받아온 유저네임과 패스워드를 이용해 UsernamePasswordAuthenticationToken 객체 생성
         UsernamePasswordAuthenticationToken authenticationToken =
                 new UsernamePasswordAuthenticationToken(loginDto.getUserId(), loginDto.getUserPw());
-        logger.info("####### authenticationToken 정보 : {}",authenticationToken);
+        log.info("####### authenticationToken 정보 : {}",authenticationToken);
 
         // authenticationToken 객체를 통해 Authentication 객체 생성
         // 이 과정에서 CustomUserDetailsService 에서 우리가 재정의한 loadUserByUsername 메서드 호출
         Authentication authentication = authenticationManagerBuilder.getObject().authenticate(authenticationToken);
-        logger.info("####### authentication getobject 정보 : {}",authenticationManagerBuilder.getObject());
+        log.info("####### authentication getobject 정보 : {}",authenticationManagerBuilder.getObject());
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        logger.info("####### authentication 정보 : {}",authentication.getPrincipal());
+        log.info("####### authentication 정보 : {}",authentication.getPrincipal());
 
         // token 생성
         String accessJWT = jwtProvider.generateAccessToken(authentication);
         String refreshJWT = jwtProvider.generateRefreshToken(authentication);
-        logger.info("####### accessJWT 정보 : {}",accessJWT);
-        logger.info("####### user 정보 : {}",loginDto.getUserId());
+        log.info("####### accessJWT 정보 : {}",accessJWT);
+        log.info("####### user 정보 : {}",loginDto.getUserId());
 
         Token token= Token.builder()
                 .userId(loginDto.getUserId())
@@ -112,5 +107,10 @@ public class UserServiceImpl implements UserService {
                 .tokenType("Bearer ")
                 .userId(loginDto.getUserId())
                 .build();
+    }
+
+    @Override
+    public List<User> selectAllUserService() {
+        return userRepository.findAll();
     }
 }

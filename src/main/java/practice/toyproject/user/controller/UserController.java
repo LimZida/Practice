@@ -16,10 +16,9 @@ import java.util.List;
 
 /**
  * title : userController
- * description : saveServiceContoller(userId) => 유저 저장
- *               selectAllServiceContoller() => 모든 유저 조회
- *               selectSeqServiceContoller(seq) => 시퀀스로 유저 조회
- *               selectIdServiceContoller(userId) => ID로 유저 조회
+ * description : loginContoller(@RequestBody LoginDto loginDto) => 로그인
+ *               signUpContoller(@RequestBody SignUpDto signUpDto) => 회원가입
+ *               selectAllUserController() => 모든 유저 조회
  *
  * reference : RESTful 설계 규칙 : https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
  *             @RequestBody란? : https://dev-coco.tistory.com/95 , https://cheershennah.tistory.com/179
@@ -59,11 +58,4 @@ public class UserController {
         log.info("####### 모든 유저 조회");
         return userService.selectAllUserService();
     }
-
-    // 유저 일련번호로 조회
-//    @RequestMapping(value ="/seq" ,method = RequestMethod.GET)
-//    public User selectSeqService(@RequestParam("seq") long seq){
-//        logger.info("####### 유저 조회용 시퀀스 파라미터 : {}",seq);
-//        return userService.selectUserBySeq(seq);
-//    }
 }

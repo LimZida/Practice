@@ -12,7 +12,18 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.web.filter.CorsFilter;
 import practice.toyproject.util.JWT.JwtFilter;
 import practice.toyproject.util.JWT.JwtProvider;
-
+/**
+ * title : SecurityConfig
+ *
+ * description : SecurityConfig 커스텀, 접근 제어 configure 총괄
+ *
+ * reference : Spring security + JWT : https://do5do.tistory.com/14
+ *             ,https://velog.io/@suhongkim98/Spring-Security-JWT%EB%A1%9C-%EC%9D%B8%EC%A6%9D-%EC%9D%B8%EA%B0%80-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0
+ *
+ *
+ * author : 임현영
+ * date : 2023.06.30
+ **/
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private final JwtProvider jwtProvider;
