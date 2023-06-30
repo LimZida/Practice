@@ -28,8 +28,7 @@ import java.util.Collection;
  * author : 임현영
  * date : 2023.05.24
  **/
-//@Data
-//getter,setter, RequiredArgsConstructor, ToString, EqualsAndHashCode 자동생성
+//@Data => getter,setter, RequiredArgsConstructor, ToString, EqualsAndHashCode 자동생성
 //@AllArgsConstructor 모든 매개변수를 가진 생성자도 추가
 //@NoArgsConstructor 파라미터가 없는 생성자 생성
 //@ToString Stringbuffer 역할
@@ -70,10 +69,12 @@ public class User{
     // 마지막 로그인
     // @UpdateTimestamp
     private Timestamp lastLoginDate;
+    // 비밀번호 수정날짜
+    private Timestamp updPwDate;
 
     //빌더패턴 사용
     @Builder
-    public User(String userId,String userPw,String userName,String imageUrl,Timestamp updateDate,Timestamp regDate,Timestamp lastLoginDate, long loginCnt, long loginFailCnt, String userHp){
+    public User(String userId,String userPw,String userName,String imageUrl,Timestamp updateDate,Timestamp regDate,Timestamp updPwDate,Timestamp lastLoginDate, long loginCnt, long loginFailCnt, String userHp){
         this.userId=userId;
         this.userPw=userPw;
         this.userName=userName;
@@ -81,6 +82,7 @@ public class User{
         this.updateDate=updateDate;
         this.regDate=regDate;
         this.lastLoginDate=lastLoginDate;
+        this.updPwDate=updPwDate;
         this.loginCnt=loginCnt;
         this.loginFailCnt=loginFailCnt;
         this.userHp=userHp;

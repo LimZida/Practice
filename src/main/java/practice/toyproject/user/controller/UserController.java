@@ -21,10 +21,9 @@ import java.util.List;
  *               selectSeqServiceContoller(seq) => 시퀀스로 유저 조회
  *               selectIdServiceContoller(userId) => ID로 유저 조회
  *
- * reference : RESTful 설계 규칙 https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
- *             @RequestBody란?
- *             jackson library object mapper
- *             JSON Serialize 알아보기
+ * reference : RESTful 설계 규칙 : https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
+ *             @RequestBody란? : https://dev-coco.tistory.com/95 , https://cheershennah.tistory.com/179
+ *             Jackson library object mapper ,JSON Serialize 알아보기
  *
  * author : 임현영
  * date : 2023.05.24

@@ -1,11 +1,10 @@
 package practice.toyproject.token.entity;
 
 import lombok.*;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 /**
- * title : entity
+ * title : Token
  *
  * description : T_TOKEN 테이블 컬럼 매핑용 entity
  *
@@ -17,7 +16,7 @@ import javax.persistence.Id;
  * 빌더 https://velog.io/@mooh2jj/%EC%98%AC%EB%B0%94%EB%A5%B8-%EC%97%94%ED%8B%B0%ED%8B%B0-Builder-%EC%82%AC%EC%9A%A9%EB%B2%95
  *
  * author : 임현영
- * date : 2023.06.27
+ * date : 2023.06.30
  **/
 @Getter
 @ToString // 로그 debug 시 toString 자동생성
