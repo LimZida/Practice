@@ -1152,3 +1152,6 @@ com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct 
 2023-06-30 17:15:17.400 INFO  36368 --- [ http-nio-8087-exec-1 ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2023-06-30 17:15:17.530 INFO  36498 --- [ http-nio-8087-exec-1 ] p.t.user.controller.UserController - ####### 유저 저장용 파라미터 : SignUpDto(userId=outaa, userHp=0109874470, userPw=zzz, userName=임현영)
 2023-06-30 17:15:17.628 INFO  36596 --- [ http-nio-8087-exec-1 ] p.t.user.service.UserServiceImpl - ####### user 정보 : User(userId=outaa, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0109874470, userPw={bcrypt}$2a$10$EZI2EulUpoqeQqdDxfAayOpxhBqTxMZBP2XfMOITeI4QbI.9hPK1S, imageUrl=, updateDate=null, regDate=null, lastLoginDate=null, updPwDate=null)
+2023-06-30 17:34:38.152 INFO  1197120 --- [ SpringApplicationShutdownHook ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 17:34:38.158 INFO  1197126 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-06-30 17:34:38.222 INFO  1197190 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
