@@ -1,0 +1,767 @@
+[2023-06-02 13:40:02:1085]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 13004 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+[2023-06-02 13:40:02:1094]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2023-06-02 13:40:02:1175]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.restart.ChangeableUrls          [0;39m [2m:[0;39m The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.1.0.0\50044485aea10afd7defeee8109c5195b4d3cae2\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.1.0.0/50044485aea10afd7defeee8109c5195b4d3cae2/oraclepki.jar
+[2023-06-02 13:40:02:1175]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.restart.ChangeableUrls          [0;39m [2m:[0;39m The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.nls\orai18n\21.1.0.0\c36ad4814d128f1259c81fad5d52ad2033e6ad37\orai18n-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-mapping.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-utility.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-collation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-translation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-net.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-servlet.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-lcsd.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-tools.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/gdk_custom.jar
+[2023-06-02 13:40:02:1176]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-06-02 13:40:02:1177]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-06-02 13:40:03:2030]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-02 13:40:03:2090]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+[2023-06-02 13:40:04:2884]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat initialized with port(s): 8087 (http)
+[2023-06-02 13:40:04:2897]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Initializing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:40:04:2898]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Starting service [Tomcat]
+[2023-06-02 13:40:04:2898]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardEngine        [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-06-02 13:40:04:3082]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2023-06-02 13:40:04:3082]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1903 ms
+[2023-06-02 13:40:04:3203]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2023-06-02 13:40:04:3210]  [33mWARN [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.z.hikari.util.DriverDataSource        [0;39m [2m:[0;39m Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-06-02 13:40:04:3661]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2023-06-02 13:40:04:3676]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.h.H2ConsoleAutoConfiguration    [0;39m [2m:[0;39m H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+[2023-06-02 13:40:05:3889]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.jpa.internal.util.LogHelper         [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-02 13:40:05:3957]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-06-02 13:40:05:4172]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.annotations.common.Version          [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-06-02 13:40:05:4325]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[2023-06-02 13:40:05:4333]  [33mWARN [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Oracle9Dialect    [0;39m [2m:[0;39m HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2023-06-02 13:40:05:4335]  [33mWARN [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.OracleDialect     [0;39m [2m:[0;39m HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[2023-06-02 13:40:06:5306]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-02 13:40:06:5319]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 13:40:06:5680]  [33mWARN [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-02 13:40:06:5824]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.w.s.WelcomePageHandlerMapping   [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2023-06-02 13:40:07:5961]  [33mWARN [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mion$DefaultTemplateResolverConfiguration[0;39m [2m:[0;39m Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2023-06-02 13:40:07:6066]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2023-06-02 13:40:07:6082]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Starting ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:40:07:6098]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat started on port(s): 8087 (http) with context path ''
+[2023-06-02 13:40:07:6110]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Started ToyProjectApplication in 5.74 seconds (JVM running for 7.771)
+[2023-06-02 13:40:38:37620]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[ionShutdownHook][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 13:40:38:37623]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[ionShutdownHook][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Shutdown initiated...
+[2023-06-02 13:40:38:37662]  [32mINFO [0;39m [35m13004[0;39m [2m---[0;39m [2m[ionShutdownHook][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Shutdown completed.
+[2023-06-02 13:40:42:873]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 8244 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+[2023-06-02 13:40:42:874]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2023-06-02 13:40:42:939]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.restart.ChangeableUrls          [0;39m [2m:[0;39m The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.1.0.0\50044485aea10afd7defeee8109c5195b4d3cae2\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.1.0.0/50044485aea10afd7defeee8109c5195b4d3cae2/oraclepki.jar
+[2023-06-02 13:40:42:939]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.restart.ChangeableUrls          [0;39m [2m:[0;39m The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.nls\orai18n\21.1.0.0\c36ad4814d128f1259c81fad5d52ad2033e6ad37\orai18n-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-mapping.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-utility.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-collation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-translation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-net.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-servlet.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-lcsd.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-tools.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/gdk_custom.jar
+[2023-06-02 13:40:42:940]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-06-02 13:40:42:940]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-06-02 13:40:43:1807]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-02 13:40:43:1871]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+[2023-06-02 13:40:44:2440]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat initialized with port(s): 8087 (http)
+[2023-06-02 13:40:44:2448]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Initializing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:40:44:2449]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Starting service [Tomcat]
+[2023-06-02 13:40:44:2449]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardEngine        [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-06-02 13:40:44:2578]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2023-06-02 13:40:44:2578]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1637 ms
+[2023-06-02 13:40:44:2653]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2023-06-02 13:40:44:2657]  [33mWARN [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.z.hikari.util.DriverDataSource        [0;39m [2m:[0;39m Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-06-02 13:40:45:2988]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2023-06-02 13:40:45:2997]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.h.H2ConsoleAutoConfiguration    [0;39m [2m:[0;39m H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+[2023-06-02 13:40:45:3170]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.jpa.internal.util.LogHelper         [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-02 13:40:45:3242]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-06-02 13:40:45:3443]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.annotations.common.Version          [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-06-02 13:40:45:3584]  [33mWARN [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.j.e.i.JdbcEnvironmentInitiator    [0;39m [2m:[0;39m HHH000342: Could not obtain connection to query metadata
+org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.Oracle12gDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:156)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:239)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:183)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:170)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:164)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:74)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:51)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:97)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:272)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:295)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:252)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:910)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at practice.toyproject.ToyProjectApplication.main(ToyProjectApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [org.hibernate.dialect.Oracle12gDialect]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:133)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:152)
+	... 48 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : org.hibernate.dialect.Oracle12gDialect
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:210)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:130)
+	... 49 common frames omitted
+[2023-06-02 13:40:45:3587]  [31mERROR[0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[2023-06-02 13:40:45:3588]  [33mWARN [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[2023-06-02 13:40:45:3591]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Shutdown initiated...
+[2023-06-02 13:40:45:3627]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Shutdown completed.
+[2023-06-02 13:40:45:3630]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2023-06-02 13:40:45:3646]  [32mINFO [0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2023-06-02 13:40:45:3707]  [31mERROR[0;39m [35m8244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:910)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at practice.toyproject.ToyProjectApplication.main(ToyProjectApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:284)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:295)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:252)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted
+Caused by: org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.Oracle12gDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:156)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:239)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:183)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:170)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:164)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:74)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:51)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:272)
+	... 38 common frames omitted
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [org.hibernate.dialect.Oracle12gDialect]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:133)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:152)
+	... 48 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : org.hibernate.dialect.Oracle12gDialect
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:210)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:130)
+	... 49 common frames omitted
+[2023-06-02 13:41:06:916]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 20104 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+[2023-06-02 13:41:06:918]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2023-06-02 13:41:07:982]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.restart.ChangeableUrls          [0;39m [2m:[0;39m The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.1.0.0\50044485aea10afd7defeee8109c5195b4d3cae2\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.1.0.0/50044485aea10afd7defeee8109c5195b4d3cae2/oraclepki.jar
+[2023-06-02 13:41:07:983]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.restart.ChangeableUrls          [0;39m [2m:[0;39m The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.nls\orai18n\21.1.0.0\c36ad4814d128f1259c81fad5d52ad2033e6ad37\orai18n-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-mapping.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-utility.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-collation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-translation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-net.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-servlet.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-lcsd.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-tools.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/gdk_custom.jar
+[2023-06-02 13:41:07:984]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-06-02 13:41:07:984]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-06-02 13:41:07:1713]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-02 13:41:07:1771]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+[2023-06-02 13:41:08:2401]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat initialized with port(s): 8087 (http)
+[2023-06-02 13:41:08:2410]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Initializing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:41:08:2411]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Starting service [Tomcat]
+[2023-06-02 13:41:08:2411]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardEngine        [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-06-02 13:41:08:2541]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2023-06-02 13:41:08:2542]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1557 ms
+[2023-06-02 13:41:08:2614]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2023-06-02 13:41:08:2620]  [33mWARN [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.z.hikari.util.DriverDataSource        [0;39m [2m:[0;39m Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-06-02 13:41:09:2951]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2023-06-02 13:41:09:2960]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.h.H2ConsoleAutoConfiguration    [0;39m [2m:[0;39m H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+[2023-06-02 13:41:09:3133]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.jpa.internal.util.LogHelper         [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-02 13:41:09:3191]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-06-02 13:41:09:3359]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.annotations.common.Version          [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-06-02 13:41:09:3482]  [33mWARN [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.j.e.i.JdbcEnvironmentInitiator    [0;39m [2m:[0;39m HHH000342: Could not obtain connection to query metadata
+org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.Oracle11gDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:156)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:239)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:183)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:170)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:164)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:74)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:51)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:97)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:272)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:295)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:252)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:910)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at practice.toyproject.ToyProjectApplication.main(ToyProjectApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [org.hibernate.dialect.Oracle11gDialect]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:133)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:152)
+	... 48 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : org.hibernate.dialect.Oracle11gDialect
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:210)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:130)
+	... 49 common frames omitted
+[2023-06-02 13:41:09:3484]  [31mERROR[0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[2023-06-02 13:41:09:3485]  [33mWARN [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+[2023-06-02 13:41:09:3488]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Shutdown initiated...
+[2023-06-02 13:41:09:3528]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Shutdown completed.
+[2023-06-02 13:41:09:3531]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2023-06-02 13:41:09:3547]  [32mINFO [0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2023-06-02 13:41:09:3584]  [31mERROR[0;39m [35m20104[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.boot.SpringApplication              [0;39m [2m:[0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:910)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at practice.toyproject.ToyProjectApplication.main(ToyProjectApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:284)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:295)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:252)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted
+Caused by: org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.Oracle11gDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:156)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:239)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:183)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:170)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:164)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:74)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:51)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:272)
+	... 38 common frames omitted
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [org.hibernate.dialect.Oracle11gDialect]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:133)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:152)
+	... 48 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : org.hibernate.dialect.Oracle11gDialect
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:210)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:588)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:130)
+	... 49 common frames omitted
+[2023-06-02 13:41:23:955]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 9272 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+[2023-06-02 13:41:23:957]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2023-06-02 13:41:23:1029]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.restart.ChangeableUrls          [0;39m [2m:[0;39m The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.1.0.0\50044485aea10afd7defeee8109c5195b4d3cae2\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.1.0.0/50044485aea10afd7defeee8109c5195b4d3cae2/oraclepki.jar
+[2023-06-02 13:41:23:1029]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.restart.ChangeableUrls          [0;39m [2m:[0;39m The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.nls\orai18n\21.1.0.0\c36ad4814d128f1259c81fad5d52ad2033e6ad37\orai18n-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-mapping.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-utility.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-collation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-translation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-net.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-servlet.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-lcsd.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-tools.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/gdk_custom.jar
+[2023-06-02 13:41:23:1030]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-06-02 13:41:23:1030]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-06-02 13:41:24:1833]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-02 13:41:24:1891]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+[2023-06-02 13:41:24:2416]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat initialized with port(s): 8087 (http)
+[2023-06-02 13:41:24:2426]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Initializing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:41:24:2426]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Starting service [Tomcat]
+[2023-06-02 13:41:24:2426]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardEngine        [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-06-02 13:41:25:2572]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2023-06-02 13:41:25:2572]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1541 ms
+[2023-06-02 13:41:25:2641]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Starting...
+[2023-06-02 13:41:25:2646]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.z.hikari.util.DriverDataSource        [0;39m [2m:[0;39m Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-06-02 13:41:25:2967]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Start completed.
+[2023-06-02 13:41:25:2974]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.h.H2ConsoleAutoConfiguration    [0;39m [2m:[0;39m H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+[2023-06-02 13:41:25:3124]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.jpa.internal.util.LogHelper         [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-02 13:41:25:3186]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.Version                   [0;39m [2m:[0;39m HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-06-02 13:41:25:3384]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.annotations.common.Version          [0;39m [2m:[0;39m HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-06-02 13:41:25:3565]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[2023-06-02 13:41:26:3573]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Oracle9Dialect    [0;39m [2m:[0;39m HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2023-06-02 13:41:26:3575]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.OracleDialect     [0;39m [2m:[0;39m HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[2023-06-02 13:41:26:4370]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-02 13:41:26:4388]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 13:41:27:4885]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-02 13:41:27:5060]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.w.s.WelcomePageHandlerMapping   [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2023-06-02 13:41:27:5187]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mion$DefaultTemplateResolverConfiguration[0;39m [2m:[0;39m Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2023-06-02 13:41:27:5287]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2023-06-02 13:41:27:5303]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Starting ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:41:27:5322]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat started on port(s): 8087 (http) with context path ''
+[2023-06-02 13:41:27:5338]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Started ToyProjectApplication in 5.015 seconds (JVM running for 6.994)
+[2023-06-02 13:41:51:29444]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[nio-8087-exec-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-02 13:41:51:29445]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[nio-8087-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2023-06-02 13:41:51:29447]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[nio-8087-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
+[2023-06-02 13:42:24:61601]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-7][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Pausing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:24:61602]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-7][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2023-06-02 13:42:24:61604]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-7][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2023-06-02 13:42:24:61608]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-7][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Stopping ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:24:61611]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-7][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Destroying ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:24:61613]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-7][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 13:42:24:61616]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-7][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Shutdown initiated...
+[2023-06-02 13:42:24:61656]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-7][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-1 - Shutdown completed.
+[2023-06-02 13:42:24:61756]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 9272 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+[2023-06-02 13:42:24:61756]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2023-06-02 13:42:24:62014]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-02 13:42:24:62031]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interfaces.
+[2023-06-02 13:42:24:62107]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat initialized with port(s): 8087 (http)
+[2023-06-02 13:42:24:62108]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Initializing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:24:62108]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Starting service [Tomcat]
+[2023-06-02 13:42:24:62108]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardEngine        [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-06-02 13:42:24:62150]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2023-06-02 13:42:24:62150]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 390 ms
+[2023-06-02 13:42:24:62159]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-2 - Starting...
+[2023-06-02 13:42:24:62159]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.z.hikari.util.DriverDataSource        [0;39m [2m:[0;39m Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-06-02 13:42:24:62289]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-2 - Start completed.
+[2023-06-02 13:42:24:62289]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.h.H2ConsoleAutoConfiguration    [0;39m [2m:[0;39m H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+[2023-06-02 13:42:24:62316]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.jpa.internal.util.LogHelper         [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-02 13:42:24:62328]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[2023-06-02 13:42:24:62329]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Oracle9Dialect    [0;39m [2m:[0;39m HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2023-06-02 13:42:24:62329]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.OracleDialect     [0;39m [2m:[0;39m HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[2023-06-02 13:42:24:62380]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-02 13:42:24:62380]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 13:42:24:62458]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-02 13:42:24:62519]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.w.s.WelcomePageHandlerMapping   [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2023-06-02 13:42:24:62556]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mion$DefaultTemplateResolverConfiguration[0;39m [2m:[0;39m Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2023-06-02 13:42:25:62587]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2023-06-02 13:42:25:62600]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Starting ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:25:62604]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat started on port(s): 8087 (http) with context path ''
+[2023-06-02 13:42:25:62611]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Started ToyProjectApplication in 0.908 seconds (JVM running for 64.266)
+[2023-06-02 13:42:25:62613]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2023-06-02 13:42:27:64718]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Pausing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:27:64718]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2023-06-02 13:42:27:64721]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Stopping ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:27:64722]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Destroying ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:27:64724]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 13:42:27:64724]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-2 - Shutdown initiated...
+[2023-06-02 13:42:27:64758]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-2 - Shutdown completed.
+[2023-06-02 13:42:27:64836]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 9272 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+[2023-06-02 13:42:27:64837]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2023-06-02 13:42:27:65057]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-02 13:42:27:65074]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interfaces.
+[2023-06-02 13:42:27:65149]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat initialized with port(s): 8087 (http)
+[2023-06-02 13:42:27:65150]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Initializing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:27:65150]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Starting service [Tomcat]
+[2023-06-02 13:42:27:65150]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardEngine        [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-06-02 13:42:27:65186]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2023-06-02 13:42:27:65187]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 348 ms
+[2023-06-02 13:42:27:65195]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-3 - Starting...
+[2023-06-02 13:42:27:65195]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.z.hikari.util.DriverDataSource        [0;39m [2m:[0;39m Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-06-02 13:42:27:65304]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-3 - Start completed.
+[2023-06-02 13:42:27:65304]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.h.H2ConsoleAutoConfiguration    [0;39m [2m:[0;39m H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+[2023-06-02 13:42:27:65323]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.jpa.internal.util.LogHelper         [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-02 13:42:27:65331]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[2023-06-02 13:42:27:65332]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Oracle9Dialect    [0;39m [2m:[0;39m HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2023-06-02 13:42:27:65332]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.OracleDialect     [0;39m [2m:[0;39m HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[2023-06-02 13:42:27:65365]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-02 13:42:27:65365]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 13:42:27:65430]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-02 13:42:27:65472]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.w.s.WelcomePageHandlerMapping   [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2023-06-02 13:42:27:65502]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mion$DefaultTemplateResolverConfiguration[0;39m [2m:[0;39m Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2023-06-02 13:42:27:65527]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2023-06-02 13:42:27:65539]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Starting ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:27:65542]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat started on port(s): 8087 (http) with context path ''
+[2023-06-02 13:42:27:65546]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Started ToyProjectApplication in 0.757 seconds (JVM running for 67.202)
+[2023-06-02 13:42:27:65548]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2023-06-02 13:42:50:88199]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-14][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Pausing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:50:88200]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-14][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2023-06-02 13:42:50:88204]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-14][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Stopping ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:50:88205]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-14][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Destroying ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:50:88207]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-14][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 13:42:50:88208]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-14][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-3 - Shutdown initiated...
+[2023-06-02 13:42:50:88244]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-14][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-3 - Shutdown completed.
+[2023-06-02 13:42:50:88325]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 9272 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+[2023-06-02 13:42:50:88325]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2023-06-02 13:42:50:88560]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-02 13:42:51:88575]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+[2023-06-02 13:42:51:88645]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat initialized with port(s): 8087 (http)
+[2023-06-02 13:42:51:88646]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Initializing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:51:88646]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Starting service [Tomcat]
+[2023-06-02 13:42:51:88646]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardEngine        [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-06-02 13:42:51:88680]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2023-06-02 13:42:51:88680]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 352 ms
+[2023-06-02 13:42:51:88687]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-4 - Starting...
+[2023-06-02 13:42:51:88687]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.z.hikari.util.DriverDataSource        [0;39m [2m:[0;39m Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-06-02 13:42:51:88808]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-4 - Start completed.
+[2023-06-02 13:42:51:88808]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.h.H2ConsoleAutoConfiguration    [0;39m [2m:[0;39m H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+[2023-06-02 13:42:51:88833]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.jpa.internal.util.LogHelper         [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-02 13:42:51:88843]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[2023-06-02 13:42:51:88844]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Oracle9Dialect    [0;39m [2m:[0;39m HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2023-06-02 13:42:51:88844]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.OracleDialect     [0;39m [2m:[0;39m HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[2023-06-02 13:42:51:88880]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-02 13:42:51:88880]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 13:42:51:88951]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-02 13:42:51:88985]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.w.s.WelcomePageHandlerMapping   [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2023-06-02 13:42:51:89013]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mion$DefaultTemplateResolverConfiguration[0;39m [2m:[0;39m Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2023-06-02 13:42:51:89036]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2023-06-02 13:42:51:89045]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Starting ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:51:89048]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat started on port(s): 8087 (http) with context path ''
+[2023-06-02 13:42:51:89052]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Started ToyProjectApplication in 0.774 seconds (JVM running for 90.708)
+[2023-06-02 13:42:51:89053]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2023-06-02 13:42:53:91151]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-19][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Pausing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:53:91152]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-19][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2023-06-02 13:42:53:91156]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-19][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Stopping ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:53:91158]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-19][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Destroying ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:53:91159]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-19][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 13:42:53:91160]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-19][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-4 - Shutdown initiated...
+[2023-06-02 13:42:53:91194]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-19][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-4 - Shutdown completed.
+[2023-06-02 13:42:53:91274]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 9272 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+[2023-06-02 13:42:53:91275]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2023-06-02 13:42:53:91502]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-02 13:42:53:91515]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+[2023-06-02 13:42:54:91578]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat initialized with port(s): 8087 (http)
+[2023-06-02 13:42:54:91579]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Initializing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:54:91579]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Starting service [Tomcat]
+[2023-06-02 13:42:54:91579]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardEngine        [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-06-02 13:42:54:91605]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2023-06-02 13:42:54:91605]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 326 ms
+[2023-06-02 13:42:54:91614]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-5 - Starting...
+[2023-06-02 13:42:54:91614]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.z.hikari.util.DriverDataSource        [0;39m [2m:[0;39m Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-06-02 13:42:54:91718]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-5 - Start completed.
+[2023-06-02 13:42:54:91718]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.h.H2ConsoleAutoConfiguration    [0;39m [2m:[0;39m H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+[2023-06-02 13:42:54:91743]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.jpa.internal.util.LogHelper         [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-02 13:42:54:91756]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[2023-06-02 13:42:54:91757]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Oracle9Dialect    [0;39m [2m:[0;39m HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2023-06-02 13:42:54:91757]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.OracleDialect     [0;39m [2m:[0;39m HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[2023-06-02 13:42:54:91792]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-02 13:42:54:91793]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 13:42:54:91846]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-02 13:42:54:91877]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.w.s.WelcomePageHandlerMapping   [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2023-06-02 13:42:54:91898]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mion$DefaultTemplateResolverConfiguration[0;39m [2m:[0;39m Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2023-06-02 13:42:54:91921]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2023-06-02 13:42:54:91931]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Starting ProtocolHandler ["http-nio-8087"]
+[2023-06-02 13:42:54:91934]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat started on port(s): 8087 (http) with context path ''
+[2023-06-02 13:42:54:91938]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Started ToyProjectApplication in 0.71 seconds (JVM running for 93.594)
+[2023-06-02 13:42:54:91939]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2023-06-02 13:43:31:128705]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[nio-8087-exec-1][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-06-02 13:43:31:128705]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[nio-8087-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2023-06-02 13:43:31:128706]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[nio-8087-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
+[2023-06-02 13:43:48:145844]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[nio-8087-exec-3][0;39m [36mp.t.user.controller.UserController      [0;39m [2m:[0;39m ####### 유저 조회용 아이디 파라미터 : 낭낭
+[2023-06-02 13:45:06:224317]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[nio-8087-exec-6][0;39m [36mp.t.user.controller.UserController      [0;39m [2m:[0;39m ####### 유저 조회용 아이디 파라미터 : ghetto
+[2023-06-02 13:45:06:224356]  [31mERROR[0;39m [35m9272[0;39m [2m---[0;39m [2m[nio-8087-exec-6][0;39m [36mo.a.c.c.C.[.[.[.[dispatcherServlet]     [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2] with root cause
+javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:128)
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1672)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:111)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:198)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at com.sun.proxy.$Proxy131.findByUserId(Unknown Source)
+	at practice.toyproject.user.service.UserServiceImpl.selectUserByUserId(UserServiceImpl.java:58)
+	at practice.toyproject.user.controller.UserController.selectIdService(UserController.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[2023-06-02 13:45:30:248242]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[nio-8087-exec-7][0;39m [36mp.t.user.controller.UserController      [0;39m [2m:[0;39m ####### 유저 조회용 아이디 파라미터 : hi
+[2023-06-02 13:45:40:258529]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[nio-8087-exec-8][0;39m [36mp.t.user.controller.UserController      [0;39m [2m:[0;39m ####### 유저 조회용 아이디 파라미터 : girl
+[2023-06-02 13:45:56:274212]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[nio-8087-exec-9][0;39m [36mp.t.user.controller.UserController      [0;39m [2m:[0;39m ####### 모든 유저 조회
+[2023-06-02 14:16:09:2087264]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-24][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Pausing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:09:2087265]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-24][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2023-06-02 14:16:09:2087265]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-24][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2023-06-02 14:16:09:2087268]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-24][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Stopping ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:09:2087269]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-24][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Destroying ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:09:2087270]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-24][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 14:16:09:2087270]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-24][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-5 - Shutdown initiated...
+[2023-06-02 14:16:09:2087322]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-24][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-5 - Shutdown completed.
+[2023-06-02 14:16:09:2087393]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 9272 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+[2023-06-02 14:16:09:2087393]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2023-06-02 14:16:10:2087609]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-02 14:16:10:2087622]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+[2023-06-02 14:16:10:2087687]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat initialized with port(s): 8087 (http)
+[2023-06-02 14:16:10:2087687]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Initializing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:10:2087687]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Starting service [Tomcat]
+[2023-06-02 14:16:10:2087688]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardEngine        [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-06-02 14:16:10:2087716]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2023-06-02 14:16:10:2087717]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 321 ms
+[2023-06-02 14:16:10:2087723]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-6 - Starting...
+[2023-06-02 14:16:10:2087724]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.z.hikari.util.DriverDataSource        [0;39m [2m:[0;39m Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-06-02 14:16:10:2087849]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-6 - Start completed.
+[2023-06-02 14:16:10:2087849]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.h.H2ConsoleAutoConfiguration    [0;39m [2m:[0;39m H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+[2023-06-02 14:16:10:2087867]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.jpa.internal.util.LogHelper         [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-02 14:16:10:2087876]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[2023-06-02 14:16:10:2087877]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Oracle9Dialect    [0;39m [2m:[0;39m HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2023-06-02 14:16:10:2087877]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.OracleDialect     [0;39m [2m:[0;39m HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[2023-06-02 14:16:10:2087917]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-02 14:16:10:2087917]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 14:16:10:2087986]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-02 14:16:10:2088021]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.w.s.WelcomePageHandlerMapping   [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2023-06-02 14:16:10:2088045]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mion$DefaultTemplateResolverConfiguration[0;39m [2m:[0;39m Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2023-06-02 14:16:10:2088076]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2023-06-02 14:16:10:2088084]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Starting ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:10:2088087]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat started on port(s): 8087 (http) with context path ''
+[2023-06-02 14:16:10:2088091]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Started ToyProjectApplication in 0.734 seconds (JVM running for 2089.747)
+[2023-06-02 14:16:10:2088092]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2023-06-02 14:16:12:2090168]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-34][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Pausing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:12:2090169]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-34][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2023-06-02 14:16:12:2090172]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-34][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Stopping ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:12:2090174]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-34][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Destroying ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:12:2090175]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-34][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 14:16:12:2090175]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-34][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-6 - Shutdown initiated...
+[2023-06-02 14:16:12:2090244]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-34][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-6 - Shutdown completed.
+[2023-06-02 14:16:12:2090305]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 9272 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+[2023-06-02 14:16:12:2090305]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2023-06-02 14:16:12:2090491]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-02 14:16:12:2090506]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+[2023-06-02 14:16:12:2090561]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat initialized with port(s): 8087 (http)
+[2023-06-02 14:16:12:2090562]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Initializing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:12:2090562]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Starting service [Tomcat]
+[2023-06-02 14:16:12:2090562]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardEngine        [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-06-02 14:16:13:2090591]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2023-06-02 14:16:13:2090592]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 285 ms
+[2023-06-02 14:16:13:2090601]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-7 - Starting...
+[2023-06-02 14:16:13:2090601]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.z.hikari.util.DriverDataSource        [0;39m [2m:[0;39m Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-06-02 14:16:13:2090707]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-7 - Start completed.
+[2023-06-02 14:16:13:2090708]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.h.H2ConsoleAutoConfiguration    [0;39m [2m:[0;39m H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+[2023-06-02 14:16:13:2090722]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.jpa.internal.util.LogHelper         [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-02 14:16:13:2090729]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[2023-06-02 14:16:13:2090730]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Oracle9Dialect    [0;39m [2m:[0;39m HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2023-06-02 14:16:13:2090730]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.OracleDialect     [0;39m [2m:[0;39m HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[2023-06-02 14:16:13:2090760]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-02 14:16:13:2090760]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 14:16:13:2090809]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-02 14:16:13:2090834]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.w.s.WelcomePageHandlerMapping   [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2023-06-02 14:16:13:2090850]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mion$DefaultTemplateResolverConfiguration[0;39m [2m:[0;39m Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2023-06-02 14:16:13:2090870]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2023-06-02 14:16:13:2090876]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Starting ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:13:2090878]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat started on port(s): 8087 (http) with context path ''
+[2023-06-02 14:16:13:2090881]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Started ToyProjectApplication in 0.608 seconds (JVM running for 2092.537)
+[2023-06-02 14:16:13:2090881]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2023-06-02 14:16:29:2107497]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-39][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Pausing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:29:2107498]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-39][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2023-06-02 14:16:29:2107502]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-39][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Stopping ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:29:2107503]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-39][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Destroying ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:29:2107505]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-39][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 14:16:29:2107505]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-39][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-7 - Shutdown initiated...
+[2023-06-02 14:16:29:2107561]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-39][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-7 - Shutdown completed.
+[2023-06-02 14:16:30:2107655]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 9272 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+[2023-06-02 14:16:30:2107655]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2023-06-02 14:16:30:2107874]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-02 14:16:30:2107889]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+[2023-06-02 14:16:30:2107954]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat initialized with port(s): 8087 (http)
+[2023-06-02 14:16:30:2107954]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Initializing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:30:2107954]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Starting service [Tomcat]
+[2023-06-02 14:16:30:2107954]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardEngine        [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-06-02 14:16:30:2107990]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2023-06-02 14:16:30:2107990]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 332 ms
+[2023-06-02 14:16:30:2107998]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-8 - Starting...
+[2023-06-02 14:16:30:2107998]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.z.hikari.util.DriverDataSource        [0;39m [2m:[0;39m Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-06-02 14:16:30:2108126]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-8 - Start completed.
+[2023-06-02 14:16:30:2108126]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.h.H2ConsoleAutoConfiguration    [0;39m [2m:[0;39m H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+[2023-06-02 14:16:30:2108149]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.jpa.internal.util.LogHelper         [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-02 14:16:30:2108158]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[2023-06-02 14:16:30:2108159]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Oracle9Dialect    [0;39m [2m:[0;39m HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2023-06-02 14:16:30:2108159]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.OracleDialect     [0;39m [2m:[0;39m HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[2023-06-02 14:16:30:2108196]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-02 14:16:30:2108196]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 14:16:30:2108264]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-02 14:16:30:2108297]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.w.s.WelcomePageHandlerMapping   [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2023-06-02 14:16:30:2108321]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mion$DefaultTemplateResolverConfiguration[0;39m [2m:[0;39m Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2023-06-02 14:16:30:2108349]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2023-06-02 14:16:30:2108355]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Starting ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:30:2108358]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat started on port(s): 8087 (http) with context path ''
+[2023-06-02 14:16:30:2108362]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Started ToyProjectApplication in 0.758 seconds (JVM running for 2110.018)
+[2023-06-02 14:16:30:2108363]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2023-06-02 14:16:32:2110467]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-44][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Pausing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:32:2110467]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-44][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2023-06-02 14:16:32:2110470]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-44][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Stopping ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:32:2110471]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-44][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Destroying ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:32:2110472]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-44][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 14:16:32:2110472]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-44][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-8 - Shutdown initiated...
+[2023-06-02 14:16:32:2110516]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[      Thread-44][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-8 - Shutdown completed.
+[2023-06-02 14:16:33:2110593]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 9272 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+[2023-06-02 14:16:33:2110594]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2023-06-02 14:16:33:2110805]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-06-02 14:16:33:2110819]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.s.d.r.c.RepositoryConfigurationDelegate[0;39m [2m:[0;39m Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+[2023-06-02 14:16:33:2110889]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat initialized with port(s): 8087 (http)
+[2023-06-02 14:16:33:2110889]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Initializing ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:33:2110889]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardService       [0;39m [2m:[0;39m Starting service [Tomcat]
+[2023-06-02 14:16:33:2110889]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.catalina.core.StandardEngine        [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2023-06-02 14:16:33:2110919]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2023-06-02 14:16:33:2110919]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 323 ms
+[2023-06-02 14:16:33:2110927]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-9 - Starting...
+[2023-06-02 14:16:33:2110927]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mc.z.hikari.util.DriverDataSource        [0;39m [2m:[0;39m Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+[2023-06-02 14:16:33:2111122]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-9 - Start completed.
+[2023-06-02 14:16:33:2111122]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.h.H2ConsoleAutoConfiguration    [0;39m [2m:[0;39m H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+[2023-06-02 14:16:33:2111137]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.jpa.internal.util.LogHelper         [0;39m [2m:[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-06-02 14:16:33:2111144]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Dialect           [0;39m [2m:[0;39m HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[2023-06-02 14:16:33:2111144]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.Oracle9Dialect    [0;39m [2m:[0;39m HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[2023-06-02 14:16:33:2111144]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36morg.hibernate.dialect.OracleDialect     [0;39m [2m:[0;39m HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[2023-06-02 14:16:33:2111194]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator      [0;39m [2m:[0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-06-02 14:16:33:2111194]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 14:16:33:2111240]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mJpaBaseConfiguration$JpaWebConfiguration[0;39m [2m:[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-06-02 14:16:33:2111266]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.a.w.s.WelcomePageHandlerMapping   [0;39m [2m:[0;39m Adding welcome page: class path resource [static/index.html]
+[2023-06-02 14:16:33:2111282]  [33mWARN [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mion$DefaultTemplateResolverConfiguration[0;39m [2m:[0;39m Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2023-06-02 14:16:33:2111298]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2023-06-02 14:16:33:2111307]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.a.coyote.http11.Http11NioProtocol     [0;39m [2m:[0;39m Starting ProtocolHandler ["http-nio-8087"]
+[2023-06-02 14:16:33:2111310]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer        [0;39m [2m:[0;39m Tomcat started on port(s): 8087 (http) with context path ''
+[2023-06-02 14:16:33:2111315]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mp.toyproject.ToyProjectApplication      [0;39m [2m:[0;39m Started ToyProjectApplication in 0.761 seconds (JVM running for 2112.971)
+[2023-06-02 14:16:33:2111316]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2023-06-02 14:16:37:2115227]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[ionShutdownHook][0;39m [36mj.LocalContainerEntityManagerFactoryBean[0;39m [2m:[0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-06-02 14:16:37:2115228]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[ionShutdownHook][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-9 - Shutdown initiated...
+[2023-06-02 14:16:37:2115262]  [32mINFO [0;39m [35m9272[0;39m [2m---[0;39m [2m[ionShutdownHook][0;39m [36mcom.zaxxer.hikari.HikariDataSource      [0;39m [2m:[0;39m HikariPool-9 - Shutdown completed.

@@ -23,7 +23,6 @@ application-dev.properties
 application-stg.properties
 application-prd.properties
 .idea
-*.log
 *.iws
 *.iml
 *.ipr
