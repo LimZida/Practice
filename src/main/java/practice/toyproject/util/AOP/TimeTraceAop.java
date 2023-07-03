@@ -1,4 +1,4 @@
-package practice.toyproject.aop;
+package practice.toyproject.util.AOP;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -8,11 +8,10 @@ import org.springframework.stereotype.Component;
 /**
  * title : TimeTraceAop
  *
- * description : AOP 적용, 스프링 빈 등록
+ * description : 함수 실행 시간에 대해 AOP 적용
  *
  * reference :  시간 aop : https://hseungyeon.tistory.com/349
  *              aop 어노테이션 : https://programforlife.tistory.com/107
- *
  *
  * author : 임현영
  * date : 2023.07.03

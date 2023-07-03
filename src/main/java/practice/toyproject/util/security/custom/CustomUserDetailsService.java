@@ -1,14 +1,14 @@
-package practice.toyproject.util.custom;
+package practice.toyproject.util.security.custom;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
-import practice.toyproject.util.custom.entity.UserDetailsImpl;
+import practice.toyproject.util.security.custom.entity.UserDetailsImpl;
 import practice.toyproject.user.entity.User;
 import practice.toyproject.user.repository.UserRepository;
+
 /**
  * title : CustomUserDetailsService
  *

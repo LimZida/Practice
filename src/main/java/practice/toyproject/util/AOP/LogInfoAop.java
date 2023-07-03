@@ -1,4 +1,4 @@
-package practice.toyproject.aop;
+package practice.toyproject.util.AOP;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
@@ -13,11 +13,10 @@ import java.lang.reflect.Method;
 /**
  * title : LogInfoAop
  *
- * description : AOP 적용, 스프링 빈 등록
+ * description : 요청이나 응답 파라미터에 대해 log AOP 적용
  *
  * reference :  로그 aop : https://velog.io/@dhk22/Spring-AOP-%EA%B0%84%EB%8B%A8%ED%95%9C-AOP-%EC%A0%81%EC%9A%A9-%EC%98%88%EC%A0%9C-Logging
- *
- *
+ *              aop 어노테이션 : https://programforlife.tistory.com/107
  *
  * author : 임현영
  * date : 2023.07.03
@@ -44,6 +43,7 @@ public class LogInfoAop {
         for (Object arg : args) {
             log.info("요청 파라미터 타입 = {}", arg.getClass().getSimpleName());
             log.info("요청 파라미터 값 = {}", arg);
+            log.info(" ");
         }
     }
 

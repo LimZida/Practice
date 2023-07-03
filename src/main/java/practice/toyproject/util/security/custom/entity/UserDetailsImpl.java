@@ -1,4 +1,4 @@
-package practice.toyproject.util.custom.entity;
+package practice.toyproject.util.security.custom.entity;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
