@@ -36,7 +36,7 @@ public class LogInfoAop {
     public void beforeParameterLog(JoinPoint joinPoint) {
         // 메서드 정보 받아오기
         Method method = getMethod(joinPoint);
-        log.info("======= 요청 메소드명 {} =======", method.getName());
+        log.info("======= 요청 {} =======",method.getName());
 
         // 파라미터 받아오기
         Object[] args = joinPoint.getArgs();
@@ -44,7 +44,6 @@ public class LogInfoAop {
         for (Object arg : args) {
             log.info("요청 파라미터 타입 = {}", arg.getClass().getSimpleName());
             log.info("요청 파라미터 값 = {}", arg);
-            log.info(" ");
         }
     }
 
@@ -53,11 +52,10 @@ public class LogInfoAop {
     public void afterReturnLog(JoinPoint joinPoint, Object returnObj) {
         // 메서드 정보 받아오기
         Method method = getMethod(joinPoint);
-        log.info("======= 리턴 메소드명 {} =======", method.getName());
 
-        log.info("리턴 파라미터 타입 = {}", returnObj.getClass().getSimpleName());
-        log.info("리턴 파라미터 값 = {}", returnObj);
-        log.info(" ");
+        log.info("======= 응답 {} =======", method.getName());
+        log.info("응답 파라미터 타입 = {}", returnObj.getClass().getSimpleName());
+        log.info("응답 파라미터 값 = {}", returnObj);
     }
 
     // JoinPoint로 메서드 정보 가져오기

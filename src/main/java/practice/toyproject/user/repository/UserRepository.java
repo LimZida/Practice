@@ -5,7 +5,6 @@ import org.springframework.stereotype.Repository;
 import practice.toyproject.user.entity.User;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
  * title : userRepository

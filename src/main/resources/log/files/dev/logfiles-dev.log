@@ -491,3 +491,551 @@
 2023-07-03 15:22:11.905 INFO  47214 --- [ SpringApplicationShutdownHook ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-07-03 15:22:11.908 INFO  47217 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2023-07-03 15:22:11.944 INFO  47253 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-03 15:24:44.289 INFO  1328 --- [ background-preinit ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-03 15:24:44.290 INFO  1329 --- [ restartedMain ] p.toyproject.ToyProjectApplication - Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 4200 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+2023-07-03 15:24:44.291 INFO  1330 --- [ restartedMain ] p.toyproject.ToyProjectApplication - The following 1 profile is active: "dev"
+2023-07-03 15:24:44.371 INFO  1410 --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.1.0.0\50044485aea10afd7defeee8109c5195b4d3cae2\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.1.0.0/50044485aea10afd7defeee8109c5195b4d3cae2/oraclepki.jar
+2023-07-03 15:24:44.371 INFO  1410 --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.nls\orai18n\21.1.0.0\c36ad4814d128f1259c81fad5d52ad2033e6ad37\orai18n-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-mapping.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-utility.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-collation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-translation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-net.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-servlet.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-lcsd.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-tools.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/gdk_custom.jar
+2023-07-03 15:24:44.372 INFO  1411 --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-03 15:24:44.372 INFO  1411 --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-03 15:24:45.878 INFO  2917 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-03 15:24:46.052 INFO  3091 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 159 ms. Found 2 JPA repository interfaces.
+2023-07-03 15:24:47.466 INFO  4505 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8087 (http)
+2023-07-03 15:24:47.475 INFO  4514 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+2023-07-03 15:24:47.476 INFO  4515 --- [ restartedMain ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-03 15:24:47.477 INFO  4516 --- [ restartedMain ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-03 15:24:47.629 INFO  4668 --- [ restartedMain ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-03 15:24:47.629 INFO  4668 --- [ restartedMain ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3256 ms
+2023-07-03 15:24:47.695 INFO  4734 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-03 15:24:47.701 WARN  4740 --- [ restartedMain ] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-07-03 15:24:48.001 INFO  5040 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-03 15:24:48.009 INFO  5048 --- [ restartedMain ] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+2023-07-03 15:24:48.050 INFO  5089 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 corsFilter =======
+2023-07-03 15:24:48.051 INFO  5090 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 파라미터가 없습니다.
+2023-07-03 15:24:48.076 INFO  5115 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(CorsFilter practice.toyproject.util.security.CorsFilterConfig.corsFilter()) 21ms
+2023-07-03 15:24:48.076 INFO  5115 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 corsFilter =======
+2023-07-03 15:24:48.076 INFO  5115 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = CorsFilter
+2023-07-03 15:24:48.077 INFO  5116 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = org.springframework.web.filter.CorsFilter@4ec54562
+2023-07-03 15:24:48.077 INFO  5116 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:24:48.270 INFO  5309 --- [ restartedMain ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-03 15:24:48.338 INFO  5377 --- [ restartedMain ] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-03 15:24:48.494 INFO  5533 --- [ restartedMain ] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-03 15:24:48.607 INFO  5646 --- [ restartedMain ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2023-07-03 15:24:48.612 WARN  5651 --- [ restartedMain ] o.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2023-07-03 15:24:48.613 WARN  5652 --- [ restartedMain ] org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2023-07-03 15:24:49.350 INFO  6389 --- [ restartedMain ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-03 15:24:49.364 INFO  6403 --- [ restartedMain ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03 15:24:50.468 WARN  7507 --- [ restartedMain ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-03 15:24:50.538 INFO  7577 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 passwordEncoder =======
+2023-07-03 15:24:50.539 INFO  7578 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 파라미터가 없습니다.
+2023-07-03 15:24:50.567 INFO  7606 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(PasswordEncoder practice.toyproject.util.security.SecurityConfig.passwordEncoder()) 28ms
+2023-07-03 15:24:50.567 INFO  7606 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 passwordEncoder =======
+2023-07-03 15:24:50.567 INFO  7606 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = DelegatingPasswordEncoder
+2023-07-03 15:24:50.568 INFO  7607 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = org.springframework.security.crypto.password.DelegatingPasswordEncoder@5150708b
+2023-07-03 15:24:50.568 INFO  7607 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:24:50.790 INFO  7829 --- [ restartedMain ] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8dcbb26, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60a86a06, org.springframework.security.web.context.SecurityContextPersistenceFilter@f5a2453, org.springframework.security.web.header.HeaderWriterFilter@ac03668, org.springframework.web.filter.CorsFilter@4ec54562, org.springframework.security.web.authentication.logout.LogoutFilter@4654b40c, practice.toyproject.util.JWT.JwtFilter@334c8bae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37cf1b40, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5fe5d4dd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b0b0672, org.springframework.security.web.session.SessionManagementFilter@69846705, org.springframework.security.web.access.ExceptionTranslationFilter@171d0738, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a8b79cb]
+2023-07-03 15:24:51.105 INFO  8144 --- [ restartedMain ] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2023-07-03 15:24:51.262 WARN  8301 --- [ restartedMain ] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-03 15:24:51.506 INFO  8545 --- [ restartedMain ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-03 15:24:51.524 INFO  8563 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+2023-07-03 15:24:51.539 INFO  8578 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8087 (http) with context path ''
+2023-07-03 15:24:51.551 INFO  8590 --- [ restartedMain ] p.toyproject.ToyProjectApplication - Started ToyProjectApplication in 8.116 seconds (JVM running for 11.207)
+2023-07-03 15:25:07.085 INFO  24124 --- [ http-nio-8087-exec-2 ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-03 15:25:07.085 INFO  24124 --- [ http-nio-8087-exec-2 ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-03 15:25:07.087 INFO  24126 --- [ http-nio-8087-exec-2 ] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-07-03 15:25:07.245 INFO  24284 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 signUpContoller =======
+2023-07-03 15:25:07.245 INFO  24284 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = SignUpDto
+2023-07-03 15:25:07.245 INFO  24284 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = SignUpDto(userId=hi, userHp=0104454470, userPw=zzz, userName=임현영)
+2023-07-03 15:25:07.253 INFO  24292 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:25:07.257 INFO  24296 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 saveUserService =======
+2023-07-03 15:25:07.257 INFO  24296 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = SignUpDto
+2023-07-03 15:25:07.257 INFO  24296 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = SignUpDto(userId=hi, userHp=0104454470, userPw=zzz, userName=임현영)
+2023-07-03 15:25:07.257 INFO  24296 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:25:07.362 INFO  24401 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 save =======
+2023-07-03 15:25:07.362 INFO  24401 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = User
+2023-07-03 15:25:07.362 INFO  24401 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = User(userId=hi, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$qRTLt1THHJNouFXfBPu9SePnQdhLL089j4Z6b1XBqFtDM1O1RiwfC, imageUrl=, updateDate=null, regDate=null, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:25:07.379 INFO  24418 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:25:07.626 INFO  24665 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(User practice.toyproject.user.repository.UserRepository.save(User)) 247ms
+2023-07-03 15:25:07.627 INFO  24666 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 save =======
+2023-07-03 15:25:07.627 INFO  24666 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = User
+2023-07-03 15:25:07.627 INFO  24666 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = User(userId=hi, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$qRTLt1THHJNouFXfBPu9SePnQdhLL089j4Z6b1XBqFtDM1O1RiwfC, imageUrl=, updateDate=null, regDate=2023-07-03 15:25:07.582, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:25:07.628 INFO  24667 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:25:07.628 INFO  24667 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(User practice.toyproject.user.service.UserServiceImpl.saveUserService(SignUpDto)) 370ms
+2023-07-03 15:25:07.628 INFO  24667 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 saveUserService =======
+2023-07-03 15:25:07.628 INFO  24667 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = User
+2023-07-03 15:25:07.629 INFO  24668 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = User(userId=hi, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$qRTLt1THHJNouFXfBPu9SePnQdhLL089j4Z6b1XBqFtDM1O1RiwfC, imageUrl=, updateDate=null, regDate=2023-07-03 15:25:07.582, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:25:07.629 INFO  24668 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:25:07.629 INFO  24668 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(User practice.toyproject.user.controller.UserController.signUpContoller(SignUpDto)) 375ms
+2023-07-03 15:25:07.629 INFO  24668 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 signUpContoller =======
+2023-07-03 15:25:07.630 INFO  24669 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = User
+2023-07-03 15:25:07.630 INFO  24669 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = User(userId=hi, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$qRTLt1THHJNouFXfBPu9SePnQdhLL089j4Z6b1XBqFtDM1O1RiwfC, imageUrl=, updateDate=null, regDate=2023-07-03 15:25:07.582, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:25:07.630 INFO  24669 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:25:38.623 INFO  55662 --- [ SpringApplicationShutdownHook ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03 15:25:38.628 INFO  55667 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-03 15:25:38.667 INFO  55706 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-03 15:25:46.354 INFO  1143 --- [ background-preinit ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-03 15:25:46.355 INFO  1144 --- [ restartedMain ] p.toyproject.ToyProjectApplication - Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 29000 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+2023-07-03 15:25:46.356 INFO  1145 --- [ restartedMain ] p.toyproject.ToyProjectApplication - The following 1 profile is active: "dev"
+2023-07-03 15:25:46.400 INFO  1189 --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.1.0.0\50044485aea10afd7defeee8109c5195b4d3cae2\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.1.0.0/50044485aea10afd7defeee8109c5195b4d3cae2/oraclepki.jar
+2023-07-03 15:25:46.400 INFO  1189 --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.nls\orai18n\21.1.0.0\c36ad4814d128f1259c81fad5d52ad2033e6ad37\orai18n-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-mapping.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-utility.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-collation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-translation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-net.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-servlet.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-lcsd.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-tools.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/gdk_custom.jar
+2023-07-03 15:25:46.401 INFO  1190 --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-03 15:25:46.401 INFO  1190 --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-03 15:25:47.236 INFO  2025 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-03 15:25:47.332 INFO  2121 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+2023-07-03 15:25:48.158 INFO  2947 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8087 (http)
+2023-07-03 15:25:48.167 INFO  2956 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+2023-07-03 15:25:48.168 INFO  2957 --- [ restartedMain ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-03 15:25:48.169 INFO  2958 --- [ restartedMain ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-03 15:25:48.306 INFO  3095 --- [ restartedMain ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-03 15:25:48.306 INFO  3095 --- [ restartedMain ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1904 ms
+2023-07-03 15:25:48.371 INFO  3160 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-03 15:25:48.376 WARN  3165 --- [ restartedMain ] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-07-03 15:25:48.695 INFO  3484 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-03 15:25:48.710 INFO  3499 --- [ restartedMain ] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+2023-07-03 15:25:48.764 INFO  3553 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 corsFilter =======
+2023-07-03 15:25:48.764 INFO  3553 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 파라미터가 없습니다.
+2023-07-03 15:25:48.789 INFO  3578 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(CorsFilter practice.toyproject.util.security.CorsFilterConfig.corsFilter()) 19ms
+2023-07-03 15:25:48.789 INFO  3578 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:25:48.789 INFO  3578 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 corsFilter =======
+2023-07-03 15:25:48.789 INFO  3578 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = CorsFilter
+2023-07-03 15:25:48.789 INFO  3578 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = org.springframework.web.filter.CorsFilter@328338ae
+2023-07-03 15:25:48.938 INFO  3727 --- [ restartedMain ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-03 15:25:48.997 INFO  3786 --- [ restartedMain ] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-03 15:25:49.141 INFO  3930 --- [ restartedMain ] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-03 15:25:49.259 INFO  4048 --- [ restartedMain ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2023-07-03 15:25:49.264 WARN  4053 --- [ restartedMain ] o.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2023-07-03 15:25:49.266 WARN  4055 --- [ restartedMain ] org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2023-07-03 15:25:49.992 INFO  4781 --- [ restartedMain ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-03 15:25:50.004 INFO  4793 --- [ restartedMain ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03 15:25:50.534 WARN  5323 --- [ restartedMain ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-03 15:25:50.567 INFO  5356 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 passwordEncoder =======
+2023-07-03 15:25:50.568 INFO  5357 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 파라미터가 없습니다.
+2023-07-03 15:25:50.580 INFO  5369 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(PasswordEncoder practice.toyproject.util.security.SecurityConfig.passwordEncoder()) 12ms
+2023-07-03 15:25:50.581 INFO  5370 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:25:50.581 INFO  5370 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 passwordEncoder =======
+2023-07-03 15:25:50.581 INFO  5370 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = DelegatingPasswordEncoder
+2023-07-03 15:25:50.581 INFO  5370 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = org.springframework.security.crypto.password.DelegatingPasswordEncoder@47f7d129
+2023-07-03 15:25:50.739 INFO  5528 --- [ restartedMain ] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@353fd9e6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54db6bd6, org.springframework.security.web.context.SecurityContextPersistenceFilter@2cc31679, org.springframework.security.web.header.HeaderWriterFilter@2cff7d21, org.springframework.web.filter.CorsFilter@328338ae, org.springframework.security.web.authentication.logout.LogoutFilter@37ac9be8, practice.toyproject.util.JWT.JwtFilter@f3ef263, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f8d414, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30617953, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ca1da55, org.springframework.security.web.session.SessionManagementFilter@ebb7d42, org.springframework.security.web.access.ExceptionTranslationFilter@3fefe5f6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5eb6ed1e]
+2023-07-03 15:25:51.062 INFO  5851 --- [ restartedMain ] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2023-07-03 15:25:51.190 WARN  5979 --- [ restartedMain ] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-03 15:25:51.423 INFO  6212 --- [ restartedMain ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-03 15:25:51.442 INFO  6231 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+2023-07-03 15:25:51.457 INFO  6246 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8087 (http) with context path ''
+2023-07-03 15:25:51.469 INFO  6258 --- [ restartedMain ] p.toyproject.ToyProjectApplication - Started ToyProjectApplication in 5.827 seconds (JVM running for 8.123)
+2023-07-03 15:25:56.894 INFO  11683 --- [ http-nio-8087-exec-1 ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-03 15:25:56.895 INFO  11684 --- [ http-nio-8087-exec-1 ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-03 15:25:56.896 INFO  11685 --- [ http-nio-8087-exec-1 ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-07-03 15:25:57.008 INFO  11797 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 signUpContoller =======
+2023-07-03 15:25:57.008 INFO  11797 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = SignUpDto
+2023-07-03 15:25:57.008 INFO  11797 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = SignUpDto(userId=hi!, userHp=0104454470, userPw=zzz, userName=임현영)
+2023-07-03 15:25:57.013 INFO  11802 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:25:57.017 INFO  11806 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 saveUserService =======
+2023-07-03 15:25:57.017 INFO  11806 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = SignUpDto
+2023-07-03 15:25:57.017 INFO  11806 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = SignUpDto(userId=hi!, userHp=0104454470, userPw=zzz, userName=임현영)
+2023-07-03 15:25:57.017 INFO  11806 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:25:57.109 INFO  11898 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 save =======
+2023-07-03 15:25:57.109 INFO  11898 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = User
+2023-07-03 15:25:57.109 INFO  11898 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = User(userId=hi!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$RhGCvQrwAmDctRZNOxAKwOEzQze6U/9/vLSV7aVaLRUS3PBy9iKwK, imageUrl=, updateDate=null, regDate=null, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:25:57.124 INFO  11913 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:25:57.303 INFO  12092 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(User practice.toyproject.user.repository.UserRepository.save(User)) 178ms
+2023-07-03 15:25:57.303 INFO  12092 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:25:57.303 INFO  12092 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 save =======
+2023-07-03 15:25:57.303 INFO  12092 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = User
+2023-07-03 15:25:57.303 INFO  12092 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = User(userId=hi!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$RhGCvQrwAmDctRZNOxAKwOEzQze6U/9/vLSV7aVaLRUS3PBy9iKwK, imageUrl=, updateDate=null, regDate=2023-07-03 15:25:57.272, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:25:57.304 INFO  12093 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(User practice.toyproject.user.service.UserServiceImpl.saveUserService(SignUpDto)) 286ms
+2023-07-03 15:25:57.304 INFO  12093 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:25:57.304 INFO  12093 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 saveUserService =======
+2023-07-03 15:25:57.304 INFO  12093 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = User
+2023-07-03 15:25:57.304 INFO  12093 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = User(userId=hi!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$RhGCvQrwAmDctRZNOxAKwOEzQze6U/9/vLSV7aVaLRUS3PBy9iKwK, imageUrl=, updateDate=null, regDate=2023-07-03 15:25:57.272, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:25:57.304 INFO  12093 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(User practice.toyproject.user.controller.UserController.signUpContoller(SignUpDto)) 290ms
+2023-07-03 15:25:57.304 INFO  12093 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:25:57.304 INFO  12093 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 signUpContoller =======
+2023-07-03 15:25:57.304 INFO  12093 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = User
+2023-07-03 15:25:57.304 INFO  12093 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = User(userId=hi!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$RhGCvQrwAmDctRZNOxAKwOEzQze6U/9/vLSV7aVaLRUS3PBy9iKwK, imageUrl=, updateDate=null, regDate=2023-07-03 15:25:57.272, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:26:27.997 INFO  42786 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 loginContoller =======
+2023-07-03 15:26:27.998 INFO  42787 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = LoginDto
+2023-07-03 15:26:27.998 INFO  42787 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = LoginDto(userId=hi!, userPw=zzz, accessJWT=null, refreshJWT=null, tokenType=null)
+2023-07-03 15:26:28.001 INFO  42790 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:26:28.002 INFO  42791 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 selectUserService =======
+2023-07-03 15:26:28.002 INFO  42791 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = LoginDto
+2023-07-03 15:26:28.002 INFO  42791 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = LoginDto(userId=hi!, userPw=zzz, accessJWT=null, refreshJWT=null, tokenType=null)
+2023-07-03 15:26:28.002 INFO  42791 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:26:28.003 INFO  42792 --- [ http-nio-8087-exec-3 ] p.t.user.service.UserServiceImpl - ####### authenticationToken 정보 : UsernamePasswordAuthenticationToken [Principal=hi!, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]
+2023-07-03 15:26:28.070 INFO  42859 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 loadUserByUsername =======
+2023-07-03 15:26:28.071 INFO  42860 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = String
+2023-07-03 15:26:28.071 INFO  42860 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = hi!
+2023-07-03 15:26:28.071 INFO  42860 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:26:28.074 INFO  42863 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 findUserByUserId =======
+2023-07-03 15:26:28.074 INFO  42863 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = String
+2023-07-03 15:26:28.074 INFO  42863 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = hi!
+2023-07-03 15:26:28.074 INFO  42863 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:26:28.203 INFO  42992 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(User practice.toyproject.user.repository.UserRepository.findUserByUserId(String)) 129ms
+2023-07-03 15:26:28.203 INFO  42992 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:26:28.203 INFO  42992 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 findUserByUserId =======
+2023-07-03 15:26:28.203 INFO  42992 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = User
+2023-07-03 15:26:28.203 INFO  42992 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = User(userId=hi!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$RhGCvQrwAmDctRZNOxAKwOEzQze6U/9/vLSV7aVaLRUS3PBy9iKwK, imageUrl=null, updateDate=null, regDate=2023-07-03 15:25:57.0, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:26:28.205 INFO  42994 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(UserDetails practice.toyproject.util.custom.CustomUserDetailsService.loadUserByUsername(String)) 134ms
+2023-07-03 15:26:28.205 INFO  42994 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:26:28.205 INFO  42994 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 loadUserByUsername =======
+2023-07-03 15:26:28.205 INFO  42994 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = UserDetailsImpl
+2023-07-03 15:26:28.205 INFO  42994 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = practice.toyproject.util.custom.entity.UserDetailsImpl@3038f1b2
+2023-07-03 15:26:28.280 INFO  43069 --- [ http-nio-8087-exec-3 ] p.t.user.service.UserServiceImpl - ####### authentication getobject 정보 : org.springframework.security.authentication.ProviderManager@243d0f65
+2023-07-03 15:26:28.280 INFO  43069 --- [ http-nio-8087-exec-3 ] p.t.user.service.UserServiceImpl - ####### authentication 정보 : practice.toyproject.util.custom.entity.UserDetailsImpl@3038f1b2
+2023-07-03 15:26:28.280 INFO  43069 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 generateAccessToken =======
+2023-07-03 15:26:28.281 INFO  43070 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = UsernamePasswordAuthenticationToken
+2023-07-03 15:26:28.281 INFO  43070 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = UsernamePasswordAuthenticationToken [Principal=practice.toyproject.util.custom.entity.UserDetailsImpl@3038f1b2, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]
+2023-07-03 15:26:28.281 INFO  43070 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:26:28.306 INFO  43095 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(String practice.toyproject.util.JWT.JwtProvider.generateAccessToken(Authentication)) 25ms
+2023-07-03 15:26:28.306 INFO  43095 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:26:28.306 INFO  43095 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 generateAccessToken =======
+2023-07-03 15:26:28.306 INFO  43095 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = String
+2023-07-03 15:26:28.306 INFO  43095 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoaSEiLCJhdXRoIjoiUk9MRV9VU0VSIiwiaWF0IjoxNjg4MzY1NTg4LCJleHAiOjE2ODgzNjczODh9.VvmjC9NhUzR4A1-7l7bFlKWMAv5rMLA96J6AKdoEXGgDuyGrIAedISCFhkQji4x2c0MBPIB4Y3wDIbW4FjeRhQ
+2023-07-03 15:26:28.307 INFO  43096 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 generateRefreshToken =======
+2023-07-03 15:26:28.307 INFO  43096 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = UsernamePasswordAuthenticationToken
+2023-07-03 15:26:28.307 INFO  43096 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = UsernamePasswordAuthenticationToken [Principal=practice.toyproject.util.custom.entity.UserDetailsImpl@3038f1b2, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]
+2023-07-03 15:26:28.307 INFO  43096 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:26:28.308 INFO  43097 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(String practice.toyproject.util.JWT.JwtProvider.generateRefreshToken(Authentication)) 1ms
+2023-07-03 15:26:28.308 INFO  43097 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:26:28.308 INFO  43097 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 generateRefreshToken =======
+2023-07-03 15:26:28.308 INFO  43097 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = String
+2023-07-03 15:26:28.308 INFO  43097 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoaSEiLCJhdXRoIjoiUk9MRV9VU0VSIiwiaWF0IjoxNjg4MzY1NTg4LCJleHAiOjE2ODg5NzAzODh9.Pkj-gxSpp727TYQq25ksy2WMy-8aTXEjQNEt54YB1M5QglwhUzCLVD20OhBi-E-H2OgyXB41XvZq4iQwMtvZ_w
+2023-07-03 15:26:28.308 INFO  43097 --- [ http-nio-8087-exec-3 ] p.t.user.service.UserServiceImpl - ####### accessJWT 정보 : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoaSEiLCJhdXRoIjoiUk9MRV9VU0VSIiwiaWF0IjoxNjg4MzY1NTg4LCJleHAiOjE2ODgzNjczODh9.VvmjC9NhUzR4A1-7l7bFlKWMAv5rMLA96J6AKdoEXGgDuyGrIAedISCFhkQji4x2c0MBPIB4Y3wDIbW4FjeRhQ
+2023-07-03 15:26:28.308 INFO  43097 --- [ http-nio-8087-exec-3 ] p.t.user.service.UserServiceImpl - ####### user 정보 : hi!
+2023-07-03 15:26:28.309 INFO  43098 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 요청 메소드명 save =======
+2023-07-03 15:26:28.309 INFO  43098 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = Token
+2023-07-03 15:26:28.309 INFO  43098 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = Token(userId=hi!, accessJwt=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoaSEiLCJhdXRoIjoiUk9MRV9VU0VSIiwiaWF0IjoxNjg4MzY1NTg4LCJleHAiOjE2ODgzNjczODh9.VvmjC9NhUzR4A1-7l7bFlKWMAv5rMLA96J6AKdoEXGgDuyGrIAedISCFhkQji4x2c0MBPIB4Y3wDIbW4FjeRhQ, refreshJwt=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoaSEiLCJhdXRoIjoiUk9MRV9VU0VSIiwiaWF0IjoxNjg4MzY1NTg4LCJleHAiOjE2ODg5NzAzODh9.Pkj-gxSpp727TYQq25ksy2WMy-8aTXEjQNEt54YB1M5QglwhUzCLVD20OhBi-E-H2OgyXB41XvZq4iQwMtvZ_w)
+2023-07-03 15:26:28.311 INFO  43100 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop -  
+2023-07-03 15:26:28.349 INFO  43138 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(Token practice.toyproject.token.repository.TokenRepository.save(Token)) 38ms
+2023-07-03 15:26:28.349 INFO  43138 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:26:28.349 INFO  43138 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 save =======
+2023-07-03 15:26:28.349 INFO  43138 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = Token
+2023-07-03 15:26:28.349 INFO  43138 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = Token(userId=hi!, accessJwt=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoaSEiLCJhdXRoIjoiUk9MRV9VU0VSIiwiaWF0IjoxNjg4MzY1NTg4LCJleHAiOjE2ODgzNjczODh9.VvmjC9NhUzR4A1-7l7bFlKWMAv5rMLA96J6AKdoEXGgDuyGrIAedISCFhkQji4x2c0MBPIB4Y3wDIbW4FjeRhQ, refreshJwt=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoaSEiLCJhdXRoIjoiUk9MRV9VU0VSIiwiaWF0IjoxNjg4MzY1NTg4LCJleHAiOjE2ODg5NzAzODh9.Pkj-gxSpp727TYQq25ksy2WMy-8aTXEjQNEt54YB1M5QglwhUzCLVD20OhBi-E-H2OgyXB41XvZq4iQwMtvZ_w)
+2023-07-03 15:26:28.350 INFO  43139 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(LoginDto practice.toyproject.user.service.UserServiceImpl.selectUserService(LoginDto)) 348ms
+2023-07-03 15:26:28.350 INFO  43139 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:26:28.350 INFO  43139 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 selectUserService =======
+2023-07-03 15:26:28.350 INFO  43139 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = LoginDto
+2023-07-03 15:26:28.350 INFO  43139 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = LoginDto(userId=hi!, userPw=null, accessJWT=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoaSEiLCJhdXRoIjoiUk9MRV9VU0VSIiwiaWF0IjoxNjg4MzY1NTg4LCJleHAiOjE2ODgzNjczODh9.VvmjC9NhUzR4A1-7l7bFlKWMAv5rMLA96J6AKdoEXGgDuyGrIAedISCFhkQji4x2c0MBPIB4Y3wDIbW4FjeRhQ, refreshJWT=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoaSEiLCJhdXRoIjoiUk9MRV9VU0VSIiwiaWF0IjoxNjg4MzY1NTg4LCJleHAiOjE2ODg5NzAzODh9.Pkj-gxSpp727TYQq25ksy2WMy-8aTXEjQNEt54YB1M5QglwhUzCLVD20OhBi-E-H2OgyXB41XvZq4iQwMtvZ_w, tokenType=Bearer )
+2023-07-03 15:26:28.350 INFO  43139 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop - 수행시간 : execution(LoginDto practice.toyproject.user.controller.UserController.loginContoller(LoginDto)) 348ms
+2023-07-03 15:26:28.350 INFO  43139 --- [ http-nio-8087-exec-3 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:26:28.350 INFO  43139 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - ======= 리턴 메소드명 loginContoller =======
+2023-07-03 15:26:28.350 INFO  43139 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 타입 = LoginDto
+2023-07-03 15:26:28.350 INFO  43139 --- [ http-nio-8087-exec-3 ] practice.toyproject.aop.LogInfoAop - 리턴 파라미터 값 = LoginDto(userId=hi!, userPw=null, accessJWT=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoaSEiLCJhdXRoIjoiUk9MRV9VU0VSIiwiaWF0IjoxNjg4MzY1NTg4LCJleHAiOjE2ODgzNjczODh9.VvmjC9NhUzR4A1-7l7bFlKWMAv5rMLA96J6AKdoEXGgDuyGrIAedISCFhkQji4x2c0MBPIB4Y3wDIbW4FjeRhQ, refreshJWT=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoaSEiLCJhdXRoIjoiUk9MRV9VU0VSIiwiaWF0IjoxNjg4MzY1NTg4LCJleHAiOjE2ODg5NzAzODh9.Pkj-gxSpp727TYQq25ksy2WMy-8aTXEjQNEt54YB1M5QglwhUzCLVD20OhBi-E-H2OgyXB41XvZq4iQwMtvZ_w, tokenType=Bearer )
+2023-07-03 15:28:11.600 INFO  146389 --- [ SpringApplicationShutdownHook ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03 15:28:11.604 INFO  146393 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-03 15:28:11.646 INFO  146435 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-03 15:30:55.051 INFO  971  --- [ background-preinit ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-03 15:30:55.054 INFO  974  --- [ restartedMain ] p.toyproject.ToyProjectApplication - Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 3376 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+2023-07-03 15:30:55.055 INFO  975  --- [ restartedMain ] p.toyproject.ToyProjectApplication - The following 1 profile is active: "dev"
+2023-07-03 15:30:55.096 INFO  1016 --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.1.0.0\50044485aea10afd7defeee8109c5195b4d3cae2\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.1.0.0/50044485aea10afd7defeee8109c5195b4d3cae2/oraclepki.jar
+2023-07-03 15:30:55.096 INFO  1016 --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.nls\orai18n\21.1.0.0\c36ad4814d128f1259c81fad5d52ad2033e6ad37\orai18n-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-mapping.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-utility.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-collation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-translation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-net.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-servlet.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-lcsd.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-tools.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/gdk_custom.jar
+2023-07-03 15:30:55.096 INFO  1016 --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-03 15:30:55.096 INFO  1016 --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-03 15:30:55.811 INFO  1731 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-03 15:30:55.884 INFO  1804 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2023-07-03 15:30:56.565 INFO  2485 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8087 (http)
+2023-07-03 15:30:56.573 INFO  2493 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+2023-07-03 15:30:56.574 INFO  2494 --- [ restartedMain ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-03 15:30:56.574 INFO  2494 --- [ restartedMain ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-03 15:30:56.683 INFO  2603 --- [ restartedMain ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-03 15:30:56.684 INFO  2604 --- [ restartedMain ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1587 ms
+2023-07-03 15:30:56.739 INFO  2659 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-03 15:30:56.742 WARN  2662 --- [ restartedMain ] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-07-03 15:30:57.011 INFO  2931 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-03 15:30:57.017 INFO  2937 --- [ restartedMain ] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+2023-07-03 15:30:57.055 INFO  2975 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.reflect.Method corsFilter =======
+2023-07-03 15:30:57.056 INFO  2976 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 파라미터가 없습니다.
+2023-07-03 15:30:57.074 INFO  2994 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop - 수행시간 : 16ms
+2023-07-03 15:30:57.074 INFO  2994 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:30:57.074 INFO  2994 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.reflect.Method corsFilter =======
+2023-07-03 15:30:57.074 INFO  2994 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = CorsFilter
+2023-07-03 15:30:57.074 INFO  2994 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = org.springframework.web.filter.CorsFilter@7baab3aa
+2023-07-03 15:30:57.191 INFO  3111 --- [ restartedMain ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-03 15:30:57.237 INFO  3157 --- [ restartedMain ] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-03 15:30:57.381 INFO  3301 --- [ restartedMain ] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-03 15:30:57.487 INFO  3407 --- [ restartedMain ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2023-07-03 15:30:57.491 WARN  3411 --- [ restartedMain ] o.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2023-07-03 15:30:57.492 WARN  3412 --- [ restartedMain ] org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2023-07-03 15:30:58.083 INFO  4003 --- [ restartedMain ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-03 15:30:58.096 INFO  4016 --- [ restartedMain ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03 15:30:58.574 WARN  4494 --- [ restartedMain ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-03 15:30:58.607 INFO  4527 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.reflect.Method passwordEncoder =======
+2023-07-03 15:30:58.607 INFO  4527 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 파라미터가 없습니다.
+2023-07-03 15:30:58.619 INFO  4539 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop - 수행시간 : 12ms
+2023-07-03 15:30:58.620 INFO  4540 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:30:58.620 INFO  4540 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.reflect.Method passwordEncoder =======
+2023-07-03 15:30:58.620 INFO  4540 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = DelegatingPasswordEncoder
+2023-07-03 15:30:58.620 INFO  4540 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = org.springframework.security.crypto.password.DelegatingPasswordEncoder@25d9d839
+2023-07-03 15:30:58.756 INFO  4676 --- [ restartedMain ] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@49a71f7c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7360bae, org.springframework.security.web.context.SecurityContextPersistenceFilter@487f3b3c, org.springframework.security.web.header.HeaderWriterFilter@34be44af, org.springframework.web.filter.CorsFilter@7baab3aa, org.springframework.security.web.authentication.logout.LogoutFilter@67b94ffd, practice.toyproject.util.JWT.JwtFilter@3829213c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5fa19791, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61199587, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@773b6512, org.springframework.security.web.session.SessionManagementFilter@200b93f, org.springframework.security.web.access.ExceptionTranslationFilter@569e45ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b7b7572]
+2023-07-03 15:30:59.005 INFO  4925 --- [ restartedMain ] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2023-07-03 15:30:59.116 WARN  5036 --- [ restartedMain ] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-03 15:30:59.315 INFO  5235 --- [ restartedMain ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-03 15:30:59.331 INFO  5251 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+2023-07-03 15:30:59.344 INFO  5264 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8087 (http) with context path ''
+2023-07-03 15:30:59.354 INFO  5274 --- [ restartedMain ] p.toyproject.ToyProjectApplication - Started ToyProjectApplication in 4.957 seconds (JVM running for 6.796)
+2023-07-03 15:31:06.573 INFO  12493 --- [ http-nio-8087-exec-2 ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-03 15:31:06.573 INFO  12493 --- [ http-nio-8087-exec-2 ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-03 15:31:06.574 INFO  12494 --- [ http-nio-8087-exec-2 ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-07-03 15:31:06.676 INFO  12596 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.reflect.Method signUpContoller =======
+2023-07-03 15:31:06.676 INFO  12596 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = SignUpDto
+2023-07-03 15:31:06.676 INFO  12596 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = SignUpDto(userId=2!, userHp=0104454470, userPw=zzz, userName=임현영)
+2023-07-03 15:31:06.684 INFO  12604 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.reflect.Method saveUserService =======
+2023-07-03 15:31:06.684 INFO  12604 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = SignUpDto
+2023-07-03 15:31:06.685 INFO  12605 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = SignUpDto(userId=2!, userHp=0104454470, userPw=zzz, userName=임현영)
+2023-07-03 15:31:06.771 INFO  12691 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.reflect.Method save =======
+2023-07-03 15:31:06.771 INFO  12691 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = User
+2023-07-03 15:31:06.771 INFO  12691 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = User(userId=2!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$oDywg6tMMvu/kzuHPRnGyutiQUKy8wcax0HNg4QNOmceE66cMgtU., imageUrl=, updateDate=null, regDate=null, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:31:06.984 INFO  12904 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop - 수행시간 : 195ms
+2023-07-03 15:31:06.984 INFO  12904 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:31:06.984 INFO  12904 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.reflect.Method save =======
+2023-07-03 15:31:06.985 INFO  12905 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = User
+2023-07-03 15:31:06.985 INFO  12905 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = User(userId=2!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$oDywg6tMMvu/kzuHPRnGyutiQUKy8wcax0HNg4QNOmceE66cMgtU., imageUrl=, updateDate=null, regDate=2023-07-03 15:31:06.954, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:31:06.986 INFO  12906 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop - 수행시간 : 301ms
+2023-07-03 15:31:06.986 INFO  12906 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:31:06.986 INFO  12906 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.reflect.Method saveUserService =======
+2023-07-03 15:31:06.986 INFO  12906 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = User
+2023-07-03 15:31:06.986 INFO  12906 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = User(userId=2!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$oDywg6tMMvu/kzuHPRnGyutiQUKy8wcax0HNg4QNOmceE66cMgtU., imageUrl=, updateDate=null, regDate=2023-07-03 15:31:06.954, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:31:06.986 INFO  12906 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop - 수행시간 : 305ms
+2023-07-03 15:31:06.986 INFO  12906 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:31:06.986 INFO  12906 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.reflect.Method signUpContoller =======
+2023-07-03 15:31:06.987 INFO  12907 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = User
+2023-07-03 15:31:06.987 INFO  12907 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = User(userId=2!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$oDywg6tMMvu/kzuHPRnGyutiQUKy8wcax0HNg4QNOmceE66cMgtU., imageUrl=, updateDate=null, regDate=2023-07-03 15:31:06.954, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:32:18.666 INFO  84586 --- [ SpringApplicationShutdownHook ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03 15:32:18.670 INFO  84590 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-03 15:32:18.722 INFO  84642 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-03 15:32:26.569 INFO  1171 --- [ restartedMain ] p.toyproject.ToyProjectApplication - Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 31908 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+2023-07-03 15:32:26.571 INFO  1173 --- [ restartedMain ] p.toyproject.ToyProjectApplication - The following 1 profile is active: "dev"
+2023-07-03 15:32:26.581 INFO  1183 --- [ background-preinit ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-03 15:32:26.645 INFO  1247 --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.1.0.0\50044485aea10afd7defeee8109c5195b4d3cae2\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.1.0.0/50044485aea10afd7defeee8109c5195b4d3cae2/oraclepki.jar
+2023-07-03 15:32:26.646 INFO  1248 --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.nls\orai18n\21.1.0.0\c36ad4814d128f1259c81fad5d52ad2033e6ad37\orai18n-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-mapping.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-utility.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-collation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-translation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-net.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-servlet.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-lcsd.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-tools.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/gdk_custom.jar
+2023-07-03 15:32:26.647 INFO  1249 --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-03 15:32:26.647 INFO  1249 --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-03 15:32:28.090 INFO  2692 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-03 15:32:28.232 INFO  2834 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 125 ms. Found 2 JPA repository interfaces.
+2023-07-03 15:32:29.090 INFO  3692 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8087 (http)
+2023-07-03 15:32:29.100 INFO  3702 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+2023-07-03 15:32:29.101 INFO  3703 --- [ restartedMain ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-03 15:32:29.102 INFO  3704 --- [ restartedMain ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-03 15:32:29.275 INFO  3877 --- [ restartedMain ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-03 15:32:29.276 INFO  3878 --- [ restartedMain ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2628 ms
+2023-07-03 15:32:29.366 INFO  3968 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-03 15:32:29.371 WARN  3973 --- [ restartedMain ] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-07-03 15:32:29.736 INFO  4338 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-03 15:32:29.746 INFO  4348 --- [ restartedMain ] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+2023-07-03 15:32:29.817 INFO  4419 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.Class corsFilter =======
+2023-07-03 15:32:29.818 INFO  4420 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 파라미터가 없습니다.
+2023-07-03 15:32:29.860 INFO  4462 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop - 수행시간 : 38ms
+2023-07-03 15:32:29.860 INFO  4462 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:32:29.861 INFO  4463 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.Class corsFilter =======
+2023-07-03 15:32:29.862 INFO  4464 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = CorsFilter
+2023-07-03 15:32:29.862 INFO  4464 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = org.springframework.web.filter.CorsFilter@4151fec1
+2023-07-03 15:32:30.164 INFO  4766 --- [ restartedMain ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-03 15:32:30.269 INFO  4871 --- [ restartedMain ] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-03 15:32:30.529 INFO  5131 --- [ restartedMain ] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-03 15:32:30.663 INFO  5265 --- [ restartedMain ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2023-07-03 15:32:30.670 WARN  5272 --- [ restartedMain ] o.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2023-07-03 15:32:30.672 WARN  5274 --- [ restartedMain ] org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2023-07-03 15:32:31.623 INFO  6225 --- [ restartedMain ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-03 15:32:31.637 INFO  6239 --- [ restartedMain ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03 15:32:32.263 WARN  6865 --- [ restartedMain ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-03 15:32:32.295 INFO  6897 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.Class passwordEncoder =======
+2023-07-03 15:32:32.295 INFO  6897 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 파라미터가 없습니다.
+2023-07-03 15:32:32.325 INFO  6927 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop - 수행시간 : 30ms
+2023-07-03 15:32:32.326 INFO  6928 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:32:32.326 INFO  6928 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.Class passwordEncoder =======
+2023-07-03 15:32:32.327 INFO  6929 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = DelegatingPasswordEncoder
+2023-07-03 15:32:32.327 INFO  6929 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = org.springframework.security.crypto.password.DelegatingPasswordEncoder@493e18b0
+2023-07-03 15:32:32.521 INFO  7123 --- [ restartedMain ] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12a44c44, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46123d00, org.springframework.security.web.context.SecurityContextPersistenceFilter@11681677, org.springframework.security.web.header.HeaderWriterFilter@308d726c, org.springframework.web.filter.CorsFilter@4151fec1, org.springframework.security.web.authentication.logout.LogoutFilter@314a2db1, practice.toyproject.util.JWT.JwtFilter@1c40279b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@644b77ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@624009cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@470eb585, org.springframework.security.web.session.SessionManagementFilter@171b735f, org.springframework.security.web.access.ExceptionTranslationFilter@769cc689, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@efc185f]
+2023-07-03 15:32:32.809 INFO  7411 --- [ restartedMain ] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2023-07-03 15:32:32.943 WARN  7545 --- [ restartedMain ] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-03 15:32:33.161 INFO  7763 --- [ restartedMain ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-03 15:32:33.178 INFO  7780 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+2023-07-03 15:32:33.191 INFO  7793 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8087 (http) with context path ''
+2023-07-03 15:32:33.201 INFO  7803 --- [ restartedMain ] p.toyproject.ToyProjectApplication - Started ToyProjectApplication in 7.395 seconds (JVM running for 9.556)
+2023-07-03 15:32:39.431 INFO  14033 --- [ http-nio-8087-exec-1 ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-03 15:32:39.431 INFO  14033 --- [ http-nio-8087-exec-1 ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-03 15:32:39.433 INFO  14035 --- [ http-nio-8087-exec-1 ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-07-03 15:32:39.528 INFO  14130 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.Class signUpContoller =======
+2023-07-03 15:32:39.529 INFO  14131 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = SignUpDto
+2023-07-03 15:32:39.529 INFO  14131 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = SignUpDto(userId=22!, userHp=0104454470, userPw=zzz, userName=임현영)
+2023-07-03 15:32:39.537 INFO  14139 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.Class saveUserService =======
+2023-07-03 15:32:39.537 INFO  14139 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = SignUpDto
+2023-07-03 15:32:39.537 INFO  14139 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = SignUpDto(userId=22!, userHp=0104454470, userPw=zzz, userName=임현영)
+2023-07-03 15:32:39.620 INFO  14222 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.Class save =======
+2023-07-03 15:32:39.621 INFO  14223 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = User
+2023-07-03 15:32:39.621 INFO  14223 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = User(userId=22!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$NVy6iagAONXPNGTwBGtz0.LwVaU9TYy128GdsYmAbiqw/CJvNzSju, imageUrl=, updateDate=null, regDate=null, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:32:39.762 INFO  14364 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop - 수행시간 : 134ms
+2023-07-03 15:32:39.762 INFO  14364 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:32:39.762 INFO  14364 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.Class save =======
+2023-07-03 15:32:39.762 INFO  14364 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = User
+2023-07-03 15:32:39.762 INFO  14364 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = User(userId=22!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$NVy6iagAONXPNGTwBGtz0.LwVaU9TYy128GdsYmAbiqw/CJvNzSju, imageUrl=, updateDate=null, regDate=2023-07-03 15:32:39.734, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:32:39.762 INFO  14364 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop - 수행시간 : 225ms
+2023-07-03 15:32:39.762 INFO  14364 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:32:39.762 INFO  14364 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.Class saveUserService =======
+2023-07-03 15:32:39.762 INFO  14364 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = User
+2023-07-03 15:32:39.762 INFO  14364 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = User(userId=22!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$NVy6iagAONXPNGTwBGtz0.LwVaU9TYy128GdsYmAbiqw/CJvNzSju, imageUrl=, updateDate=null, regDate=2023-07-03 15:32:39.734, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:32:39.763 INFO  14365 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop - 수행시간 : 228ms
+2023-07-03 15:32:39.763 INFO  14365 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:32:39.763 INFO  14365 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.Class signUpContoller =======
+2023-07-03 15:32:39.763 INFO  14365 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = User
+2023-07-03 15:32:39.763 INFO  14365 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = User(userId=22!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$NVy6iagAONXPNGTwBGtz0.LwVaU9TYy128GdsYmAbiqw/CJvNzSju, imageUrl=, updateDate=null, regDate=2023-07-03 15:32:39.734, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:33:33.301 INFO  67903 --- [ SpringApplicationShutdownHook ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03 15:33:33.304 INFO  67906 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-03 15:33:33.348 INFO  67950 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-03 15:33:42.546 INFO  1046 --- [ restartedMain ] p.toyproject.ToyProjectApplication - Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 14216 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+2023-07-03 15:33:42.548 INFO  1048 --- [ restartedMain ] p.toyproject.ToyProjectApplication - The following 1 profile is active: "dev"
+2023-07-03 15:33:42.554 INFO  1054 --- [ background-preinit ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-03 15:33:42.610 INFO  1110 --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.1.0.0\50044485aea10afd7defeee8109c5195b4d3cae2\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.1.0.0/50044485aea10afd7defeee8109c5195b4d3cae2/oraclepki.jar
+2023-07-03 15:33:42.610 INFO  1110 --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.nls\orai18n\21.1.0.0\c36ad4814d128f1259c81fad5d52ad2033e6ad37\orai18n-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-mapping.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-utility.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-collation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-translation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-net.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-servlet.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-lcsd.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-tools.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/gdk_custom.jar
+2023-07-03 15:33:42.611 INFO  1111 --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-03 15:33:42.611 INFO  1111 --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-03 15:33:43.495 INFO  1995 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-03 15:33:43.567 INFO  2067 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2023-07-03 15:33:44.284 INFO  2784 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8087 (http)
+2023-07-03 15:33:44.292 INFO  2792 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+2023-07-03 15:33:44.292 INFO  2792 --- [ restartedMain ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-03 15:33:44.293 INFO  2793 --- [ restartedMain ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-03 15:33:44.403 INFO  2903 --- [ restartedMain ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-03 15:33:44.403 INFO  2903 --- [ restartedMain ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1791 ms
+2023-07-03 15:33:44.461 INFO  2961 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-03 15:33:44.465 WARN  2965 --- [ restartedMain ] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-07-03 15:33:44.737 INFO  3237 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-03 15:33:44.744 INFO  3244 --- [ restartedMain ] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+2023-07-03 15:33:44.789 INFO  3289 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.String corsFilter =======
+2023-07-03 15:33:44.790 INFO  3290 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 파라미터가 없습니다.
+2023-07-03 15:33:44.808 INFO  3308 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop - 수행시간 : 16ms
+2023-07-03 15:33:44.809 INFO  3309 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:33:44.809 INFO  3309 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.String corsFilter =======
+2023-07-03 15:33:44.809 INFO  3309 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = CorsFilter
+2023-07-03 15:33:44.809 INFO  3309 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = org.springframework.web.filter.CorsFilter@50c3f16f
+2023-07-03 15:33:44.934 INFO  3434 --- [ restartedMain ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-03 15:33:44.988 INFO  3488 --- [ restartedMain ] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-03 15:33:45.150 INFO  3650 --- [ restartedMain ] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-03 15:33:45.262 INFO  3762 --- [ restartedMain ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2023-07-03 15:33:45.267 WARN  3767 --- [ restartedMain ] o.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2023-07-03 15:33:45.269 WARN  3769 --- [ restartedMain ] org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2023-07-03 15:33:45.845 INFO  4345 --- [ restartedMain ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-03 15:33:45.856 INFO  4356 --- [ restartedMain ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03 15:33:46.419 WARN  4919 --- [ restartedMain ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-03 15:33:46.480 INFO  4980 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.String passwordEncoder =======
+2023-07-03 15:33:46.481 INFO  4981 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 파라미터가 없습니다.
+2023-07-03 15:33:46.497 INFO  4997 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop - 수행시간 : 16ms
+2023-07-03 15:33:46.497 INFO  4997 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:33:46.497 INFO  4997 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.String passwordEncoder =======
+2023-07-03 15:33:46.498 INFO  4998 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = DelegatingPasswordEncoder
+2023-07-03 15:33:46.498 INFO  4998 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = org.springframework.security.crypto.password.DelegatingPasswordEncoder@8adcb7e
+2023-07-03 15:33:46.747 INFO  5247 --- [ restartedMain ] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c6686e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1717832c, org.springframework.security.web.context.SecurityContextPersistenceFilter@633850cc, org.springframework.security.web.header.HeaderWriterFilter@1c5b26ac, org.springframework.web.filter.CorsFilter@50c3f16f, org.springframework.security.web.authentication.logout.LogoutFilter@26ea9551, practice.toyproject.util.JWT.JwtFilter@47b82b8d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41cf9222, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ceb5b31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@667259aa, org.springframework.security.web.session.SessionManagementFilter@58371521, org.springframework.security.web.access.ExceptionTranslationFilter@1d01473, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1489ef89]
+2023-07-03 15:33:47.084 INFO  5584 --- [ restartedMain ] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2023-07-03 15:33:47.242 WARN  5742 --- [ restartedMain ] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-03 15:33:47.502 INFO  6002 --- [ restartedMain ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-03 15:33:47.519 INFO  6019 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+2023-07-03 15:33:47.533 INFO  6033 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8087 (http) with context path ''
+2023-07-03 15:33:47.544 INFO  6044 --- [ restartedMain ] p.toyproject.ToyProjectApplication - Started ToyProjectApplication in 5.688 seconds (JVM running for 7.482)
+2023-07-03 15:33:54.164 INFO  12664 --- [ http-nio-8087-exec-1 ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-03 15:33:54.164 INFO  12664 --- [ http-nio-8087-exec-1 ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-03 15:33:54.166 INFO  12666 --- [ http-nio-8087-exec-1 ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-07-03 15:33:54.264 INFO  12764 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.String signUpContoller =======
+2023-07-03 15:33:54.264 INFO  12764 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = SignUpDto
+2023-07-03 15:33:54.264 INFO  12764 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = SignUpDto(userId=232!, userHp=0104454470, userPw=zzz, userName=임현영)
+2023-07-03 15:33:54.271 INFO  12771 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.String saveUserService =======
+2023-07-03 15:33:54.272 INFO  12772 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = SignUpDto
+2023-07-03 15:33:54.272 INFO  12772 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = SignUpDto(userId=232!, userHp=0104454470, userPw=zzz, userName=임현영)
+2023-07-03 15:33:54.347 INFO  12847 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.String save =======
+2023-07-03 15:33:54.347 INFO  12847 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = User
+2023-07-03 15:33:54.347 INFO  12847 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = User(userId=232!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$CPX8.earYU3OajCYpFP9guSkfsAsnq5jAAHFEvATmTUnQk2/yjupC, imageUrl=, updateDate=null, regDate=null, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:33:54.494 INFO  12994 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop - 수행시간 : 135ms
+2023-07-03 15:33:54.494 INFO  12994 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:33:54.494 INFO  12994 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.String save =======
+2023-07-03 15:33:54.495 INFO  12995 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = User
+2023-07-03 15:33:54.495 INFO  12995 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = User(userId=232!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$CPX8.earYU3OajCYpFP9guSkfsAsnq5jAAHFEvATmTUnQk2/yjupC, imageUrl=, updateDate=null, regDate=2023-07-03 15:33:54.466, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:33:54.495 INFO  12995 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop - 수행시간 : 223ms
+2023-07-03 15:33:54.495 INFO  12995 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:33:54.495 INFO  12995 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.String saveUserService =======
+2023-07-03 15:33:54.495 INFO  12995 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = User
+2023-07-03 15:33:54.495 INFO  12995 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = User(userId=232!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$CPX8.earYU3OajCYpFP9guSkfsAsnq5jAAHFEvATmTUnQk2/yjupC, imageUrl=, updateDate=null, regDate=2023-07-03 15:33:54.466, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:33:54.495 INFO  12995 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop - 수행시간 : 226ms
+2023-07-03 15:33:54.496 INFO  12996 --- [ http-nio-8087-exec-1 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:33:54.496 INFO  12996 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.String signUpContoller =======
+2023-07-03 15:33:54.496 INFO  12996 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = User
+2023-07-03 15:33:54.496 INFO  12996 --- [ http-nio-8087-exec-1 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = User(userId=232!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$CPX8.earYU3OajCYpFP9guSkfsAsnq5jAAHFEvATmTUnQk2/yjupC, imageUrl=, updateDate=null, regDate=2023-07-03 15:33:54.466, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:34:29.373 INFO  47873 --- [ SpringApplicationShutdownHook ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03 15:34:29.377 INFO  47877 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-03 15:34:29.424 INFO  47924 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-03 15:34:36.904 INFO  978  --- [ background-preinit ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-03 15:34:36.905 INFO  979  --- [ restartedMain ] p.toyproject.ToyProjectApplication - Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 32432 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+2023-07-03 15:34:36.906 INFO  980  --- [ restartedMain ] p.toyproject.ToyProjectApplication - The following 1 profile is active: "dev"
+2023-07-03 15:34:36.953 INFO  1027 --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.1.0.0\50044485aea10afd7defeee8109c5195b4d3cae2\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.1.0.0/50044485aea10afd7defeee8109c5195b4d3cae2/oraclepki.jar
+2023-07-03 15:34:36.954 INFO  1028 --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.nls\orai18n\21.1.0.0\c36ad4814d128f1259c81fad5d52ad2033e6ad37\orai18n-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-mapping.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-utility.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-collation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-translation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-net.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-servlet.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-lcsd.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-tools.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/gdk_custom.jar
+2023-07-03 15:34:36.954 INFO  1028 --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-03 15:34:36.954 INFO  1028 --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-03 15:34:37.701 INFO  1775 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-03 15:34:37.776 INFO  1850 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2023-07-03 15:34:38.460 INFO  2534 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8087 (http)
+2023-07-03 15:34:38.467 INFO  2541 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+2023-07-03 15:34:38.468 INFO  2542 --- [ restartedMain ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-03 15:34:38.468 INFO  2542 --- [ restartedMain ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-03 15:34:38.573 INFO  2647 --- [ restartedMain ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-03 15:34:38.574 INFO  2648 --- [ restartedMain ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1619 ms
+2023-07-03 15:34:38.636 INFO  2710 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-03 15:34:38.640 WARN  2714 --- [ restartedMain ] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-07-03 15:34:38.929 INFO  3003 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-03 15:34:38.935 INFO  3009 --- [ restartedMain ] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+2023-07-03 15:34:38.974 INFO  3048 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.String corsFilter =======
+2023-07-03 15:34:38.975 INFO  3049 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 파라미터가 없습니다.
+2023-07-03 15:34:38.993 INFO  3067 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop - 수행시간 : 16ms
+2023-07-03 15:34:38.993 INFO  3067 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:34:38.993 INFO  3067 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.String corsFilter =======
+2023-07-03 15:34:38.994 INFO  3068 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = CorsFilter
+2023-07-03 15:34:38.994 INFO  3068 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = org.springframework.web.filter.CorsFilter@6011039c
+2023-07-03 15:34:39.115 INFO  3189 --- [ restartedMain ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-03 15:34:39.176 INFO  3250 --- [ restartedMain ] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-03 15:34:39.352 INFO  3426 --- [ restartedMain ] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-03 15:34:39.477 INFO  3551 --- [ restartedMain ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2023-07-03 15:34:39.481 WARN  3555 --- [ restartedMain ] o.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2023-07-03 15:34:39.483 WARN  3557 --- [ restartedMain ] org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2023-07-03 15:34:40.063 INFO  4137 --- [ restartedMain ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-03 15:34:40.074 INFO  4148 --- [ restartedMain ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03 15:34:40.592 WARN  4666 --- [ restartedMain ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-03 15:34:40.622 INFO  4696 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.String passwordEncoder =======
+2023-07-03 15:34:40.623 INFO  4697 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 파라미터가 없습니다.
+2023-07-03 15:34:40.635 INFO  4709 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop - 수행시간 : 12ms
+2023-07-03 15:34:40.636 INFO  4710 --- [ restartedMain ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:34:40.636 INFO  4710 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.String passwordEncoder =======
+2023-07-03 15:34:40.636 INFO  4710 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = DelegatingPasswordEncoder
+2023-07-03 15:34:40.636 INFO  4710 --- [ restartedMain ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = org.springframework.security.crypto.password.DelegatingPasswordEncoder@36e4a9ea
+2023-07-03 15:34:40.772 INFO  4846 --- [ restartedMain ] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@36c87705, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e93c264, org.springframework.security.web.context.SecurityContextPersistenceFilter@3511f087, org.springframework.security.web.header.HeaderWriterFilter@6c2a3b88, org.springframework.web.filter.CorsFilter@6011039c, org.springframework.security.web.authentication.logout.LogoutFilter@25ecfde, practice.toyproject.util.JWT.JwtFilter@eea17ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ec29fbf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@505befd0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5398b401, org.springframework.security.web.session.SessionManagementFilter@b75bffe, org.springframework.security.web.access.ExceptionTranslationFilter@711c6744, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a94e430]
+2023-07-03 15:34:41.030 INFO  5104 --- [ restartedMain ] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2023-07-03 15:34:41.139 WARN  5213 --- [ restartedMain ] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-03 15:34:41.342 INFO  5416 --- [ restartedMain ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-03 15:34:41.356 INFO  5430 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+2023-07-03 15:34:41.370 INFO  5444 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8087 (http) with context path ''
+2023-07-03 15:34:41.380 INFO  5454 --- [ restartedMain ] p.toyproject.ToyProjectApplication - Started ToyProjectApplication in 5.118 seconds (JVM running for 7.065)
+2023-07-03 15:34:45.585 INFO  9659 --- [ http-nio-8087-exec-2 ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-03 15:34:45.585 INFO  9659 --- [ http-nio-8087-exec-2 ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-03 15:34:45.586 INFO  9660 --- [ http-nio-8087-exec-2 ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-07-03 15:34:45.693 INFO  9767 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.String signUpContoller =======
+2023-07-03 15:34:45.693 INFO  9767 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = SignUpDto
+2023-07-03 15:34:45.694 INFO  9768 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = SignUpDto(userId=232!, userHp=0104454470, userPw=zzz, userName=임현영)
+2023-07-03 15:34:45.703 INFO  9777 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.String saveUserService =======
+2023-07-03 15:34:45.704 INFO  9778 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = SignUpDto
+2023-07-03 15:34:45.704 INFO  9778 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = SignUpDto(userId=232!, userHp=0104454470, userPw=zzz, userName=임현영)
+2023-07-03 15:34:45.813 INFO  9887 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 요청 class java.lang.String save =======
+2023-07-03 15:34:45.813 INFO  9887 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 타입 = User
+2023-07-03 15:34:45.813 INFO  9887 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 요청 파라미터 값 = User(userId=232!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$IacBKgL6W7QirEgRKk0hKOcObGLimEqxNYqTz8dZC3TwaqINcilea, imageUrl=, updateDate=null, regDate=null, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:34:46.027 INFO  10101 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop - 수행시간 : 194ms
+2023-07-03 15:34:46.027 INFO  10101 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:34:46.027 INFO  10101 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.String save =======
+2023-07-03 15:34:46.028 INFO  10102 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = User
+2023-07-03 15:34:46.028 INFO  10102 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = User(userId=232!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$IacBKgL6W7QirEgRKk0hKOcObGLimEqxNYqTz8dZC3TwaqINcilea, imageUrl=, updateDate=null, regDate=null, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:34:46.028 INFO  10102 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop - 수행시간 : 324ms
+2023-07-03 15:34:46.028 INFO  10102 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:34:46.028 INFO  10102 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.String saveUserService =======
+2023-07-03 15:34:46.028 INFO  10102 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = User
+2023-07-03 15:34:46.028 INFO  10102 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = User(userId=232!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$IacBKgL6W7QirEgRKk0hKOcObGLimEqxNYqTz8dZC3TwaqINcilea, imageUrl=, updateDate=null, regDate=null, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:34:46.028 INFO  10102 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop - 수행시간 : 327ms
+2023-07-03 15:34:46.029 INFO  10103 --- [ http-nio-8087-exec-2 ] p.toyproject.aop.TimeTraceAop -  
+2023-07-03 15:34:46.029 INFO  10103 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - ======= 응답 class java.lang.String signUpContoller =======
+2023-07-03 15:34:46.029 INFO  10103 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 타입 = User
+2023-07-03 15:34:46.029 INFO  10103 --- [ http-nio-8087-exec-2 ] practice.toyproject.aop.LogInfoAop - 응답 파라미터 값 = User(userId=232!, loginCnt=0, loginFailCnt=0, userName=임현영, userHp=0104454470, userPw={bcrypt}$2a$10$IacBKgL6W7QirEgRKk0hKOcObGLimEqxNYqTz8dZC3TwaqINcilea, imageUrl=, updateDate=null, regDate=null, lastLoginDate=null, updPwDate=null)
+2023-07-03 15:35:08.991 INFO  33065 --- [ SpringApplicationShutdownHook ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-03 15:35:08.995 INFO  33069 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-03 15:35:09.029 INFO  33103 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

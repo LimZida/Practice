@@ -34,7 +34,8 @@ public class TimeTraceAop {
             long finish = System.currentTimeMillis();   // 종료 시각
             long timeMs = finish - start;   // 호출 시간
 
-            log.info("수행시간 : {}",joinPoint.toString()+" "+ timeMs + "ms");
+            log.info("수행시간 : {}", timeMs + "ms");
+            log.info(" ");
         }
     }
 }
