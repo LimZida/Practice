@@ -16,7 +16,8 @@ import java.lang.reflect.Method;
  * description : 요청이나 응답 파라미터에 대해 log AOP 적용
  *
  * reference :  로그 aop : https://velog.io/@dhk22/Spring-AOP-%EA%B0%84%EB%8B%A8%ED%95%9C-AOP-%EC%A0%81%EC%9A%A9-%EC%98%88%EC%A0%9C-Logging
- *              aop 어노테이션 : https://programforlife.tistory.com/107
+ *              aop 어노테이션 : https://programforlife.tistory.com/107 , https://code-lab1.tistory.com/193
+ *              프록시 패턴 : https://velog.io/@newtownboy/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4-%ED%94%84%EB%A1%9D%EC%8B%9C%ED%8C%A8%ED%84%B4Proxy-Pattern
  *
  * author : 임현영
  * date : 2023.07.03
@@ -35,11 +36,14 @@ public class LogInfoAop {
     public void beforeParameterLog(JoinPoint joinPoint) {
         // 메서드 정보 받아오기
         Method method = getMethod(joinPoint);
-        log.info("======= 요청 {} =======",method.getName());
+        log.info("======= 요청 실행 메서드 {} =======", method.getName());
 
         // 파라미터 받아오기
         Object[] args = joinPoint.getArgs();
-        if (args.length <= 0) log.info("파라미터가 없습니다.");
+        if (args.length <= 0) {
+            log.info("파라미터가 없습니다.");
+            log.info(" ");
+        }
         for (Object arg : args) {
             log.info("요청 파라미터 타입 = {}", arg.getClass().getSimpleName());
             log.info("요청 파라미터 값 = {}", arg);
@@ -53,9 +57,10 @@ public class LogInfoAop {
         // 메서드 정보 받아오기
         Method method = getMethod(joinPoint);
 
-        log.info("======= 응답 {} =======", method.getName());
+        log.info("======= 응답 결과 메서드 {} =======", method.getName());
         log.info("응답 파라미터 타입 = {}", returnObj.getClass().getSimpleName());
         log.info("응답 파라미터 값 = {}", returnObj);
+        log.info(" ");
     }
 
     // JoinPoint로 메서드 정보 가져오기

@@ -10,7 +10,6 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.filter.CorsFilter;
-import practice.toyproject.util.JWT.JwtFilter;
 import practice.toyproject.util.JWT.JwtProvider;
 /**
  * title : SecurityConfig

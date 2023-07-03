@@ -1,4 +1,4 @@
-package practice.toyproject.util.JWT;
+package practice.toyproject.util.security;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
@@ -6,6 +6,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
+import practice.toyproject.util.JWT.JwtCode;
+import practice.toyproject.util.JWT.JwtProvider;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

@@ -17,7 +17,6 @@ import org.springframework.transaction.annotation.Transactional;
 import practice.toyproject.token.entity.Token;
 import practice.toyproject.token.repository.TokenRepository;
 
-import javax.annotation.PostConstruct;
 import java.security.Key;
 import java.util.Arrays;
 import java.util.Base64;
@@ -50,23 +49,18 @@ import java.util.stream.Collectors;
  **/
 @Component
 public class JwtProvider {
-    @Value("${jwt.key}") // application.properties에 있는 secret key
-    private String secretKey;
+//    @Value("${jwt.key}") // application.properties에 있는 secret key
+//    private String secretKey;
     private Key key;
     private final String AUTHORITIES_KEY = "auth";
     private final long accessTokenValidTime = (60 * 1000) * 30; // 30분
     private final long refreshTokenValidTime = (60 * 1000) * 60 * 24 * 7; // 7일
     private final TokenRepository tokenRepository;
     @Autowired
-    public JwtProvider(TokenRepository tokenRepository) {
+    public JwtProvider(@Value("${jwt.key}") String secretKey, TokenRepository tokenRepository) {
         this.tokenRepository = tokenRepository;
-    }
-
-    @PostConstruct
-    protected void init() {
-        // key를 base64로 인코딩
         String encodedKey = Base64.getEncoder().encodeToString(secretKey.getBytes());
-        key= Keys.hmacShaKeyFor(encodedKey.getBytes());
+        this.key = Keys.hmacShaKeyFor(encodedKey.getBytes());
     }
 
     public String generateToken(Authentication authentication, Long accessTokenValidTime) {
