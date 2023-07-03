@@ -67,7 +67,6 @@ public class UserServiceImpl implements UserService {
                 .loginFailCnt(0)
                 .build();
 
-        log.info("####### user 정보 : {}",user.toString());
         return userRepository.save(user);
     }
     @Override

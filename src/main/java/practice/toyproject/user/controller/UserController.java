@@ -29,7 +29,6 @@ import java.util.List;
  **/
 @RestController
 @RequestMapping("/shop")
-@Slf4j
 public class UserController {
     //생성자 주입 (Autowired 생략가능)
     private final UserService userService;
@@ -41,21 +40,18 @@ public class UserController {
     // 로그인(유저 조회)
     @RequestMapping(value =("/login") ,method =RequestMethod.POST)
     public LoginDto loginContoller(@RequestBody LoginDto loginDto){
-        log.info("####### 유저 조회용  파라미터 : {}",loginDto.toString());
         return userService.selectUserService(loginDto);
     }
     
     // 회원가입(유저 저장)
     @RequestMapping(value = "/signup",method = RequestMethod.POST)
     public User signUpContoller(@RequestBody SignUpDto signUpDto){
-        log.info("####### 유저 저장용 파라미터 : {}",signUpDto.toString());
         return userService.saveUserService(signUpDto);
     }
 
     // 유저 모두 조회
     @RequestMapping(value = "/select", method = RequestMethod.GET)
     public List<User> selectAllUserController(){
-        log.info("####### 모든 유저 조회");
         return userService.selectAllUserService();
     }
 }

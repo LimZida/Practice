@@ -22,7 +22,6 @@ import practice.toyproject.user.repository.UserRepository;
  **/
 //https://velog.io/@kyu9610/Spring-Security-4.-Spring-Security-%EB%A1%9C%EA%B7%B8%EC%9D%B8
 @Component
-@Slf4j
 public class CustomUserDetailsService implements UserDetailsService {
     private final UserRepository userRepository;
     @Autowired
@@ -32,15 +31,11 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String userId) throws UsernameNotFoundException {
-        log.info("############ userId {}",userId);
-        log.info("############ filter로 들어온 데이터 결과 {}",userRepository.findUserByUserId(userId).toString());
-
         User userEntity = userRepository.findUserByUserId(userId);
         if(userEntity == null){
             return null;
         }
         UserDetailsImpl userDetailsImpl = new UserDetailsImpl(userEntity);
-        log.info("############ principalDetails {}", userDetailsImpl);
 
         return userDetailsImpl;
     }
