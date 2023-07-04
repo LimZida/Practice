@@ -23,7 +23,8 @@ import java.util.Collection;
  *                         https://velog.io/@aidenshin/%EB%82%B4%EA%B0%80-%EC%83%9D%EA%B0%81%ED%95%98%EB%8A%94-JPA-%EC%97%94%ED%8B%B0%ED%8B%B0-%EC%9E%91%EC%84%B1-%EC%9B%90%EC%B9%99
  * Timestamp https://kyhslam.tistory.com/entry/1-Springboot-JPA-Oracle-%EC%97%B0%EB%8F%99-%EC%84%A4%EC%A0%95
  *           https://velog.io/@koo8624/Spring-CreationTimestamp-UpdateTimestamp
- * 빌더 https://velog.io/@mooh2jj/%EC%98%AC%EB%B0%94%EB%A5%B8-%EC%97%94%ED%8B%B0%ED%8B%B0-Builder-%EC%82%AC%EC%9A%A9%EB%B2%95
+ * 빌더 : https://velog.io/@mooh2jj/%EC%98%AC%EB%B0%94%EB%A5%B8-%EC%97%94%ED%8B%B0%ED%8B%B0-Builder-%EC%82%AC%EC%9A%A9%EB%B2%95
+ *       https://pamyferret.tistory.com/67
  *
  * author : 임현영
  * date : 2023.05.24
@@ -35,7 +36,7 @@ import java.util.Collection;
 
 @Getter
 @ToString // 로그 debug 시 toString 자동생성
-@NoArgsConstructor(access = AccessLevel.PROTECTED) // new 객체 생성을 막고, Builder와 호환
+@NoArgsConstructor(access = AccessLevel.PROTECTED) // new 객체 생성을 막고 일관성, Builder와 호환
 @Entity(name = "T_USER") //DB 테이블과 매핑
 public class User{
 
