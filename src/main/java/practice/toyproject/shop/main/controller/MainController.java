@@ -29,12 +29,14 @@ public class MainController {
         this.s3Uploader = s3Uploader;
     }
 
-
+    //로컬에서 s3로 업로드
     @RequestMapping(value = "/src",method = RequestMethod.POST)
-    public ResponseEntity<String> updateUserImage(@RequestParam("images") MultipartFile multipartFile, @RequestParam("type") String type) {
+    public ResponseEntity<String> uploadSrc(@RequestParam("images") MultipartFile multipartFile, @RequestParam("type") String type) {
         try {
-            s3Uploader.uploadFiles(multipartFile, "images/"+type);
-            return ResponseEntity.ok("good");
+            String uploadResult = s3Uploader.uploadFiles(multipartFile, "images/" + type);
+            return ResponseEntity.ok(uploadResult);
         } catch (Exception e) { return new ResponseEntity(HttpStatus.BAD_REQUEST); }
     }
+
+    //s3에서 로컬로 업로드
 }

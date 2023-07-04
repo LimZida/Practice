@@ -38,7 +38,6 @@ public class TimeTraceAop {
             long timeMs = finish - start;   // 호출 시간
 
             log.info("수행시간 : {}", timeMs + "ms");
-            log.info(" ");
         }
     }
 }

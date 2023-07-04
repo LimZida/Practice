@@ -9112,3 +9112,230 @@ com.amazonaws.AmazonClientException: EC2 Instance Metadata Service is disabled
 2023-07-04 17:43:29.095 INFO  15200 --- [ http-nio-8087-exec-2 ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 타입 = ResponseEntity
 2023-07-04 17:43:29.095 INFO  15200 --- [ http-nio-8087-exec-2 ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 값 = <200 OK OK,good,[]>
 2023-07-04 17:43:29.095 INFO  15200 --- [ http-nio-8087-exec-2 ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:53:09.686 INFO  595791 --- [ SpringApplicationShutdownHook ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-04 17:53:09.690 INFO  595795 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-04 17:53:09.733 INFO  595838 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-04 17:53:15.278 INFO  940  --- [ restartedMain ] p.toyproject.ToyProjectApplication - Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 22296 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+2023-07-04 17:53:15.280 INFO  942  --- [ restartedMain ] p.toyproject.ToyProjectApplication - The following 1 profile is active: "dev"
+2023-07-04 17:53:15.285 INFO  947  --- [ background-preinit ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-04 17:53:15.332 INFO  994  --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.1.0.0\50044485aea10afd7defeee8109c5195b4d3cae2\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.1.0.0/50044485aea10afd7defeee8109c5195b4d3cae2/oraclepki.jar
+2023-07-04 17:53:15.332 INFO  994  --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.nls\orai18n\21.1.0.0\c36ad4814d128f1259c81fad5d52ad2033e6ad37\orai18n-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-mapping.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-utility.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-collation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-translation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-net.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-servlet.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-lcsd.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-tools.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/gdk_custom.jar
+2023-07-04 17:53:15.333 INFO  995  --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-04 17:53:15.333 INFO  995  --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-04 17:53:16.124 INFO  1786 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-04 17:53:16.197 INFO  1859 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2023-07-04 17:53:16.358 WARN  2020 --- [ restartedMain ] com.amazonaws.util.EC2MetadataUtils - Unable to retrieve the requested metadata (/latest/meta-data/instance-id). EC2 Instance Metadata Service is disabled
+com.amazonaws.AmazonClientException: EC2 Instance Metadata Service is disabled
+	at com.amazonaws.internal.InstanceMetadataServiceResourceFetcher.readResource(InstanceMetadataServiceResourceFetcher.java:65)
+	at com.amazonaws.internal.EC2ResourceFetcher.readResource(EC2ResourceFetcher.java:66)
+	at com.amazonaws.util.EC2MetadataUtils.getItems(EC2MetadataUtils.java:402)
+	at com.amazonaws.util.EC2MetadataUtils.getData(EC2MetadataUtils.java:371)
+	at org.springframework.cloud.aws.context.support.env.AwsCloudEnvironmentCheckUtils.isRunningOnCloudEnvironment(AwsCloudEnvironmentCheckUtils.java:38)
+	at org.springframework.cloud.aws.context.annotation.OnAwsCloudEnvironmentCondition.matches(OnAwsCloudEnvironmentCondition.java:38)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:489)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:140)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at practice.toyproject.ToyProjectApplication.main(ToyProjectApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2023-07-04 17:53:16.517 INFO  2179 --- [ restartedMain ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#667dde66' of type [com.amazonaws.auth.BasicAWSCredentials] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-04 17:53:16.518 INFO  2180 --- [ restartedMain ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#2e4a6d3b' of type [com.amazonaws.auth.AWSStaticCredentialsProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-04 17:53:16.526 INFO  2188 --- [ restartedMain ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#1f34279a' of type [com.amazonaws.auth.profile.ProfileCredentialsProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-04 17:53:16.528 INFO  2190 --- [ restartedMain ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'credentialsProvider' of type [org.springframework.cloud.aws.core.credentials.CredentialsProviderFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-04 17:53:16.528 INFO  2190 --- [ restartedMain ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'credentialsProvider' of type [com.amazonaws.auth.AWSCredentialsProviderChain] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-04 17:53:16.983 INFO  2645 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8087 (http)
+2023-07-04 17:53:16.992 INFO  2654 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+2023-07-04 17:53:16.992 INFO  2654 --- [ restartedMain ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-04 17:53:16.992 INFO  2654 --- [ restartedMain ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-04 17:53:17.107 INFO  2769 --- [ restartedMain ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-04 17:53:17.108 INFO  2770 --- [ restartedMain ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1774 ms
+2023-07-04 17:53:17.163 INFO  2825 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-04 17:53:17.166 WARN  2828 --- [ restartedMain ] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-07-04 17:53:17.428 INFO  3090 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-04 17:53:17.434 INFO  3096 --- [ restartedMain ] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+2023-07-04 17:53:17.470 INFO  3132 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - ======= 요청 실행 메서드 corsFilter =======
+2023-07-04 17:53:17.470 INFO  3132 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 파라미터가 없습니다.
+2023-07-04 17:53:17.470 INFO  3132 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:53:17.488 INFO  3150 --- [ restartedMain ] p.toyproject.util.AOP.TimeTraceAop - 수행시간 : 16ms
+2023-07-04 17:53:17.488 INFO  3150 --- [ restartedMain ] p.toyproject.util.AOP.TimeTraceAop -  
+2023-07-04 17:53:17.489 INFO  3151 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - ======= 응답 결과 메서드 corsFilter =======
+2023-07-04 17:53:17.489 INFO  3151 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 타입 = CorsFilter
+2023-07-04 17:53:17.489 INFO  3151 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 값 = org.springframework.web.filter.CorsFilter@427b5f11
+2023-07-04 17:53:17.489 INFO  3151 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:53:17.615 INFO  3277 --- [ restartedMain ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-04 17:53:17.670 INFO  3332 --- [ restartedMain ] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-04 17:53:17.808 INFO  3470 --- [ restartedMain ] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-04 17:53:17.913 INFO  3575 --- [ restartedMain ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2023-07-04 17:53:17.917 WARN  3579 --- [ restartedMain ] o.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2023-07-04 17:53:17.918 WARN  3580 --- [ restartedMain ] org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2023-07-04 17:53:18.502 INFO  4164 --- [ restartedMain ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-04 17:53:18.514 INFO  4176 --- [ restartedMain ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-04 17:53:18.540 INFO  4202 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - ======= 요청 실행 메서드 amazonS3Client =======
+2023-07-04 17:53:18.541 INFO  4203 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 파라미터가 없습니다.
+2023-07-04 17:53:18.541 INFO  4203 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:53:18.757 INFO  4419 --- [ restartedMain ] p.toyproject.util.AOP.TimeTraceAop - 수행시간 : 216ms
+2023-07-04 17:53:18.757 INFO  4419 --- [ restartedMain ] p.toyproject.util.AOP.TimeTraceAop -  
+2023-07-04 17:53:18.757 INFO  4419 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - ======= 응답 결과 메서드 amazonS3Client =======
+2023-07-04 17:53:18.758 INFO  4420 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 타입 = AmazonS3Client
+2023-07-04 17:53:18.758 INFO  4420 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 값 = com.amazonaws.services.s3.AmazonS3Client@18e28036
+2023-07-04 17:53:18.758 INFO  4420 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:53:19.313 WARN  4975 --- [ restartedMain ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-04 17:53:19.345 INFO  5007 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - ======= 요청 실행 메서드 passwordEncoder =======
+2023-07-04 17:53:19.346 INFO  5008 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 파라미터가 없습니다.
+2023-07-04 17:53:19.346 INFO  5008 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:53:19.358 INFO  5020 --- [ restartedMain ] p.toyproject.util.AOP.TimeTraceAop - 수행시간 : 12ms
+2023-07-04 17:53:19.358 INFO  5020 --- [ restartedMain ] p.toyproject.util.AOP.TimeTraceAop -  
+2023-07-04 17:53:19.358 INFO  5020 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - ======= 응답 결과 메서드 passwordEncoder =======
+2023-07-04 17:53:19.358 INFO  5020 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 타입 = DelegatingPasswordEncoder
+2023-07-04 17:53:19.358 INFO  5020 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 값 = org.springframework.security.crypto.password.DelegatingPasswordEncoder@49f07412
+2023-07-04 17:53:19.358 INFO  5020 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:53:19.492 INFO  5154 --- [ restartedMain ] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c6731fa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bb003a7, org.springframework.security.web.context.SecurityContextPersistenceFilter@743b0e93, org.springframework.security.web.header.HeaderWriterFilter@5f7c64c4, org.springframework.web.filter.CorsFilter@427b5f11, org.springframework.security.web.authentication.logout.LogoutFilter@6c335cc8, practice.toyproject.util.security.JwtFilter@67784899, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ec14198, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5022438e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ff6ceb2, org.springframework.security.web.session.SessionManagementFilter@3625978d, org.springframework.security.web.access.ExceptionTranslationFilter@42165886, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22e99713]
+2023-07-04 17:53:19.733 INFO  5395 --- [ restartedMain ] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2023-07-04 17:53:19.843 WARN  5505 --- [ restartedMain ] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-04 17:53:20.054 INFO  5716 --- [ restartedMain ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-04 17:53:20.138 INFO  5800 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+2023-07-04 17:53:20.151 INFO  5813 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8087 (http) with context path ''
+2023-07-04 17:53:20.160 INFO  5822 --- [ restartedMain ] p.toyproject.ToyProjectApplication - Started ToyProjectApplication in 5.476 seconds (JVM running for 7.312)
+2023-07-04 17:53:25.723 INFO  11385 --- [ http-nio-8087-exec-1 ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-04 17:53:25.724 INFO  11386 --- [ http-nio-8087-exec-1 ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-04 17:53:25.725 INFO  11387 --- [ http-nio-8087-exec-1 ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-07-04 17:53:25.799 INFO  11461 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - ======= 요청 실행 메서드 uploadSrc =======
+2023-07-04 17:53:25.800 INFO  11462 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - 요청 파라미터 타입 = StandardMultipartFile
+2023-07-04 17:53:25.800 INFO  11462 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - 요청 파라미터 값 = org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@3f7aa79e
+2023-07-04 17:53:25.800 INFO  11462 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:53:25.800 INFO  11462 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - 요청 파라미터 타입 = String
+2023-07-04 17:53:25.800 INFO  11462 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - 요청 파라미터 값 = shoes
+2023-07-04 17:53:25.800 INFO  11462 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:53:25.803 INFO  11465 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - ======= 요청 실행 메서드 uploadFiles =======
+2023-07-04 17:53:25.803 INFO  11465 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - 요청 파라미터 타입 = StandardMultipartFile
+2023-07-04 17:53:25.803 INFO  11465 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - 요청 파라미터 값 = org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@3f7aa79e
+2023-07-04 17:53:25.803 INFO  11465 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:53:25.803 INFO  11465 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - 요청 파라미터 타입 = String
+2023-07-04 17:53:25.803 INFO  11465 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - 요청 파라미터 값 = images/shoes
+2023-07-04 17:53:25.803 INFO  11465 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:53:26.325 INFO  11987 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AWS.S3Uploader - 로컬 저장 이미지 삭제 성공
+2023-07-04 17:53:26.325 INFO  11987 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.TimeTraceAop - 수행시간 : 522ms
+2023-07-04 17:53:26.325 INFO  11987 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.TimeTraceAop -  
+2023-07-04 17:53:26.325 INFO  11987 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - ======= 응답 결과 메서드 uploadFiles =======
+2023-07-04 17:53:26.325 INFO  11987 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 타입 = String
+2023-07-04 17:53:26.325 INFO  11987 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 값 = https://ctdev-innmo.s3.ap-northeast-2.amazonaws.com/images/shoes/ae979369-4045-4ae7-8c95-977c33cc123ezz.jpg
+2023-07-04 17:53:26.325 INFO  11987 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:53:26.328 INFO  11990 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.TimeTraceAop - 수행시간 : 528ms
+2023-07-04 17:53:26.328 INFO  11990 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.TimeTraceAop -  
+2023-07-04 17:53:26.328 INFO  11990 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - ======= 응답 결과 메서드 uploadSrc =======
+2023-07-04 17:53:26.328 INFO  11990 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 타입 = ResponseEntity
+2023-07-04 17:53:26.328 INFO  11990 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 값 = <200 OK OK,https://ctdev-innmo.s3.ap-northeast-2.amazonaws.com/images/shoes/ae979369-4045-4ae7-8c95-977c33cc123ezz.jpg,[]>
+2023-07-04 17:53:26.329 INFO  11991 --- [ http-nio-8087-exec-1 ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:54:37.514 INFO  83176 --- [ SpringApplicationShutdownHook ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-04 17:54:37.518 INFO  83180 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-04 17:54:37.558 INFO  83220 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-04 17:54:42.732 INFO  904  --- [ restartedMain ] p.toyproject.ToyProjectApplication - Starting ToyProjectApplication using Java 11.0.17 on AC931548 with PID 9032 (C:\workspace\practice\out\production\classes started by 인턴 임현영 in C:\workspace\practice)
+2023-07-04 17:54:42.733 INFO  905  --- [ restartedMain ] p.toyproject.ToyProjectApplication - The following 1 profile is active: "dev"
+2023-07-04 17:54:42.734 INFO  906  --- [ background-preinit ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-04 17:54:42.773 INFO  945  --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.1.0.0\50044485aea10afd7defeee8109c5195b4d3cae2\ojdbc8-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.1.0.0/50044485aea10afd7defeee8109c5195b4d3cae2/oraclepki.jar
+2023-07-04 17:54:42.774 INFO  946  --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\인턴 임현영\.gradle\caches\modules-2\files-2.1\com.oracle.database.nls\orai18n\21.1.0.0\c36ad4814d128f1259c81fad5d52ad2033e6ad37\orai18n-21.1.0.0.jar referenced one or more files that do not exist: file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-mapping.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-utility.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-collation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-translation.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-net.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-servlet.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-lcsd.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/orai18n-tools.jar,file:/C:/Users/인턴%20임현영/.gradle/caches/modules-2/files-2.1/com.oracle.database.nls/orai18n/21.1.0.0/c36ad4814d128f1259c81fad5d52ad2033e6ad37/gdk_custom.jar
+2023-07-04 17:54:42.774 INFO  946  --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-04 17:54:42.774 INFO  946  --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-04 17:54:43.491 INFO  1663 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-04 17:54:43.565 INFO  1737 --- [ restartedMain ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2023-07-04 17:54:43.730 WARN  1902 --- [ restartedMain ] com.amazonaws.util.EC2MetadataUtils - Unable to retrieve the requested metadata (/latest/meta-data/instance-id). EC2 Instance Metadata Service is disabled
+com.amazonaws.AmazonClientException: EC2 Instance Metadata Service is disabled
+	at com.amazonaws.internal.InstanceMetadataServiceResourceFetcher.readResource(InstanceMetadataServiceResourceFetcher.java:65)
+	at com.amazonaws.internal.EC2ResourceFetcher.readResource(EC2ResourceFetcher.java:66)
+	at com.amazonaws.util.EC2MetadataUtils.getItems(EC2MetadataUtils.java:402)
+	at com.amazonaws.util.EC2MetadataUtils.getData(EC2MetadataUtils.java:371)
+	at org.springframework.cloud.aws.context.support.env.AwsCloudEnvironmentCheckUtils.isRunningOnCloudEnvironment(AwsCloudEnvironmentCheckUtils.java:38)
+	at org.springframework.cloud.aws.context.annotation.OnAwsCloudEnvironmentCondition.matches(OnAwsCloudEnvironmentCondition.java:38)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:489)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:140)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at practice.toyproject.ToyProjectApplication.main(ToyProjectApplication.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2023-07-04 17:54:43.884 INFO  2056 --- [ restartedMain ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#400c076f' of type [com.amazonaws.auth.BasicAWSCredentials] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-04 17:54:43.885 INFO  2057 --- [ restartedMain ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#3f7d8230' of type [com.amazonaws.auth.AWSStaticCredentialsProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-04 17:54:43.892 INFO  2064 --- [ restartedMain ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean '(inner bean)#5c335269' of type [com.amazonaws.auth.profile.ProfileCredentialsProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-04 17:54:43.893 INFO  2065 --- [ restartedMain ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'credentialsProvider' of type [org.springframework.cloud.aws.core.credentials.CredentialsProviderFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-04 17:54:43.894 INFO  2066 --- [ restartedMain ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'credentialsProvider' of type [com.amazonaws.auth.AWSCredentialsProviderChain] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-04 17:54:44.352 INFO  2524 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8087 (http)
+2023-07-04 17:54:44.360 INFO  2532 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+2023-07-04 17:54:44.360 INFO  2532 --- [ restartedMain ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-04 17:54:44.361 INFO  2533 --- [ restartedMain ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-04 17:54:44.475 INFO  2647 --- [ restartedMain ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-04 17:54:44.475 INFO  2647 --- [ restartedMain ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1700 ms
+2023-07-04 17:54:44.535 INFO  2707 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-04 17:54:44.538 WARN  2710 --- [ restartedMain ] c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-07-04 17:54:44.800 INFO  2972 --- [ restartedMain ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-04 17:54:44.807 INFO  2979 --- [ restartedMain ] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@ctdev-innp-ora-01.caizqquwbw1r.ap-northeast-2.rds.amazonaws.com:3921:INNPDEV'
+2023-07-04 17:54:44.845 INFO  3017 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - ======= 요청 실행 메서드 corsFilter =======
+2023-07-04 17:54:44.845 INFO  3017 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 파라미터가 없습니다.
+2023-07-04 17:54:44.845 INFO  3017 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:54:44.864 INFO  3036 --- [ restartedMain ] p.toyproject.util.AOP.TimeTraceAop - 수행시간 : 16ms
+2023-07-04 17:54:44.865 INFO  3037 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - ======= 응답 결과 메서드 corsFilter =======
+2023-07-04 17:54:44.865 INFO  3037 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 타입 = CorsFilter
+2023-07-04 17:54:44.865 INFO  3037 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 값 = org.springframework.web.filter.CorsFilter@6450c857
+2023-07-04 17:54:44.865 INFO  3037 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:54:44.986 INFO  3158 --- [ restartedMain ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-04 17:54:45.031 INFO  3203 --- [ restartedMain ] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-04 17:54:45.174 INFO  3346 --- [ restartedMain ] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-04 17:54:45.276 INFO  3448 --- [ restartedMain ] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2023-07-04 17:54:45.281 WARN  3453 --- [ restartedMain ] o.hibernate.dialect.Oracle9Dialect - HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2023-07-04 17:54:45.282 WARN  3454 --- [ restartedMain ] org.hibernate.dialect.OracleDialect - HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2023-07-04 17:54:45.944 INFO  4116 --- [ restartedMain ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-04 17:54:45.954 INFO  4126 --- [ restartedMain ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-04 17:54:45.980 INFO  4152 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - ======= 요청 실행 메서드 amazonS3Client =======
+2023-07-04 17:54:45.980 INFO  4152 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 파라미터가 없습니다.
+2023-07-04 17:54:45.980 INFO  4152 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:54:46.196 INFO  4368 --- [ restartedMain ] p.toyproject.util.AOP.TimeTraceAop - 수행시간 : 215ms
+2023-07-04 17:54:46.196 INFO  4368 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - ======= 응답 결과 메서드 amazonS3Client =======
+2023-07-04 17:54:46.197 INFO  4369 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 타입 = AmazonS3Client
+2023-07-04 17:54:46.197 INFO  4369 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 값 = com.amazonaws.services.s3.AmazonS3Client@2f1c55e0
+2023-07-04 17:54:46.197 INFO  4369 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:54:46.776 WARN  4948 --- [ restartedMain ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-04 17:54:46.804 INFO  4976 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - ======= 요청 실행 메서드 passwordEncoder =======
+2023-07-04 17:54:46.804 INFO  4976 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 파라미터가 없습니다.
+2023-07-04 17:54:46.804 INFO  4976 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:54:46.815 INFO  4987 --- [ restartedMain ] p.toyproject.util.AOP.TimeTraceAop - 수행시간 : 11ms
+2023-07-04 17:54:46.815 INFO  4987 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - ======= 응답 결과 메서드 passwordEncoder =======
+2023-07-04 17:54:46.816 INFO  4988 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 타입 = DelegatingPasswordEncoder
+2023-07-04 17:54:46.816 INFO  4988 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 값 = org.springframework.security.crypto.password.DelegatingPasswordEncoder@4288292e
+2023-07-04 17:54:46.816 INFO  4988 --- [ restartedMain ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-04 17:54:46.946 INFO  5118 --- [ restartedMain ] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e1e406f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54625180, org.springframework.security.web.context.SecurityContextPersistenceFilter@14f49d43, org.springframework.security.web.header.HeaderWriterFilter@2ef05dd1, org.springframework.web.filter.CorsFilter@6450c857, org.springframework.security.web.authentication.logout.LogoutFilter@55da14d1, practice.toyproject.util.security.JwtFilter@1a1f63ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e18b27, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6fc88057, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@705ce710, org.springframework.security.web.session.SessionManagementFilter@35650e39, org.springframework.security.web.access.ExceptionTranslationFilter@1bf829b6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d4025c6]
+2023-07-04 17:54:47.192 INFO  5364 --- [ restartedMain ] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2023-07-04 17:54:47.301 WARN  5473 --- [ restartedMain ] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-07-04 17:54:47.500 INFO  5672 --- [ restartedMain ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-04 17:54:47.593 INFO  5765 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+2023-07-04 17:54:47.609 INFO  5781 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8087 (http) with context path ''
+2023-07-04 17:54:47.622 INFO  5794 --- [ restartedMain ] p.toyproject.ToyProjectApplication - Started ToyProjectApplication in 5.45 seconds (JVM running for 7.345)

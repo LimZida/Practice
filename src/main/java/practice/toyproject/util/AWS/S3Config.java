@@ -24,6 +24,8 @@ public class S3Config {
     private final String secretKey;
     private final String region;
 
+    private AmazonS3Client build;
+
     @Autowired
     public S3Config( @Value("${cloud.aws.credentials.access-key}")String accessKey, @Value("${cloud.aws.credentials.secret-key}")String secretKey, @Value("${cloud.aws.region.static}") String region){
         this.accessKey=accessKey;
@@ -34,13 +36,16 @@ public class S3Config {
 
     @Bean
     public AmazonS3Client amazonS3Client() {
-        BasicAWSCredentials awsCreds = new BasicAWSCredentials(accessKey,secretKey);
-        AmazonS3Client build = (AmazonS3Client) AmazonS3ClientBuilder.standard()
-                .withRegion(region)
-                .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
-                .build();
+        if( "dev".equals(System.getProperty("spring.profiles.active")) ){
+            BasicAWSCredentials awsCreds = new BasicAWSCredentials(accessKey,secretKey);
+            build = (AmazonS3Client) AmazonS3ClientBuilder.standard()
+                    .withRegion(region)
+                    .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
+                    .build();
 
-//        AmazonS3Client build = (AmazonS3Client) AmazonS3ClientBuilder.standard().build();
+        }else{
+            build = (AmazonS3Client) AmazonS3ClientBuilder.standard().build();
+        }
         return build;
     }
 }
