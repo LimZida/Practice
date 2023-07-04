@@ -34,19 +34,19 @@ public class UserController {
     
     // 로그인(유저 조회)
     @RequestMapping(value =("/login") ,method =RequestMethod.POST)
-    public LoginDto loginContoller(@RequestBody LoginDto loginDto){
+    public LoginDto login(@RequestBody LoginDto loginDto){
         return userService.selectUserService(loginDto);
     }
     
     // 회원가입(유저 저장)
     @RequestMapping(value = "/signup",method = RequestMethod.POST)
-    public User signUpContoller(@RequestBody SignUpDto signUpDto){
+    public User signUp(@RequestBody SignUpDto signUpDto){
         return userService.saveUserService(signUpDto);
     }
 
     // 유저 모두 조회
     @RequestMapping(value = "/select", method = RequestMethod.GET)
-    public List<User> selectAllUserController(){
+    public List<User> allUser(){
         return userService.selectAllUserService();
     }
 }

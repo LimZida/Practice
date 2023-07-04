@@ -103,6 +103,7 @@ public class UserServiceImpl implements UserService {
                 .refreshJWT(refreshJWT)
                 .tokenType("Bearer ")
                 .userId(loginDto.getUserId())
+                .userPw(loginDto.getUserPw())
                 .build();
     }
 

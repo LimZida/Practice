@@ -71,6 +71,7 @@ public class User{
     // @UpdateTimestamp
     private Timestamp lastLoginDate;
     // 비밀번호 수정날짜
+    @CreationTimestamp
     private Timestamp updPwDate;
 
     //빌더패턴 사용
