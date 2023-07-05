@@ -1,11 +1,18 @@
 package practice.toyproject.shop.main.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import practice.toyproject.shop.main.model.SrcDto;
 import practice.toyproject.util.AWS.S3Uploader;
+
+import javax.servlet.http.HttpServletResponse;
+import java.lang.reflect.Array;
+import java.util.List;
 
 /**
  * title : MainController
@@ -30,13 +37,25 @@ public class MainController {
     }
 
     //로컬에서 s3로 업로드
-    @RequestMapping(value = "/src",method = RequestMethod.POST)
-    public ResponseEntity<String> uploadSrc(@RequestParam("images") MultipartFile multipartFile, @RequestParam("type") String type) {
+//    @RequestMapping(value = "/src",method = RequestMethod.POST)
+    @PostMapping("/src")
+    public ResponseEntity<String> uploadSrc(@RequestBody SrcDto srcDto) {
         try {
-            String uploadResult = s3Uploader.uploadFiles(multipartFile, "images/" + type);
+            String uploadResult = s3Uploader.uploadFiles(srcDto.getMultipartFile(), "image/" + srcDto.getType());
             return ResponseEntity.ok(uploadResult);
         } catch (Exception e) { return new ResponseEntity(HttpStatus.BAD_REQUEST); }
     }
 
     //s3에서 로컬로 업로드
+    @GetMapping ("/src")
+    public void getSrc(HttpServletResponse response){
+        try {
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.IMAGE_JPEG);
+
+            s3Uploader.getFileList(response);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }
