@@ -57,8 +57,7 @@ public class S3Uploader {
     }
     // s3에 넣기
     private String putS3(File uploadFile, String fileName) {
-//        amazonS3Client.putObject(new PutObjectRequest(bucket, fileName, uploadFile).withCannedAcl(CannedAccessControlList.PublicRead));
-        amazonS3Client.putObject(new PutObjectRequest(bucket, fileName, uploadFile));
+        amazonS3Client.putObject(new PutObjectRequest(bucket, fileName, uploadFile));//withCannedAcl(CannedAccessControlList.PublicRead)
         return amazonS3Client.getUrl(bucket, fileName).toString();
     }
 

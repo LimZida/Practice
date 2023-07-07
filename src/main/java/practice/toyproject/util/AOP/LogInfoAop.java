@@ -27,7 +27,7 @@ import java.lang.reflect.Method;
 @Component
 public class LogInfoAop {
 
-    // com.aop.controller 이하 패키지의 모든 클래스 이하 모든 메서드에 적용
+    // toyproject 이하 패키지의 모든 클래스 이하 모든 메서드에 적용
     @Pointcut("execution(* practice.toyproject..*(..))")
     private void cut(){}
 

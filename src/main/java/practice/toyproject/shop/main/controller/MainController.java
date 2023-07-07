@@ -13,12 +13,12 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * title : MainController
- * description :
+ * description : uploadSrc(UploadSrcDto uploadSrcDto) => 로컬에서 s3로 업로드 (1장씩) 기능
+ *               getSrc(GetSrcDto getSrcDto, HttpServletResponse response) => s3에서 로컬로 업로드 (1장씩) 기능
  *
  * reference : RESTful 설계 규칙 : https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
  *             @RequestBody란? : https://dev-coco.tistory.com/95 , https://cheershennah.tistory.com/179
  *             @RequestBody, @ModelAttribute, @RequestParam의 차이 : https://mangkyu.tistory.com/72
- *             form-data 형식 요청은 보통 파일 업로드나 파일 데이터 전송에 사용된다.
  *
  * author : 임현영
  * date : 2023.07.04
@@ -32,19 +32,18 @@ public class MainController {
         this.s3Service = s3Service;
     }
 
-    //로컬에서 s3로 업로드 (1장씩)
-    @PostMapping(value="/src", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PostMapping(value="/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE) // form-data 형식
     public ResponseEntity<String> uploadSrc(@ModelAttribute UploadSrcDto uploadSrcDto) {
         try {
             String uploadResult = s3Service.uploadSrcService(uploadSrcDto);
             return ResponseEntity.ok(uploadResult);
         } catch (Exception e) {
             e.printStackTrace();
-            return new ResponseEntity(HttpStatus.BAD_REQUEST); }
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+        }
     }
 
-    //s3에서 로컬로 업로드 (1장씩)
-    @GetMapping ("/src")
+    @PostMapping ("/download")
     public ResponseEntity<String> getSrc(@RequestBody GetSrcDto getSrcDto, HttpServletResponse response){
         try {
             s3Service.getSrcService(getSrcDto,response);

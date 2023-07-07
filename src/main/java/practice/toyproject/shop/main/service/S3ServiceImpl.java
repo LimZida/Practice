@@ -12,11 +12,9 @@ import java.io.IOException;
 /**
  * title : S3ServiceImpl
  *
- * description :
+ * description : S3Uploader와 의존된 S3Service 구현체
  *
  * reference :
- *
- *
  *
  * author : 임현영
  * date : 2023.07.07

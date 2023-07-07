@@ -12,6 +12,7 @@ import lombok.*;
  *             빌더 : https://velog.io/@mooh2jj/%EC%98%AC%EB%B0%94%EB%A5%B8-%EC%97%94%ED%8B%B0%ED%8B%B0-Builder-%EC%82%AC%EC%9A%A9%EB%B2%95
  *                   https://pamyferret.tistory.com/67
  *             Setter와 Builder의 차이 : https://mjoo1106.tistory.com/entry/Spring-Setter-vs-Builder
+ *
  * author : 임현영
  * date : 2023.07.07
  **/

@@ -60,7 +60,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll() // index.html
                 .antMatchers("/shop/login").permitAll() // 로그인 경로
                 .antMatchers("/shop/signup").permitAll() // 회원가입 경로는 인증없이 호출 가능
-                .antMatchers("/shop/src").permitAll()
+                .antMatchers("/shop/upload").permitAll()
+                .antMatchers("/shop/download").permitAll()
                 .anyRequest().authenticated() // 나머지 경로는 jwt 인증 해야함
 
                 // exception handling
