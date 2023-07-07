@@ -5525,3 +5525,6 @@ com.amazonaws.AmazonClientException: EC2 Instance Metadata Service is disabled
 2023-07-07 14:15:59.146 INFO  12005 --- [ http-nio-8087-exec-2 ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 타입 = ResponseEntity
 2023-07-07 14:15:59.147 INFO  12006 --- [ http-nio-8087-exec-2 ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 값 = <200 OK OK,https://ctdev-innmo.s3.ap-northeast-2.amazonaws.com/image/shoes/ad137c3f-8119-4f72-9cc2-f21685d37bb4temp.jpg,[]>
 2023-07-07 14:15:59.147 INFO  12006 --- [ http-nio-8087-exec-2 ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-07 15:10:41.512 INFO  3294371 --- [ SpringApplicationShutdownHook ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-07 15:10:41.515 INFO  3294374 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-07 15:10:41.557 INFO  3294416 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

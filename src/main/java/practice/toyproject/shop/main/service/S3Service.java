@@ -17,6 +17,6 @@ import javax.servlet.http.HttpServletResponse;
  * date : 2023.07.07
  **/
 public interface S3Service {
-    void uploadSrcService(UploadSrcDto uploadSrcDto);
+    String uploadSrcService(UploadSrcDto uploadSrcDto);
     void getSrcService(GetSrcDto getSrcDto, HttpServletResponse response);
 }
