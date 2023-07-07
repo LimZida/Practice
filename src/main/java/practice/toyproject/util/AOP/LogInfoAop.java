@@ -40,7 +40,7 @@ public class LogInfoAop {
 
         // 파라미터 받아오기
         Object[] args = joinPoint.getArgs();
-        if (args.length <= 0) {
+        if (args.length == 0) {
             log.info("파라미터가 없습니다.");
             log.info(" ");
         }

@@ -1,9 +1,7 @@
 package practice.toyproject.user.model;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
+
 /**
  * title : LoginDto
  *
@@ -18,7 +16,7 @@ import lombok.ToString;
  **/
 @Getter
 @ToString
-@NoArgsConstructor //파라미터가 없는 생성자 생성
+@NoArgsConstructor(access = AccessLevel.PROTECTED) //파라미터가 없는 생성자 생성
 public class LoginDto {
     private String userId;
     private String userPw;

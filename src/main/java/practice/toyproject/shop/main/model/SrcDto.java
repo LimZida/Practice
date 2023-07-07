@@ -1,9 +1,6 @@
 package practice.toyproject.shop.main.model;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
@@ -20,15 +17,15 @@ import org.springframework.web.multipart.MultipartFile;
  * date : 2023.06.30
  **/
 @Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString
-@NoArgsConstructor
 public class SrcDto {
-    private MultipartFile multipartFile;
+    private MultipartFile image;
     private String type;
 
     @Builder
-    public SrcDto(MultipartFile multipartFile, String type){
-        this.multipartFile=multipartFile;
+    public SrcDto(MultipartFile image, String type){
+        this.image = image;
         this.type=type;
     }
 }

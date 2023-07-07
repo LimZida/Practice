@@ -86,13 +86,13 @@ public class S3Uploader {
     // S3에서 사용자에게 이미지 리스트 응답
     public void getFileList(HttpServletResponse response)throws IOException {
         try{
-            ListObjectsV2Result result = amazonS3Client.listObjectsV2(bucket,"image/clothes/");
+            ListObjectsV2Result result = amazonS3Client.listObjectsV2(bucket,"image/clothes/temp.jpg");
             List<S3ObjectSummary> objects = result.getObjectSummaries();
 
             for (int i = 1; i < objects.size(); i++) {
                 S3ObjectSummary objectSummary = objects.get(i);
                 String fileName = objectSummary.getKey();
-                
+
                 //사진 응답
                 getFileInResponse(fileName,response);
             }
@@ -141,12 +141,12 @@ public class S3Uploader {
         }
     }
     //s3에서 사용자에게 응답하기
-    public void getFileInResponse(String fileName, HttpServletResponse response) throws IOException {
+    public void getFileInResponse(String filePath, HttpServletResponse response) throws IOException {
             S3ObjectInputStream inputStream = null;
 
         try {
             // S3로부터 이미지 파일 가져오기
-            S3Object object = amazonS3Client.getObject(bucket, fileName);
+            S3Object object = amazonS3Client.getObject(bucket, filePath);
             inputStream = object.getObjectContent();
             // 이미지 파일의 MIME 타입 설정
             String contentType = object.getObjectMetadata().getContentType();
