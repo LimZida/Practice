@@ -50,9 +50,6 @@ public class MainController {
     @GetMapping ("/src")
     public void getSrc(HttpServletResponse response){
         try {
-            HttpHeaders headers = new HttpHeaders();
-            headers.setContentType(MediaType.IMAGE_JPEG);
-
             s3Uploader.getFileList(response);
         }catch (Exception e){
             e.printStackTrace();

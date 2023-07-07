@@ -7,6 +7,7 @@ import com.amazonaws.util.IOUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -91,9 +92,6 @@ public class S3Uploader {
             for (int i = 1; i < objects.size(); i++) {
                 S3ObjectSummary objectSummary = objects.get(i);
                 String fileName = objectSummary.getKey();
-
-                System.out.println("objectSummary: "+objectSummary);
-                System.out.println("filename: "+fileName);
                 
                 //사진 응답
                 getFileInResponse(fileName,response);
@@ -143,29 +141,28 @@ public class S3Uploader {
         }
     }
     //s3에서 사용자에게 응답하기
-    public void getFileInResponse(String fileName, HttpServletResponse response){
+    public void getFileInResponse(String fileName, HttpServletResponse response) throws IOException {
+            S3ObjectInputStream inputStream = null;
+
         try {
             // S3로부터 이미지 파일 가져오기
             S3Object object = amazonS3Client.getObject(bucket, fileName);
-            System.out.println("object: "+object);
-            S3ObjectInputStream inputStream = object.getObjectContent();
-            System.out.println("inputStream: "+inputStream);
-            System.out.println(" ");
+            inputStream = object.getObjectContent();
             // 이미지 파일의 MIME 타입 설정
             String contentType = object.getObjectMetadata().getContentType();
             response.setContentType(contentType);
 
             // 이미지 파일 스트림을 응답으로 전송
             IOUtils.copy(inputStream, response.getOutputStream());
-            System.out.println("zzz "+inputStream);
             response.flushBuffer();
+
         } catch (AmazonServiceException e) {
             // Amazon S3 서비스 예외 처리
             // 예외 처리 로직 추가
             System.out.println(e);
-        } catch (IOException e) {
-            // 입출력 예외 처리
-            // 예외 처리 로직 추가
+        } finally {
+            inputStream.close();
+            response.getOutputStream().close();
         }
     }
 
