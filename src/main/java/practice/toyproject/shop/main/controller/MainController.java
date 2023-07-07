@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import practice.toyproject.shop.main.model.SrcDto;
+import practice.toyproject.shop.main.model.UploadSrcDto;
 import practice.toyproject.util.AWS.S3Uploader;
 
 import javax.servlet.http.HttpServletResponse;
@@ -16,9 +16,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * reference : RESTful 설계 규칙 : https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
  *             @RequestBody란? : https://dev-coco.tistory.com/95 , https://cheershennah.tistory.com/179
- *             Setter와 Builder의 차이 : https://mjoo1106.tistory.com/entry/Spring-Setter-vs-Builder
- *
- *
+ *             @RequestBody, @ModelAttribute, @RequestParam의 차이 : https://mangkyu.tistory.com/72
+ *             form-data 형식 요청은 보통 파일 업로드나 파일 데이터 전송에 사용된다.
  * author : 임현영
  * date : 2023.07.04
  **/
@@ -34,9 +33,9 @@ public class MainController {
 
     //로컬에서 s3로 업로드 (1장씩)
     @PostMapping(value="/src", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public ResponseEntity<String> uploadSrc(@ModelAttribute SrcDto srcDto) {
+    public ResponseEntity<String> uploadSrc(@ModelAttribute UploadSrcDto uploadSrcDto) {
         try {
-            String uploadResult = s3Uploader.uploadFiles(srcDto.getImage(), "image/" + srcDto.getType());
+            String uploadResult = s3Uploader.uploadFiles(uploadSrcDto.getImage(), "image/" + uploadSrcDto.getType());
             return ResponseEntity.ok(uploadResult);
         } catch (Exception e) {
             e.printStackTrace();
@@ -45,9 +44,9 @@ public class MainController {
 
     //s3에서 로컬로 업로드 (1장씩)
     @GetMapping ("/src")
-    public ResponseEntity<String> getSrc(HttpServletResponse response){
+    public ResponseEntity<String> getSrc(@RequestParam String dirName,HttpServletResponse response){
         try {
-            s3Uploader.getFileInResponse("image/clothes/temp.jpg",response);
+            s3Uploader.getFileInResponse(dirName,response);
             return ResponseEntity.ok("good");
         }catch (Exception e){
             e.printStackTrace();

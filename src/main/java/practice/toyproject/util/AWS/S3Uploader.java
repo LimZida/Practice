@@ -141,12 +141,12 @@ public class S3Uploader {
         }
     }
     //s3에서 사용자에게 응답하기
-    public void getFileInResponse(String filePath, HttpServletResponse response) throws IOException {
+    public void getFileInResponse(String dirName, HttpServletResponse response) throws IOException {
             S3ObjectInputStream inputStream = null;
 
         try {
             // S3로부터 이미지 파일 가져오기
-            S3Object object = amazonS3Client.getObject(bucket, filePath);
+            S3Object object = amazonS3Client.getObject(bucket, dirName);
             inputStream = object.getObjectContent();
             // 이미지 파일의 MIME 타입 설정
             String contentType = object.getObjectMetadata().getContentType();

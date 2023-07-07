@@ -33,19 +33,19 @@ public class UserController {
     }
     
     // 로그인(유저 조회)
-    @PostMapping(value =("/login"))
+    @PostMapping("/login")
     public LoginDto login(@RequestBody LoginDto loginDto){
         return userService.selectUserService(loginDto);
     }
     
     // 회원가입(유저 저장)
-    @PostMapping(value = "/signup")
+    @PostMapping("/signup")
     public User signUp(@RequestBody SignUpDto signUpDto){
         return userService.saveUserService(signUpDto);
     }
 
     // 유저 모두 조회
-    @GetMapping(value = "/select")
+    @GetMapping( "/select")
     public List<User> allUser(){
         return userService.selectAllUserService();
     }

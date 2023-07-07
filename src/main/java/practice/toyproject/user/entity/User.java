@@ -36,7 +36,7 @@ import java.util.Collection;
 
 @Getter
 @ToString // 로그 debug 시 toString 자동생성
-@NoArgsConstructor(access = AccessLevel.PROTECTED) // new 객체 생성을 막고 일관성, Builder와 호환
+@NoArgsConstructor(access = AccessLevel.PROTECTED) //protected 접근 제어자를 가진 기본 생성자를 자동으로 생성해주는 역할, Builder와 호환
 @Entity(name = "T_USER") //DB 테이블과 매핑
 public class User{
 
