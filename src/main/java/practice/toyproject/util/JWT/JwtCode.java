@@ -10,7 +10,7 @@ package practice.toyproject.util.JWT;
  * date : 2023.06.30
  **/
 public class JwtCode {
-    public static final Boolean ACCESS = true;
-    public static final Boolean EXPIRED = false;
-    public static final Boolean DENIED = false;
+    public static final String ACCESS = "ACCESS";
+    public static final String EXPIRED = "EXPIRED";
+    public static final String DENIED = "DENIED";
 }

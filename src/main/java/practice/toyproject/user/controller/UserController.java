@@ -3,8 +3,8 @@ package practice.toyproject.user.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import practice.toyproject.user.entity.User;
-import practice.toyproject.user.model.LoginDto;
-import practice.toyproject.user.model.SignUpDto;
+import practice.toyproject.user.dto.LoginDto;
+import practice.toyproject.user.dto.SignUpDto;
 import practice.toyproject.user.service.UserService;
 
 import java.util.List;

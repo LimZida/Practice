@@ -1,8 +1,8 @@
 package practice.toyproject.user.service;
 
 import practice.toyproject.user.entity.User;
-import practice.toyproject.user.model.LoginDto;
-import practice.toyproject.user.model.SignUpDto;
+import practice.toyproject.user.dto.LoginDto;
+import practice.toyproject.user.dto.SignUpDto;
 
 import java.util.List;
 

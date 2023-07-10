@@ -12,8 +12,8 @@ import practice.toyproject.token.entity.Token;
 import practice.toyproject.token.repository.TokenRepository;
 import practice.toyproject.util.JWT.JwtProvider;
 import practice.toyproject.user.entity.User;
-import practice.toyproject.user.model.LoginDto;
-import practice.toyproject.user.model.SignUpDto;
+import practice.toyproject.user.dto.LoginDto;
+import practice.toyproject.user.dto.SignUpDto;
 import practice.toyproject.user.repository.UserRepository;
 
 import java.util.List;

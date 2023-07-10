@@ -5625,7 +5625,7 @@ com.amazonaws.AmazonClientException: EC2 Instance Metadata Service is disabled
 2023-07-07 15:43:01.527 INFO  220408 --- [ http-nio-8087-exec-1 ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-07-07 15:43:01.528 INFO  220409 --- [ http-nio-8087-exec-1 ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2023-07-07 15:43:01.529 INFO  220410 --- [ http-nio-8087-exec-1 ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2023-07-07 15:43:01.575 WARN  220456 --- [ http-nio-8087-exec-1 ] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> practice.toyproject.shop.main.controller.MainController.getSrc(practice.toyproject.shop.main.model.GetSrcDto,javax.servlet.http.HttpServletResponse)]
+2023-07-07 15:43:01.575 WARN  220456 --- [ http-nio-8087-exec-1 ] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> practice.toyproject.shop.main.controller.MainController.getSrc(practice.toyproject.shop.main.dto.GetSrcDto,javax.servlet.http.HttpServletResponse)]
 2023-07-07 15:43:22.604 INFO  241485 --- [ SpringApplicationShutdownHook ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-07-07 15:43:22.607 INFO  241488 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2023-07-07 15:43:22.650 INFO  241531 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
@@ -6305,3 +6305,6 @@ com.amazonaws.AmazonClientException: EC2 Instance Metadata Service is disabled
 2023-07-07 15:47:40.932 INFO  31979 --- [ http-nio-8087-exec-4 ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 타입 = ResponseEntity
 2023-07-07 15:47:40.932 INFO  31979 --- [ http-nio-8087-exec-4 ] p.toyproject.util.AOP.LogInfoAop - 응답 파라미터 값 = <200 OK OK,good,[]>
 2023-07-07 15:47:40.932 INFO  31979 --- [ http-nio-8087-exec-4 ] p.toyproject.util.AOP.LogInfoAop -  
+2023-07-07 16:22:30.403 INFO  2121450 --- [ SpringApplicationShutdownHook ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-07 16:22:30.409 INFO  2121456 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-07 16:22:30.448 INFO  2121495 --- [ SpringApplicationShutdownHook ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

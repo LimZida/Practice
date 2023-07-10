@@ -5,8 +5,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import practice.toyproject.shop.main.model.GetSrcDto;
-import practice.toyproject.shop.main.model.UploadSrcDto;
+import practice.toyproject.shop.main.dto.GetSrcDto;
+import practice.toyproject.shop.main.dto.UploadSrcDto;
 import practice.toyproject.shop.main.service.S3Service;
 
 import javax.servlet.http.HttpServletResponse;

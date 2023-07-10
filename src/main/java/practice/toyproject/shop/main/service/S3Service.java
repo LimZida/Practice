@@ -1,7 +1,7 @@
 package practice.toyproject.shop.main.service;
 
-import practice.toyproject.shop.main.model.GetSrcDto;
-import practice.toyproject.shop.main.model.UploadSrcDto;
+import practice.toyproject.shop.main.dto.GetSrcDto;
+import practice.toyproject.shop.main.dto.UploadSrcDto;
 
 import javax.servlet.http.HttpServletResponse;
 /**

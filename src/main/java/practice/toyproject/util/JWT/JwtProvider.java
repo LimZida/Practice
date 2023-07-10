@@ -105,7 +105,7 @@ public class JwtProvider {
         return new UsernamePasswordAuthenticationToken(principal, token, authorities);
     }
 
-    public Boolean validateToken(String token) {
+    public String validateToken(String token) {
         try {
             Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token);
             return JwtCode.ACCESS;

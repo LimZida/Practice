@@ -2,8 +2,8 @@ package practice.toyproject.shop.main.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import practice.toyproject.shop.main.model.GetSrcDto;
-import practice.toyproject.shop.main.model.UploadSrcDto;
+import practice.toyproject.shop.main.dto.GetSrcDto;
+import practice.toyproject.shop.main.dto.UploadSrcDto;
 import practice.toyproject.util.AWS.S3Uploader;
 
 import javax.servlet.http.HttpServletResponse;
