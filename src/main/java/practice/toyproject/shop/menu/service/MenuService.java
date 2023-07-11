@@ -18,4 +18,5 @@ import java.util.List;
 public interface MenuService {
     List<Menu> selectMenuDepthService(MenuDto menuDto);
     List<Menu> selectMenuCodeService(MenuDto menuDto);
+    Menu saveMenuService(MenuDto menuDto);
 }

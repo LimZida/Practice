@@ -17,10 +17,16 @@ import lombok.*;
 @NoArgsConstructor(access = AccessLevel.PROTECTED) //파라미터가 없는 생성자 생성
 public class MenuDto {
     private Long dirDepth;
-    private String dirCd;
+    private String dirCdUpper;
+    private String dirCdLower;
+    private String dirCdName;
+    private String dirUseYn;
     @Builder
-    private MenuDto(Long dirDepth,String dirCd){
+    private MenuDto(Long dirDepth,String dirCdUpper,String dirCdLower, String dirCdName,String dirUseYn){
         this.dirDepth=dirDepth;
-        this.dirCd=dirCd;
+        this.dirCdUpper = dirCdUpper;
+        this.dirCdLower=dirCdLower;
+        this.dirCdName=dirCdName;
+        this.dirUseYn=dirUseYn;
     }
 }

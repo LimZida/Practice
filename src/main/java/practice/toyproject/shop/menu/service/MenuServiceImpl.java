@@ -32,6 +32,20 @@ public class MenuServiceImpl implements MenuService {
 
     @Override
     public List<Menu> selectMenuCodeService(MenuDto menuDto) {
-        return menuRepository.findMenuByDirCdUpper(menuDto.getDirCd());
+        return menuRepository.findMenuByDirCdUpper(menuDto.getDirCdUpper());
+    }
+
+    @Override
+    public Menu saveMenuService(MenuDto menuDto) {
+        Menu menu=Menu
+                .builder()
+                .dirDepth(menuDto.getDirDepth())
+                .dirCdUpper(menuDto.getDirCdUpper())
+                .dirCdLower(menuDto.getDirCdLower())
+                .dirCdName(menuDto.getDirCdName())
+                .dirUseYn(menuDto.getDirUseYn())
+                .build();
+
+        return menuRepository.save(menu);
     }
 }
