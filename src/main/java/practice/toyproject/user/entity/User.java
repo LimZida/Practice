@@ -31,24 +31,11 @@ import java.util.Collection;
  * author : 임현영
  * date : 2023.05.24
  **/
-//@Data => getter,setter, RequiredArgsConstructor, ToString, EqualsAndHashCode 자동생성
-//@AllArgsConstructor 모든 매개변수를 가진 생성자도 추가
-//@NoArgsConstructor 파라미터가 없는 생성자 생성
-//@ToString Stringbuffer 역할
-
 @Getter
 @ToString // 로그 debug 시 toString 자동생성
 @NoArgsConstructor(access = AccessLevel.PROTECTED) //protected 접근 제어자를 가진 기본 생성자를 자동으로 생성해주는 역할(다른 패키지의 기본 생성자 호출을 막음), Builder와 호환
 @Entity(name = "T_USER") //DB 테이블과 매핑
 public class User{
-
-//    @SequenceGenerator(
-//            name = "USER_SEQ_GENERATOR", // 여기서 사용할 시퀀스 이름
-//            sequenceName = "SEQ_T_USER", //매핑할 데이터베이스 시퀀스 이름
-//            initialValue = 1, allocationSize = 1)
-//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "USER_SEQ_GENERATOR")
-//    // 일련번호
-//    private long seq;
     @Id //PK
     // 이메일
     private String userId;

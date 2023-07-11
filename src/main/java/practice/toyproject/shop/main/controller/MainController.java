@@ -5,9 +5,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import practice.toyproject.shop.main.dto.GetSrcDto;
-import practice.toyproject.shop.main.dto.UploadSrcDto;
-import practice.toyproject.shop.main.service.S3Service;
+import practice.toyproject.shop.src.dto.GetSrcDto;
+import practice.toyproject.shop.src.dto.UploadSrcDto;
+import practice.toyproject.shop.src.service.S3SrcService;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -26,16 +26,16 @@ import javax.servlet.http.HttpServletResponse;
 @RestController
 @RequestMapping("/shop")
 public class MainController {
-    private final S3Service s3Service;
+    private final S3SrcService s3SrcService;
     @Autowired
-    public MainController(S3Service s3Service) {
-        this.s3Service = s3Service;
+    public MainController(S3SrcService s3SrcService) {
+        this.s3SrcService = s3SrcService;
     }
 
     @PostMapping(value="/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE) // form-data 형식
     public ResponseEntity<String> uploadSrc(@ModelAttribute UploadSrcDto uploadSrcDto) {
         try {
-            String uploadResult = s3Service.uploadSrcService(uploadSrcDto);
+            String uploadResult = s3SrcService.uploadSrcService(uploadSrcDto);
             return ResponseEntity.ok(uploadResult);
         } catch (Exception e) {
             e.printStackTrace();
@@ -46,7 +46,7 @@ public class MainController {
     @PostMapping ("/download")
     public ResponseEntity<String> getSrc(@RequestBody GetSrcDto getSrcDto, HttpServletResponse response){
         try {
-            s3Service.getSrcService(getSrcDto,response);
+            s3SrcService.getSrcService(getSrcDto,response);
             return ResponseEntity.ok("good");
         }catch (Exception e){
             e.printStackTrace();

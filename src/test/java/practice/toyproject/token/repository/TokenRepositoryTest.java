@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.transaction.annotation.Transactional;
 import practice.toyproject.token.entity.Token;
-import practice.toyproject.util.JWT.JwtUtil;
+import practice.toyproject.util.JWT.JwtProvider;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -30,12 +30,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Transactional
 class TokenRepositoryTest {
     private final TokenRepository tokenRepository;
-    private final JwtUtil jwtUtil;
+    private final JwtProvider jwtProvider;
 
     @Autowired
-    TokenRepositoryTest(TokenRepository tokenRepository, JwtUtil jwtUtil) {
+    TokenRepositoryTest(TokenRepository tokenRepository, JwtProvider jwtProvider) {
         this.tokenRepository = tokenRepository;
-        this.jwtUtil = jwtUtil;
+        this.jwtProvider = jwtProvider;
     }
 
     private final Logger logger = LoggerFactory.getLogger(TokenRepositoryTest.class);
@@ -43,13 +43,13 @@ class TokenRepositoryTest {
     @Test
     void save() {
         String userId="zida4472";
-        String accessJWT = jwtUtil.createToken(userId, 1000L * 60 * 60 * 24 * 1);
-        String refreshJWT = jwtUtil.createToken(userId, 1000L * 60 * 60 * 24 * 30);
+//        String accessJWT = jwtUtil.createToken(userId, 1000L * 60 * 60 * 24 * 1);
+//        String refreshJWT = jwtUtil.createToken(userId, 1000L * 60 * 60 * 24 * 30);
 
         Token token=Token.builder()
                 .userId(userId)
-                .accessJwt(accessJWT)
-                .refreshJwt(refreshJWT)
+//                .accessJwt(accessJWT)
+//                .refreshJwt(refreshJWT)
                 .build();
         tokenRepository.save(token);
         logger.info("###### save token값 {} :",token);

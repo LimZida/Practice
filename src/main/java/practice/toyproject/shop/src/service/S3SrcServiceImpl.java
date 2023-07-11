@@ -1,9 +1,9 @@
-package practice.toyproject.shop.main.service;
+package practice.toyproject.shop.src.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import practice.toyproject.shop.main.dto.GetSrcDto;
-import practice.toyproject.shop.main.dto.UploadSrcDto;
+import practice.toyproject.shop.src.dto.GetSrcDto;
+import practice.toyproject.shop.src.dto.UploadSrcDto;
 import practice.toyproject.util.AWS.S3Uploader;
 
 import javax.servlet.http.HttpServletResponse;
@@ -20,10 +20,10 @@ import java.io.IOException;
  * date : 2023.07.07
  **/
 @Service
-public class S3ServiceImpl implements S3Service {
+public class S3SrcServiceImpl implements S3SrcService {
     private final S3Uploader s3Uploader;
     @Autowired
-    public S3ServiceImpl(S3Uploader s3Uploader) {
+    public S3SrcServiceImpl(S3Uploader s3Uploader) {
         this.s3Uploader = s3Uploader;
     }
 
