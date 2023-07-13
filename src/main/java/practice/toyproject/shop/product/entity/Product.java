@@ -1,14 +1,15 @@
-package practice.toyproject.shop.menu.entity;
+package practice.toyproject.shop.product.entity;
 
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+
 /**
- * title : Menu
+ * title : Product
  *
- * description : T_MENU_DIR 테이블 컬럼 매핑용 entity
+ * description : T_PRODUCT 테이블 컬럼 매핑용 entity
  *
  * reference : 생성자 https://kadosholy.tistory.com/91
  * 롬복  https://www.daleseo.com/lombok-popular-annotations/
@@ -23,36 +24,40 @@ import java.sql.Timestamp;
  *       https://pamyferret.tistory.com/67
  *
  * author : 임현영
- * date : 2023.07.11
+ * date : 2023.07.13
  **/
 @Getter
 @ToString // 로그 debug 시 toString 자동생성
 @NoArgsConstructor(access = AccessLevel.PROTECTED) //protected 접근 제어자를 가진 기본 생성자를 자동으로 생성해주는 역할(다른 패키지에서 기본 생성자 호출을 막음), Builder와 호환
-@Entity(name = "T_MENU_DIR")
-public class Menu {
+@Entity(name = "T_PRODUCT")
+public class Product {
     @SequenceGenerator(
-            name = "MENU_SEQ_GENERATOR", // 여기서 사용할 시퀀스 이름
-            sequenceName = "SEQ_T_MENU_DIR", //매핑할 데이터베이스 시퀀스 이름
+            name = "PRODUCT_SEQ_GENERATOR", // 여기서 사용할 시퀀스 이름
+            sequenceName = "SEQ_T_PRODUCT", //매핑할 데이터베이스 시퀀스 이름
             initialValue = 1, allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "MENU_SEQ_GENERATOR")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PRODUCT_SEQ_GENERATOR")
     @Id
-    private Long dirSeq;
-    private Long dirDepth;
-    private String dirCdUpper;
-    private String dirCdLower;
-    private String dirCdName;
-    private String dirUseYn;
+    private Long productSeq;
+    private String productImgUrl;
+    private String productType; //코드화 분류 필요
+    private String productName;
     @CreationTimestamp
-    private Timestamp dirRegDate;
+    private Timestamp productRegDate;
+    private String productUseYn;
+    private String productPrice;
+    private String productDescription;
+
     @Builder
-    private Menu(Long dirSeq,Long dirDepth, String dirCdUpper, String dirCdLower, String dirCdName, String dirUseYn, Timestamp dirRegDate){
-        this.dirSeq=dirSeq;
-        this.dirDepth=dirDepth;
-        this.dirCdUpper=dirCdUpper;
-        this.dirCdLower=dirCdLower;
-        this.dirCdName=dirCdName;
-        this.dirUseYn=dirUseYn;
-        this.dirRegDate=dirRegDate;
+    private Product(Long productSeq, String productImgUrl, String productType, String productName, Timestamp productRegDate, String productUseYn
+                    ,String productPrice, String productDescription){
+        this.productSeq=productSeq;
+        this.productImgUrl=productImgUrl;
+        this.productType=productType;
+        this.productName=productName;
+        this.productRegDate=productRegDate;
+        this.productUseYn=productUseYn;
+        this.productPrice=productPrice;
+        this.productDescription=productDescription;
     }
 
 }

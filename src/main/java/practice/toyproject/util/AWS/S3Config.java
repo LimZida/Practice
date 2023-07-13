@@ -27,7 +27,7 @@ public class S3Config {
     private AmazonS3Client build;
 
     @Autowired
-    public S3Config( @Value("${cloud.aws.credentials.access-key}")String accessKey, @Value("${cloud.aws.credentials.secret-key}")String secretKey, @Value("${cloud.aws.region.static}") String region){
+    public S3Config( @Value("${aws.credentials.access-key}")String accessKey, @Value("${aws.credentials.secret-key}")String secretKey, @Value("${aws.region.static}") String region){
         this.accessKey=accessKey;
         this.secretKey=secretKey;
         this.region=region;

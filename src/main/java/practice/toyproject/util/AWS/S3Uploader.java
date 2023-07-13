@@ -37,7 +37,7 @@ public class S3Uploader {
     private String bucket;
 
     @Autowired
-    public S3Uploader(AmazonS3Client amazonS3Client,@Value("${cloud.aws.s3.bucket}") String bucket) {
+    public S3Uploader(AmazonS3Client amazonS3Client,@Value("${aws.s3.bucket}") String bucket) {
         this.amazonS3Client = amazonS3Client;
         this.bucket=bucket;
     }
