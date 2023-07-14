@@ -1,8 +1,7 @@
 package practice.toyproject.user.service;
 
+import practice.toyproject.user.dto.UserDto;
 import practice.toyproject.user.entity.User;
-import practice.toyproject.user.dto.LoginDto;
-import practice.toyproject.user.dto.SignUpDto;
 
 import java.util.List;
 
@@ -22,8 +21,8 @@ import java.util.List;
  **/
 
 public interface UserService {
-    User saveUserService(SignUpDto signUpDto);
-    List<User> selectAllUserService();
-    LoginDto selectUserService(LoginDto loginDto);
+    UserDto.signup signUpService(UserDto.signup signup);
+    List<User> viewService();
+    UserDto.login loginService(UserDto.login login);
 
 }

@@ -10,10 +10,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import practice.toyproject.token.entity.Token;
 import practice.toyproject.token.repository.TokenRepository;
+import practice.toyproject.user.dto.UserDto;
 import practice.toyproject.util.JWT.JwtProvider;
 import practice.toyproject.user.entity.User;
-import practice.toyproject.user.dto.LoginDto;
-import practice.toyproject.user.dto.SignUpDto;
 import practice.toyproject.user.repository.UserRepository;
 
 import java.util.List;
@@ -53,26 +52,28 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User saveUserService(SignUpDto signUpDto) {
+    public UserDto.signup signUpService(UserDto.signup signup) {
         User user= User.builder()
-                .userId(signUpDto.getUserId())
+                .userId(signup.getUserId())
                 //spring security 설정으로 인해 passwordEncoder 사용 후 저장
-                .userPw(passwordEncoder.encode(signUpDto.getUserPw()))
-                .userHp(signUpDto.getUserHp())
-                .userName(signUpDto.getUserName())
+                .userPw(passwordEncoder.encode(signup.getUserPw()))
+                .userHp(signup.getUserHp())
+                .userName(signup.getUserName())
                 .imageUrl("")
                 .loginCnt(0)
                 .loginFailCnt(0)
                 .build();
 
-        return userRepository.save(user);
+        userRepository.save(user);
+
+        return signup;
     }
     @Override
-    public LoginDto selectUserService(LoginDto loginDto) {
+    public UserDto.login loginService(UserDto.login login) {
         // user 검증
         // 받아온 유저네임과 패스워드를 이용해 UsernamePasswordAuthenticationToken 객체 생성
         UsernamePasswordAuthenticationToken authenticationToken =
-                new UsernamePasswordAuthenticationToken(loginDto.getUserId(), loginDto.getUserPw());
+                new UsernamePasswordAuthenticationToken(login.getUserId(), login.getUserPw());
         log.info("####### authenticationToken 정보 : {}",authenticationToken);
 
         // authenticationToken 객체를 통해 Authentication 객체 생성
@@ -87,10 +88,10 @@ public class UserServiceImpl implements UserService {
         String accessJWT = jwtProvider.generateAccessToken(authentication);
         String refreshJWT = jwtProvider.generateRefreshToken(authentication);
         log.info("####### accessJWT 정보 : {}",accessJWT);
-        log.info("####### user 정보 : {}",loginDto.getUserId());
+        log.info("####### user 정보 : {}",login.getUserId());
 
         Token token= Token.builder()
-                .userId(loginDto.getUserId())
+                .userId(login.getUserId())
                 .accessJwt(accessJWT)
                 .refreshJwt(refreshJWT)
                 .build();
@@ -98,17 +99,17 @@ public class UserServiceImpl implements UserService {
         // refresh token 저장
         tokenRepository.save(token);
 
-        return loginDto.builder()
+        return login.builder()
                 .accessJWT(accessJWT)
                 .refreshJWT(refreshJWT)
                 .tokenType("Bearer ")
-                .userId(loginDto.getUserId())
-                .userPw(loginDto.getUserPw())
+                .userId(login.getUserId())
+                .userPw(login.getUserPw())
                 .build();
     }
 
     @Override
-    public List<User> selectAllUserService() {
+    public List<User> viewService() {
         return userRepository.findAll();
     }
 }

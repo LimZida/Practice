@@ -97,7 +97,7 @@ public class S3Uploader {
             }
 
         } catch (AmazonServiceException e) {
-            System.out.println(e);
+            log.error("이미지 리스트 응답 에러:{}",e);
             // Amazon S3 서비스 예외 처리
             // 예외 처리 로직 추가
         }
@@ -118,17 +118,17 @@ public class S3Uploader {
             fos = new FileOutputStream(new File(fileName));
             byte[] read_buf = new byte[1024];
             int read_len = 0;
-            System.out.println(file.read(read_buf));
+
             //파일 저장
             while ((read_len = file.read(read_buf)) > 0) {
                 fos.write(read_buf, 0, read_len);
             }
         } catch (AmazonServiceException e) {
-            System.out.println(e.getErrorMessage());
+            log.error("이미지 S3 저장 에러 AmazonServiceException :{}",e);
         } catch (FileNotFoundException e) {
-            System.out.println(e);
+            log.error("이미지 S3 저장 에러 FileNotFoundException :{}",e);
         } catch (IOException e) {
-            System.out.println(e);
+            log.error("이미지 S3 저장 에러 IOException :{}",e);
         }
         finally {
             if (file != null) {
@@ -158,7 +158,7 @@ public class S3Uploader {
         } catch (AmazonServiceException e) {
             // Amazon S3 서비스 예외 처리
             // 예외 처리 로직 추가
-            System.out.println(e);
+            log.error("이미지 S3 저장 에러 AmazonServiceException :{}",e);
         } finally {
             inputStream.close();
             response.getOutputStream().close();

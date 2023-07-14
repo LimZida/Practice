@@ -2,8 +2,7 @@ package practice.toyproject.shop.src.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import practice.toyproject.shop.src.dto.GetSrcDto;
-import practice.toyproject.shop.src.dto.UploadSrcDto;
+import practice.toyproject.shop.src.dto.SrcDto;
 import practice.toyproject.util.AWS.S3Uploader;
 
 import javax.servlet.http.HttpServletResponse;
@@ -28,9 +27,9 @@ public class S3SrcServiceImpl implements S3SrcService {
     }
 
     @Override
-    public String uploadSrcService(UploadSrcDto uploadSrcDto) {
+    public String uploadSrcService(SrcDto.upload upload) {
         try{
-            String uploadResult = s3Uploader.uploadFiles(uploadSrcDto.getImage(), "image/" + uploadSrcDto.getType());
+            String uploadResult = s3Uploader.uploadFiles(upload.getImage(), "image/" + upload.getType());
             return uploadResult;
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -38,9 +37,9 @@ public class S3SrcServiceImpl implements S3SrcService {
     }
 
     @Override
-    public void getSrcService(GetSrcDto getSrcDto, HttpServletResponse response) {
+    public void getSrcService(SrcDto.download download, HttpServletResponse response) {
         try{
-            s3Uploader.getFileInResponse(getSrcDto.getDirName(),response);
+            s3Uploader.getFileInResponse(download.getDirName(),response);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

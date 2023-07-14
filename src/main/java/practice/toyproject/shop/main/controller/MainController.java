@@ -5,8 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import practice.toyproject.shop.src.dto.GetSrcDto;
-import practice.toyproject.shop.src.dto.UploadSrcDto;
+import practice.toyproject.shop.src.dto.SrcDto;
 import practice.toyproject.shop.src.service.S3SrcService;
 
 import javax.servlet.http.HttpServletResponse;
@@ -33,9 +32,9 @@ public class MainController {
     }
 
     @PostMapping(value="/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE) // form-data 형식
-    public ResponseEntity<String> uploadSrc(@ModelAttribute UploadSrcDto uploadSrcDto) {
+    public ResponseEntity<String> uploadSrc(@ModelAttribute SrcDto.upload upload) {
         try {
-            String uploadResult = s3SrcService.uploadSrcService(uploadSrcDto);
+            String uploadResult = s3SrcService.uploadSrcService(upload);
             return ResponseEntity.ok(uploadResult);
         } catch (Exception e) {
             e.printStackTrace();
@@ -44,9 +43,9 @@ public class MainController {
     }
 
     @PostMapping ("/download")
-    public ResponseEntity<String> getSrc(@RequestBody GetSrcDto getSrcDto, HttpServletResponse response){
+    public ResponseEntity<String> getSrc(@RequestBody SrcDto.download download, HttpServletResponse response){
         try {
-            s3SrcService.getSrcService(getSrcDto,response);
+            s3SrcService.getSrcService(download,response);
             return ResponseEntity.ok("good");
         }catch (Exception e){
             e.printStackTrace();

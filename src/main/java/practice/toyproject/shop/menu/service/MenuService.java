@@ -16,7 +16,7 @@ import java.util.List;
  * date : 2023.07.11
  **/
 public interface MenuService {
-    List<Menu> selectMenuDepthService(MenuDto menuDto);
-    List<Menu> selectMenuCodeService(MenuDto menuDto);
-    Menu saveMenuService(MenuDto menuDto);
+    List<Menu> selectMenuDepthService(MenuDto.menuInfo menulist);
+    List<Menu> selectMenuCodeService(MenuDto.menuInfo menulist);
+    Menu saveMenuService(MenuDto.menuInfo menulist);
 }

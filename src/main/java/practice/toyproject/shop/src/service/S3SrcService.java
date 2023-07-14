@@ -1,7 +1,6 @@
 package practice.toyproject.shop.src.service;
 
-import practice.toyproject.shop.src.dto.GetSrcDto;
-import practice.toyproject.shop.src.dto.UploadSrcDto;
+import practice.toyproject.shop.src.dto.SrcDto;
 
 import javax.servlet.http.HttpServletResponse;
 /**
@@ -15,6 +14,6 @@ import javax.servlet.http.HttpServletResponse;
  * date : 2023.07.07
  **/
 public interface S3SrcService {
-    String uploadSrcService(UploadSrcDto uploadSrcDto);
-    void getSrcService(GetSrcDto getSrcDto, HttpServletResponse response);
+    String uploadSrcService(SrcDto.upload upload);
+    void getSrcService(SrcDto.download download, HttpServletResponse response);
 }

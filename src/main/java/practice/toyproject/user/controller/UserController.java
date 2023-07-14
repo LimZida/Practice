@@ -2,9 +2,8 @@ package practice.toyproject.user.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import practice.toyproject.user.dto.UserDto;
 import practice.toyproject.user.entity.User;
-import practice.toyproject.user.dto.LoginDto;
-import practice.toyproject.user.dto.SignUpDto;
 import practice.toyproject.user.service.UserService;
 
 import java.util.List;
@@ -33,19 +32,19 @@ public class UserController {
     
     // 로그인(유저 조회)
     @PostMapping("/login")
-    public LoginDto login(@RequestBody LoginDto loginDto){
-        return userService.selectUserService(loginDto);
+    public UserDto.login login(@RequestBody UserDto.login login){
+        return userService.loginService(login);
     }
     
     // 회원가입(유저 저장)
     @PostMapping("/signup")
-    public User signUp(@RequestBody SignUpDto signUpDto){
-        return userService.saveUserService(signUpDto);
+    public UserDto.signup signUp(@RequestBody UserDto.signup signup){
+        return userService.signUpService(signup);
     }
 
     // 유저 모두 조회
     @GetMapping( "/select")
     public List<User> allUser(){
-        return userService.selectAllUserService();
+        return userService.viewService();
     }
 }
