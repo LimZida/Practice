@@ -32,14 +32,14 @@ public class UserController {
     
     // 로그인(유저 조회)
     @PostMapping("/login")
-    public UserDto.login login(@RequestBody UserDto.login login){
-        return userService.loginService(login);
+    public UserDto.loginInfo login(@RequestBody UserDto.loginInfo loginInfo){
+        return userService.loginService(loginInfo);
     }
     
     // 회원가입(유저 저장)
     @PostMapping("/signup")
-    public UserDto.signup signUp(@RequestBody UserDto.signup signup){
-        return userService.signUpService(signup);
+    public UserDto.signupInfo signUp(@RequestBody UserDto.signupInfo signupInfo){
+        return userService.signUpService(signupInfo);
     }
 
     // 유저 모두 조회

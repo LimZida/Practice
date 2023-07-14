@@ -27,9 +27,9 @@ public class S3SrcServiceImpl implements S3SrcService {
     }
 
     @Override
-    public String uploadSrcService(SrcDto.upload upload) {
+    public String uploadSrcService(SrcDto.uploadInfo uploadInfo) {
         try{
-            String uploadResult = s3Uploader.uploadFiles(upload.getImage(), "image/" + upload.getType());
+            String uploadResult = s3Uploader.uploadFiles(uploadInfo.getImage(), "image/" + uploadInfo.getType());
             return uploadResult;
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -37,9 +37,9 @@ public class S3SrcServiceImpl implements S3SrcService {
     }
 
     @Override
-    public void getSrcService(SrcDto.download download, HttpServletResponse response) {
+    public void getSrcService(SrcDto.downloadInfo downloadInfo, HttpServletResponse response) {
         try{
-            s3Uploader.getFileInResponse(download.getDirName(),response);
+            s3Uploader.getFileInResponse(downloadInfo.getDirName(),response);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

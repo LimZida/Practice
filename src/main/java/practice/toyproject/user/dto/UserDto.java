@@ -24,7 +24,7 @@ public class UserDto {
     @Getter
     @ToString
     @NoArgsConstructor(access = AccessLevel.PROTECTED) //파라미터가 없는 생성자 생성
-    public static class login{
+    public static class loginInfo {
         private String userId;
         private String userPw;
         private String accessJWT;
@@ -32,7 +32,7 @@ public class UserDto {
         private String tokenType;
 
         @Builder
-        private login(String userId, String userPw, String accessJWT, String refreshJWT, String tokenType){
+        private loginInfo(String userId, String userPw, String accessJWT, String refreshJWT, String tokenType){
             this.userId=userId;
             this.userPw = userPw;
             this.accessJWT=accessJWT;
@@ -44,7 +44,7 @@ public class UserDto {
     @Getter
     @ToString
     @NoArgsConstructor(access = AccessLevel.PROTECTED) //파라미터가 없는 생성자 생성
-    public static class signup{
+    public static class signupInfo {
         // 아이디
         private String userId;
         // 핸드폰
@@ -55,7 +55,7 @@ public class UserDto {
         private String userName;
 
         @Builder
-        private signup(String userId, String userPw,String userHp,String userName){
+        private signupInfo(String userId, String userPw, String userHp, String userName){
             this.userId=userId;
             this.userPw=userPw;
             this.userHp=userHp;

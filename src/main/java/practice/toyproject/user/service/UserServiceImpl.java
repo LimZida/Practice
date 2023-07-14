@@ -52,13 +52,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserDto.signup signUpService(UserDto.signup signup) {
+    public UserDto.signupInfo signUpService(UserDto.signupInfo signupInfo) {
         User user= User.builder()
-                .userId(signup.getUserId())
+                .userId(signupInfo.getUserId())
                 //spring security 설정으로 인해 passwordEncoder 사용 후 저장
-                .userPw(passwordEncoder.encode(signup.getUserPw()))
-                .userHp(signup.getUserHp())
-                .userName(signup.getUserName())
+                .userPw(passwordEncoder.encode(signupInfo.getUserPw()))
+                .userHp(signupInfo.getUserHp())
+                .userName(signupInfo.getUserName())
                 .imageUrl("")
                 .loginCnt(0)
                 .loginFailCnt(0)
@@ -66,14 +66,14 @@ public class UserServiceImpl implements UserService {
 
         userRepository.save(user);
 
-        return signup;
+        return signupInfo;
     }
     @Override
-    public UserDto.login loginService(UserDto.login login) {
+    public UserDto.loginInfo loginService(UserDto.loginInfo loginInfo) {
         // user 검증
         // 받아온 유저네임과 패스워드를 이용해 UsernamePasswordAuthenticationToken 객체 생성
         UsernamePasswordAuthenticationToken authenticationToken =
-                new UsernamePasswordAuthenticationToken(login.getUserId(), login.getUserPw());
+                new UsernamePasswordAuthenticationToken(loginInfo.getUserId(), loginInfo.getUserPw());
         log.info("####### authenticationToken 정보 : {}",authenticationToken);
 
         // authenticationToken 객체를 통해 Authentication 객체 생성
@@ -88,10 +88,10 @@ public class UserServiceImpl implements UserService {
         String accessJWT = jwtProvider.generateAccessToken(authentication);
         String refreshJWT = jwtProvider.generateRefreshToken(authentication);
         log.info("####### accessJWT 정보 : {}",accessJWT);
-        log.info("####### user 정보 : {}",login.getUserId());
+        log.info("####### user 정보 : {}", loginInfo.getUserId());
 
         Token token= Token.builder()
-                .userId(login.getUserId())
+                .userId(loginInfo.getUserId())
                 .accessJwt(accessJWT)
                 .refreshJwt(refreshJWT)
                 .build();
@@ -99,12 +99,12 @@ public class UserServiceImpl implements UserService {
         // refresh token 저장
         tokenRepository.save(token);
 
-        return login.builder()
+        return loginInfo.builder()
                 .accessJWT(accessJWT)
                 .refreshJWT(refreshJWT)
                 .tokenType("Bearer ")
-                .userId(login.getUserId())
-                .userPw(login.getUserPw())
+                .userId(loginInfo.getUserId())
+                .userPw(loginInfo.getUserPw())
                 .build();
     }
 

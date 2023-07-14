@@ -14,18 +14,18 @@ import lombok.*;
  * date : 2023.07.11
  **/
 public class MenuDto {
-
+    //메뉴 목록 반환 dto
     @Getter
     @ToString
     @NoArgsConstructor(access = AccessLevel.PROTECTED) //파라미터가 없는 생성자 생성
-    public static class menuInfo {
+    public static class listInfo {
         private Long dirDepth;
         private String dirCdUpper;
         private String dirCdLower;
         private String dirCdName;
         private String dirUseYn;
         @Builder
-        private menuInfo(Long dirDepth, String dirCdUpper, String dirCdLower, String dirCdName, String dirUseYn){
+        private listInfo(Long dirDepth, String dirCdUpper, String dirCdLower, String dirCdName, String dirUseYn){
             this.dirDepth=dirDepth;
             this.dirCdUpper = dirCdUpper;
             this.dirCdLower=dirCdLower;

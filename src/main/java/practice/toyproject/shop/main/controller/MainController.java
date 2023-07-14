@@ -32,9 +32,9 @@ public class MainController {
     }
 
     @PostMapping(value="/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE) // form-data 형식
-    public ResponseEntity<String> uploadSrc(@ModelAttribute SrcDto.upload upload) {
+    public ResponseEntity<String> uploadSrc(@ModelAttribute SrcDto.uploadInfo uploadInfo) {
         try {
-            String uploadResult = s3SrcService.uploadSrcService(upload);
+            String uploadResult = s3SrcService.uploadSrcService(uploadInfo);
             return ResponseEntity.ok(uploadResult);
         } catch (Exception e) {
             e.printStackTrace();
@@ -43,9 +43,9 @@ public class MainController {
     }
 
     @PostMapping ("/download")
-    public ResponseEntity<String> getSrc(@RequestBody SrcDto.download download, HttpServletResponse response){
+    public ResponseEntity<String> getSrc(@RequestBody SrcDto.downloadInfo downloadInfo, HttpServletResponse response){
         try {
-            s3SrcService.getSrcService(download,response);
+            s3SrcService.getSrcService(downloadInfo,response);
             return ResponseEntity.ok("good");
         }catch (Exception e){
             e.printStackTrace();

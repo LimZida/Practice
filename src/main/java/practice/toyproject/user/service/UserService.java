@@ -21,8 +21,8 @@ import java.util.List;
  **/
 
 public interface UserService {
-    UserDto.signup signUpService(UserDto.signup signup);
+    UserDto.signupInfo signUpService(UserDto.signupInfo signupInfo);
     List<User> viewService();
-    UserDto.login loginService(UserDto.login login);
+    UserDto.loginInfo loginService(UserDto.loginInfo loginInfo);
 
 }

@@ -16,8 +16,8 @@ import java.util.List;
  * date : 2023.07.07
  **/
 public interface ProductService {
-    Product saveProductService(ProductDto productDto);
-    Product selectSeqProductService(ProductDto productDto); // 매개변수 product로 해야하는지?
-    List<Product> selectTypeProductService(ProductDto productDto);
+    Product saveProductService(ProductDto.saveInfo saveInfo);
+    Product selectSeqProductService(ProductDto.saveInfo saveInfo);
+    List<Product> selectTypeProductService(ProductDto.saveInfo saveInfo);
     List<Product> selectAllService();
 }

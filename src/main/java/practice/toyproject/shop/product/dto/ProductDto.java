@@ -2,8 +2,6 @@ package practice.toyproject.shop.product.dto;
 
 import lombok.*;
 
-import java.sql.Timestamp;
-
 /**
  * title : ProductDto
  *
@@ -25,7 +23,7 @@ public class ProductDto {
     @Getter
     @ToString
     @NoArgsConstructor(access = AccessLevel.PROTECTED) //파라미터가 없는 생성자 생성
-    public static class save{
+    public static class saveInfo {
         private Long productSeq;
         private String productImgUrl;
         private String productType; //코드화 분류 필요
@@ -35,8 +33,8 @@ public class ProductDto {
         private String productDescription;
 
         @Builder
-        private save(Long productSeq, String productImgUrl, String productType, String productName, String productUseYn
-                ,String productPrice, String productDescription){
+        private saveInfo(Long productSeq, String productImgUrl, String productType, String productName, String productUseYn
+                , String productPrice, String productDescription){
             this.productSeq=productSeq;
             this.productImgUrl=productImgUrl;
             this.productType=productType;

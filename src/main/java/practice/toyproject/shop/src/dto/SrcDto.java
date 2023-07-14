@@ -24,11 +24,11 @@ public class SrcDto {
     @Getter
     @NoArgsConstructor(access = AccessLevel.PROTECTED)
     @ToString
-    public class download {
+    public class downloadInfo {
         private String dirName;
 
         @Builder
-        private download(String dirName){
+        private downloadInfo(String dirName){
             this.dirName=dirName;
         }
     }
@@ -37,12 +37,12 @@ public class SrcDto {
     @Getter
     @NoArgsConstructor(access = AccessLevel.PROTECTED)
     @ToString
-    public class upload{
+    public class uploadInfo {
         private MultipartFile image;
         private String type;
 
         @Builder
-        private upload(MultipartFile image, String type){
+        private uploadInfo(MultipartFile image, String type){
             this.image = image;
             this.type=type;
         }
