@@ -24,7 +24,7 @@ import java.util.List;
 @Repository
 public interface ProductRepository extends JpaRepository<Product,Long> {
     Product save(Product product);
-    Product findProductByProductSeq(Long productSeq);
+    Product findProductByProductSeq(Long productSeq); // 매개변수 product로 해야하는지?
     List<Product> findProductByProductType(String ProductType);
     List<Product> findAll();
 
