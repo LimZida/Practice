@@ -24,7 +24,7 @@ import java.sql.Timestamp;
  *              https://pamyferret.tistory.com/67
  *
  * author : 임현영
- * date : 2023.07.13
+ * date : 2023.07.14
  **/
 @Getter
 @ToString // 로그 debug 시 toString 자동생성

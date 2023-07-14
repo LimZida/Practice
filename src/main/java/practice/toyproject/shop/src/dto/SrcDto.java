@@ -4,7 +4,7 @@ import lombok.*;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * title : GetSrcDto
+ * title : SrcDto
  *
  * description : s3에서 가져올 사진 json request 매핑용 dto
  *

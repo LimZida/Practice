@@ -24,7 +24,6 @@ public class ProductDto {
     @ToString
     @NoArgsConstructor(access = AccessLevel.PROTECTED) //파라미터가 없는 생성자 생성
     public static class saveInfo {
-        private Long productSeq;
         private String productImgUrl;
         private String productType; //코드화 분류 필요
         private String productName;
@@ -33,15 +32,38 @@ public class ProductDto {
         private String productDescription;
 
         @Builder
-        private saveInfo(Long productSeq, String productImgUrl, String productType, String productName, String productUseYn
+        private saveInfo(String productImgUrl, String productType, String productName, String productUseYn
                 , String productPrice, String productDescription){
-            this.productSeq=productSeq;
             this.productImgUrl=productImgUrl;
             this.productType=productType;
             this.productName=productName;
             this.productUseYn=productUseYn;
             this.productPrice=productPrice;
             this.productDescription=productDescription;
+        }
+    }
+    //Seq로 상품 조회 dto
+    @Getter
+    @ToString
+    @NoArgsConstructor(access = AccessLevel.PROTECTED) //파라미터가 없는 생성자 생성
+    public static class seqInfo {
+        private Long productSeq;
+
+        @Builder
+        private seqInfo(Long productSeq){
+            this.productSeq=productSeq;
+        }
+    }
+    // type으로 상품 조회 dto
+    @Getter
+    @ToString
+    @NoArgsConstructor(access = AccessLevel.PROTECTED) //파라미터가 없는 생성자 생성
+    public static class typeInfo {
+        private String productType; //코드화 분류 필요
+
+        @Builder
+        private typeInfo(String productType){
+            this.productType=productType;
         }
     }
 }

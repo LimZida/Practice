@@ -26,22 +26,22 @@ public class MenuServiceImpl implements MenuService {
     }
 
     @Override
-    public List<Menu> selectMenuDepthService(MenuDto.listInfo listInfo) {
-        return menuRepository.findMenuByDirDepth(listInfo.getDirDepth());
+    public List<Menu> selectMenuDepthService(MenuDto.depthInfo depthInfo) {
+        return menuRepository.findMenuByDirDepth(depthInfo.getDirDepth());
     }
     @Override
-    public List<Menu> selectMenuCodeService(MenuDto.listInfo listInfo) {
-        return menuRepository.findMenuByDirCdUpper(listInfo.getDirCdUpper());
+    public List<Menu> selectMenuCodeService(MenuDto.codeInfo codeInfo) {
+        return menuRepository.findMenuByDirCdUpper(codeInfo.getDirCdUpper());
     }
     @Override
-    public Menu saveMenuService(MenuDto.listInfo listInfo) {
+    public Menu saveMenuService(MenuDto.saveInfo saveInfo) {
         Menu menu=Menu
                 .builder()
-                .dirDepth(listInfo.getDirDepth())
-                .dirCdUpper(listInfo.getDirCdUpper())
-                .dirCdLower(listInfo.getDirCdLower())
-                .dirCdName(listInfo.getDirCdName())
-                .dirUseYn(listInfo.getDirUseYn())
+                .dirDepth(saveInfo.getDirDepth())
+                .dirCdUpper(saveInfo.getDirCdUpper())
+                .dirCdLower(saveInfo.getDirCdLower())
+                .dirCdName(saveInfo.getDirCdName())
+                .dirUseYn(saveInfo.getDirUseYn())
                 .build();
 
         return menuRepository.save(menu);
